@@ -8,3 +8,36 @@ body {
     max-width: 1521px;
     border-collapse: separate;
 }
+
+.footer-text-dark {
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2C2C2C;
+    margin: 0;
+
+    p{
+        margin: 0;
+    }
+}
+.footer-text-light {
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2C2C2C;
+
+    span{
+        display: block;
+        margin-bottom: 6px;
+    }
+}
+
+
