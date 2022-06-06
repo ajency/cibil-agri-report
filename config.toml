@@ -1,0 +1,5 @@
+baseURL = "https://github.com/MamataNivajekar/cibil-report"
+languageCode = "en-us"
+title = "CIBIL Agri Report"
+theme = "ink"
+publishDir = "docs"
