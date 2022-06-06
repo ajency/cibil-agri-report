@@ -5,8 +5,64 @@ body {
 .main-container{
     margin: auto !important;
     padding: 80px 60px 60px !important;
-    max-width: 1521px;
+    max-width: 1641px;
     border-collapse: separate;
+    .member-details{
+        border: 1px solid #ACACAC;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 40px;
+        p{
+            margin: 0px;
+        }
+    }
+    .td-title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #00A6CA;
+    }
+    .table-title {
+        font-family: 'Intro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #2C2C2C;
+        margin: 0px auto 10px;
+    }
+    .td-desc{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 24px;
+        color: #2C2C2C;
+    }
+    .colon{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin: 0 12px;
+    }
+    .page-title {
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 44px;
+        color: #2C2C2C;
+        margin-top: 42px;
+        margin-bottom: 30px;
+        .small-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
 }
 
 .footer-text-dark {
