@@ -7,13 +7,18 @@ body {
     padding: 80px 60px 60px !important;
     max-width: 1641px;
     border-collapse: separate;
-    .member-details{
+    .member-details, .consumer-info{
         border: 1px solid #ACACAC;
         border-radius: 8px;
-        padding: 20px;
+        padding: 10px;
         margin-bottom: 40px;
         p{
             margin: 0px;
+        }
+    }
+    .member-details{
+        td{
+            padding: 10px;
         }
     }
     .td-title{
@@ -22,6 +27,7 @@ body {
         font-size: 16px;
         line-height: 24px;
         color: #00A6CA;
+        text-transform: uppercase;
     }
     .table-title {
         font-family: 'Intro';
@@ -61,6 +67,30 @@ body {
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+    .consumer-info{
+        .colon{
+            width: 33px;
+            text-align: center;
+        }
+    }
+    .inner-table {
+        margin-left: 0;
+        max-width: 595px;
+        td{
+            padding: 10px;
+        }
+    }
+    .inner-table-container {
+        vertical-align: top;
+        &.first{
+            padding-right: 20px;
+        }
+    }
+    td{
+        &.td-title{
+            width: 195px;
         }
     }
 }

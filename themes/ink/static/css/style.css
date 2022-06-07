@@ -76,6 +76,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .main-container .consumer-info .colon {
@@ -85,6 +86,7 @@ body {
 
 .main-container .inner-table {
   margin-left: 0;
+  max-width: 595px;
 }
 
 .main-container .inner-table td {
@@ -93,6 +95,14 @@ body {
 
 .main-container .inner-table-container {
   vertical-align: top;
+}
+
+.main-container .inner-table-container.first {
+  padding-right: 20px;
+}
+
+.main-container td.td-title {
+  width: 195px;
 }
 
 .footer-text-dark {
