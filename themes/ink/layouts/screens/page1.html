@@ -4,7 +4,9 @@
 {{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
 {{ partial "consumer-info-table.html"}}
 {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
-
 {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
-
+{{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
+{{ partial "halfcircle-graphs.html"}}
+{{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
+{{ partial "summary-table.html"}}
 {{ end }}
