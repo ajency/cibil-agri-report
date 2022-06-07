@@ -1,0 +1,16 @@
+<table class="default-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0"
+    align="center">
+    <thead>
+        <tr>
+            <th>Survey No. {{ .surveyNo }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{ if .text }}<p class="hindi short-length">{{ .text }}</p> {{ end }}
+                {{ if .imageURL }}<img src ="{{ .imageURL}}" >{{ end }}
+            </td>
+        </tr>
+    </tbody>
+</table>
