@@ -15,6 +15,7 @@ body {
         border-radius: 8px;
         padding: 10px;
         margin-bottom: 40px;
+        overflow: hidden;
         p{
             margin: 0px;
         }
@@ -43,7 +44,7 @@ body {
     }
     .td-desc{
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 19px;
         line-height: 24px;
         color: #2C2C2C;
@@ -61,11 +62,12 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
-        margin-top: 0;
+        margin-top: 0 !important;
         line-height: 44px;
         color: #2C2C2C;
         margin-top: 42px;
         margin-bottom: 30px;
+        text-transform: uppercase;
         .small-text{
             font-weight: 400;
             font-size: 16px;
@@ -258,8 +260,8 @@ body {
     margin-bottom: 40px; 
 
     table{
-        border: 1px solid #ACACAC;
-        border-radius: 8px;
+        // border: 1px solid #ACACAC;
+        // border-radius: 8px;
         text-align: left;
         overflow: hidden;
 
@@ -272,6 +274,7 @@ body {
                 line-height: 16px;
                 text-transform: uppercase;
                 color: #00A6CA;
+                border-bottom: 1px solid #ACACAC;
             }
         }
         tbody{
@@ -326,6 +329,7 @@ body {
             line-height: 24px;
             text-transform: uppercase;
             color: #00A6CA;
+            border-bottom: 1px solid #ACACAC;
         }
     }
 
@@ -376,6 +380,36 @@ body {
     }
 }
 
+tfoot{
+    tr{
+        border-top: 1px solid #ACACAC;
+        td{
+            padding: 15px 20px !important;
+            vertical-align: top;
+            border-top: 1px solid #ACACAC;
+            &.foot-alert-info{
+                font-weight: 700 !important;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #2C2C2C;
+                padding-top: 4px !important;
+                padding-bottom: 4px !important;
+                border-top: 0;
+
+                img{
+                    margin-right: 10px;
+                }
+
+                span{
+                    vertical-align: super;
+                }
+            }
+        }
+    }
+}
+
 .ownership-charge-text {
     font-weight: 400;
     font-size: 18px;
@@ -397,6 +431,49 @@ body {
     margin-bottom: 10px; 
 }
 
+.spaced-table{
+    position: relative;
+    tbody{
+        position: relative;
+    }
+    tr{
+        td,th{
+            &:first-of-type{
+                padding-left: 60px;
+            }
+        }
+    }
+    .flot-symbol {
+        position: absolute;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #00A6CA;
+        top: 73px;
+        left: 20px;
+    }
+}
+
 .short-length{
     max-width: 877px;
+}
+
+.padding-0{
+    padding: 0 !important;
+}
+
+.white-row {
+    tbody,thead{
+        tr{
+            background: #fff !important;
+        }
+    }
+}
+.border-0{
+    tr{
+        th{
+            border: 0 !important;
+        }
+    }
 }

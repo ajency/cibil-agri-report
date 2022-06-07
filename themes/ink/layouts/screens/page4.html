@@ -1,0 +1,11 @@
+{{ define "main" }}
+    {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
+    {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
+    {{ partial "consumer-information-table.html" }}
+    {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
+    {{ partial "consumer-details-table-spaced.html" }}
+    {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
+    {{ partial "consumer-details-table-spaced.html" }}
+    {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+    {{ partial "consumer-details-table.html" }}
+{{ end }}
