@@ -3,4 +3,30 @@
 {{ partial "info-table.html"}}
 {{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
 {{ partial "consumer-info-table.html"}}
+{{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
+
+<div class="title-table">
+    <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+        <thead>
+            <tr>
+                {{ range .Site.Data.farmInformation.table_head }}
+                <th>{{ .title }}</th>
+                {{ end }}
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Site.Data.farmInformation.table_body }}
+            <tr>
+                <td>{{ .state }}</td>
+                <td>{{ .district }}</td>
+                <td>{{ .sub_district }}</td>
+                <td>{{ .village }}</td>
+                <td>{{ .survey_number }}</td>
+                <td>{{ .sub_survey_number }}</td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>
+
 {{ end }}

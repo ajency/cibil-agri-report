@@ -1,0 +1,64 @@
+{
+  "table_body" : [
+    {
+      "state": "Gujarat",
+      "district": "Rajkot",
+      "subdistrict": "-",
+      "village": "Pipliya",
+      "survey_number": "50/1",
+      "sub_survey_number": "-"
+    },
+    {
+      "state": "Gujarat",
+      "district": "Dhanu",
+      "sub_district": "-",
+      "village": "Dhanu",
+      "survey_number": "24/2",
+      "sub_survey_number": "-"
+    },
+    {
+      "state": "Gujarat",
+      "district": "Valsad",
+      "sub_district": "-",
+      "village": "Umarsadi",
+      "survey_number": "58/1",
+      "sub_survey_number": "-"
+    },
+    {
+      "state": "Gujarat",
+      "district": "Daman",
+      "sub_district": "-",
+      "village": "Atul",
+      "survey_number": "42/1",
+      "sub_survey_number": "-"
+    },
+    {
+      "state": "Gujarat",
+      "district": "Vapi",
+      "sub_district": "-",
+      "village": "Udwada",
+      "survey_number": "32/1",
+      "sub_survey_number": "-"
+    }
+  ],
+  "table_head":[
+    {
+      "title": "STATE"
+    },
+    {
+      "title": "DISTRICT"
+    },
+    {
+      "title": "SUB-DISTRICT"
+    },
+    {
+      "title": "VILLAGE"
+    },
+    {
+      "title": "SURVEY NO."
+    },
+    {
+      "title": "SUB-SURVEY NO."
+    }
+  ]
+}
