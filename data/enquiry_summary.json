@@ -1,0 +1,30 @@
+{
+  "table_body" : [
+    {
+      "content":[
+        "14",
+        "31/10/2021",
+        "03",
+        "06",
+        "03"
+      ]
+    }
+  ],
+  "table_head":[
+    {
+      "title": "TOTAL EnQuIRIES"
+    },
+    {
+      "title": "Most Recent"
+    },
+    {
+      "title": "Past 30 Days"
+    },
+    {
+      "title": "Past 12 Months"
+    },
+    {
+      "title": "Past 24 Months"
+    }
+  ]
+}

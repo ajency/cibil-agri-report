@@ -1,0 +1,24 @@
+{
+  "table_body" : [
+    {
+      "content":[
+        "MFI",
+        "JLG-SHG (2)"
+      ]
+    },
+    {
+      "content":[
+        "Consumer",
+        "Trustee (1), Director (2)"
+      ]
+    }
+  ],
+  "table_head":[
+    {
+      "title": "repository"
+    },
+    {
+      "title": "Relationship type"
+    }
+  ]
+}
