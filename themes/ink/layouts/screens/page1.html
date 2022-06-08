@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
-{{ partial "info-table.html" (dict "member_id" "56559252325" "reference_number" "5653AFG34" "control_number" "2,40,87,03,312")}}
+{{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data "member_id" "56559252325" "reference_number" "5653AFG34" "control_number" "2,40,87,03,312")}}
 {{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
 {{ partial "consumer-info-table.html" ( dict "consumer_name" "Mohana Parab" "dob" "14/07/1963" "tel_no" "9716549822" "email_id" "mohanparab12@gmail.com" "gender" "Female" "address" "Mahindra City, Capgemini, Chennai, Tamil Nadu, India 603002" "pan" "ALBPR1035C" "driving_licence_no" "34EWR9900" "voter_id" "ZI821555LP" "passport_no" "NA" ) }}
-{{ partial "table-title-with-id" (dict "tableTitle" "FARM INFORMATION" "farmer_id" "729157745") }}
+{{ partial "table-title-with-id" (dict "tableTitle" "FARM INFORMATION" "property" "farmer id" "value" "729157745") }}
 {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
 {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
 {{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.halfcircle_graph.left_graph "rightGraph" .Site.Data.halfcircle_graph.right_graph) }}
