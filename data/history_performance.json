@@ -1,0 +1,96 @@
+{
+    "table_body": [
+        {
+            "data": [
+                {
+                    "content": [
+                        "Kharif (Jun 2021 - Nov 2021)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Groundnut",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,975",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Below Average",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        },
+                        {
+                            "farm" : "2984",
+                            "district": "2,351"
+                        },
+                        {
+                            "farm" : "3,094",
+                            "district": "4,130"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Kharif (Jun 2021 - Nov 2021)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Groundnut",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,975",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Below Average",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        },
+                        {
+                            "farm" : "2984",
+                            "district": "2,351"
+                        },
+                        {
+                            "farm" : "3,094",
+                            "district": "4,910"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
