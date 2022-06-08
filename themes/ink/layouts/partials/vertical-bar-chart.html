@@ -1,0 +1,17 @@
+<table class="bordered-table padding-0 vertical-bar-graph" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <thead>
+        <tr>
+            <th class="td-title border-bottom">{{.chart_title}}</th>
+            <th class=" border-bottom"><span class="td-title">DURATION</span><span class="colon">:</span><span class="td-desc">{{.duration}}</span></th>
+            <th class="border-bottom labels-img" width="{{.labels_image_width}}"><img src="{{ .labels_image | relURL}}" width="{{.labels_image_width}}"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3" class="td-desc">{{.chart_desc}}</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="graph-img"><img src="{{ .graph_image | relURL}}"></td>
+        </tr>
+    </tbody>
+</table>

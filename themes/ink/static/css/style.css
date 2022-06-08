@@ -462,6 +462,68 @@ body {
   padding-right: 20px;
 }
 
+.main-container .border-bottom {
+  border-bottom: 1px solid #ACACAC;
+}
+
+.main-container .regional-details-table .rdt-head .td-title {
+  font-size: 18px;
+  padding: 24px 20px 15px;
+}
+
+.main-container .regional-details-table .rtd-body .td-title {
+  line-height: 16px;
+  padding-bottom: 20px;
+}
+
+.main-container .regional-details-table .rtd-body .note-text {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  font-weight: 600;
+}
+
+.main-container .regional-details-table .rtd-body td {
+  vertical-align: top;
+}
+
+.main-container .regional-details-table .rtd-body .left-panel, .main-container .regional-details-table .rtd-body .middle-panel, .main-container .regional-details-table .rtd-body .right-panel {
+  padding: 15px 20px 20px;
+}
+
+.main-container .regional-details-table .rtd-body .left-panel tr:not(:last-child) td, .main-container .regional-details-table .rtd-body .middle-panel tr:not(:last-child) td, .main-container .regional-details-table .rtd-body .right-panel tr:not(:last-child) td {
+  padding-bottom: 40px;
+}
+
+.main-container .vertical-bar-graph {
+  text-align: left;
+}
+
+.main-container .vertical-bar-graph .td-title {
+  font-size: 18px;
+}
+
+.main-container .vertical-bar-graph thead th {
+  vertical-align: middle;
+  padding: 20px 20px 14px;
+}
+
+.main-container .vertical-bar-graph thead th.labels-img {
+  text-align: right;
+  background-color: #F6F7FC;
+  padding-bottom: 17px;
+}
+
+.main-container .vertical-bar-graph tbody tr td.td-desc {
+  padding: 15px 20px 20px;
+}
+
+.main-container .vertical-bar-graph tbody tr td.graph-img {
+  text-align: center;
+  padding: 20px 50px 40px 106px;
+}
+
 .footer-text-dark {
   font-family: 'Intro';
   font-style: normal;
