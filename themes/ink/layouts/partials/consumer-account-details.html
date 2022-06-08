@@ -3,172 +3,131 @@
         <td>
             <table class="ac-table-head one" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
-                    <td class="ac-table-title {{.table_title_class}}">account information</td>
+                    <td class="ac-table-title {{.table_title_class}}">{{.table1Name}}</td>
                     <td class="ac-dates-table">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
-                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe Opened</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe Opened</span><span class="colon">: </span><span class="td-desc">{{range .tableHead1}}{{.date_opened}}{{end}}</span></td>
                                 <td class="line">|</td>
-                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe CLOSED</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe CLOSED</span><span class="colon">: </span><span class="td-desc">{{range .tableHead1}}{{.date_closed}}{{end}}</span></td>
                                 <td class="line">|</td>
-                                <td class="ac-dates"><span class="td-title">date reported & certified</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates"><span class="td-title">date reported & certified</span><span class="colon">: </span><span class="td-desc">{{range .tableHead1}}{{.date_reported}}{{end}}</span></td>
                             </tr>
                         </table>
                     </td>
-                    <td class="active status">active</td>
-                    <td class="active img"><img style="vertical-align: bottom;" src="{{"images/static-images/active.png" | relURL}}" width="57"></td>
+                    <td class="{{.status}} status">{{.status}}</td>
+                    
+                    <td class="{{.status}} img"><img style="vertical-align: bottom;" {{ if eq .status "active" }}src="{{"images/static-images/active.png" | relURL}}" {{else}} src="{{"images/static-images/inactive.png" | relURL}}" {{ end }} width="57"></td>
                 </tr>
             </table>
             <table class="ac-table-body" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
                     <td class="left-panel">
+                        {{range .tableBody1_leftPanel}}
                         <table class="ac-table-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <thead>
                                 <tr>
-                                    <th>ACCOUNT</th>
+                                    <th>{{.title}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <table class="ac-table-inner-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            {{range .content}}
                                             <tr>
-                                                <td class="td-title">MEMBER NAME</td>
+                                                <td class="td-title">{{.name}}</td>
                                                 <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
+                                                <td class="td-desc">{{.desc}}</td>
                                             </tr>
-                                            <tr>
-                                                <td class="td-title">Account Number</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">TYPE</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Personal Loan</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">OWNERSHIP</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Individual</td>
-                                            </tr>
+                                            {{end}}
                                         </table>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        {{end}}
                     </td>
                     <td class="middle-panel">
+                        {{range .tableBody1_middlePanel}}
                         <table class="ac-table-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <thead>
                                 <tr>
-                                    <th colspan="2">AMOUNTS</th>
+                                    <th colspan="2">{{.title}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <table class="ac-table-inner-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            {{range .contentLeft}}
                                             <tr>
-                                                <td class="td-title">MEMBER NAME</td>
+                                                <td class="td-title">{{.name}}</td>
                                                 <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
+                                                <td class="td-desc">{{.desc}}</td>
                                             </tr>
-                                            <tr>
-                                                <td class="td-title">Account Number</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">TYPE</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Personal Loan</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">OWNERSHIP</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Individual</td>
-                                            </tr>
+                                            {{end}}
                                         </table>
                                     </td>
                                     <td>
                                         <table class="ac-table-inner-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                                            <tr>
-                                                <td class="td-title">MEMBER NAME</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">Account Number</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">TYPE</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Personal Loan</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">OWNERSHIP</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Individual</td>
-                                            </tr>
+                                            {{if gt (len .contentRight) 0}}
+                                                {{range .contentRight}}
+                                                <tr>
+                                                    <td class="td-title">{{.name}}</td>
+                                                    <td class="colon">:</td>
+                                                    <td class="td-desc">{{.desc}}</td>
+                                                </tr>
+                                                {{end}}
+                                            {{end}}
                                         </table>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        {{end}}
                     </td>
                     <td class="right-panel">
+                        {{range .tableBody1_rightPanel}}
                         <table class="ac-table-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <thead>
                                 <tr>
-                                    <th>ACCOUNT</th>
+                                    <th>{{.title}}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
                                         <table class="ac-table-inner-columns" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            {{range .content}}
                                             <tr>
-                                                <td class="td-title">MEMBER NAME</td>
+                                                {{if gt (len .name) 0}}
+                                                <td class="td-title">{{.name}}</td>
                                                 <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
+                                                {{end}}
+                                                <td class="td-desc">{{.desc}}</td>
                                             </tr>
-                                            <tr>
-                                                <td class="td-title">Account Number</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Not disclosed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">TYPE</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Personal Loan</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="td-title">OWNERSHIP</td>
-                                                <td class="colon">:</td>
-                                                <td class="td-desc">Individual</td>
-                                            </tr>
+                                            {{end}}
                                         </table>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        {{end}}
                     </td>
                 </tr>
             </table>
             <table class="ac-table-head two" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
-                    <td class="ac-table-title">DAYS PAST DUE/ASSET CLASSIFICATION</td>
+                    <td class="ac-table-title">{{.table2Name}}</td>
                     <td class="ac-dates-table">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
-                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe Opened</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">START DATE</span><span class="colon">: </span><span class="td-desc">{{range .tableHead2}}{{.start_date}}{{end}}</span></td>
                                 <td class="line">|</td>
-                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">DATe CLOSED</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates {{.table_headDates_class}}"><span class="td-title">END DATE</span><span class="colon">: </span><span class="td-desc">{{range .tableHead2}}{{.end_date}}{{end}}</span></td>
                                 <td class="line">|</td>
-                                <td class="ac-dates"><span class="td-title">date reported & certified</span><span class="colon">: </span><span class="td-desc">12/05/2018</span></td>
+                                <td class="ac-dates"><span class="td-title">LAST PAYMENT</span><span class="colon">: </span><span class="td-desc">{{range .tableHead2}}{{.last_payment}}{{end}}</span></td>
                             </tr>
                         </table>
                     </td>
@@ -177,65 +136,30 @@
             <table class="ac-table-body striped-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tbody>
                     <tr>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
-                        <td class="td-title">YEAR</td>
+                        <td class="td-title">Year</td>
+                        {{range .horizontal_rows}}
+                        <td class="td-title">{{.}}</td>
+                        {{end}}
                     </tr>
+                    {{range .tableBody_daysPastDue}}
                     <tr>
-                        <td class="td-title">2019</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
+                        <td class="td-title">{{.year}}</td>
+                        {{ range .content }}
+                            <td>{{ .jan }}</td>
+                            <td>{{ .feb }}</td>
+                            <td>{{ .mar }}</td>
+                            <td>{{ .apr }}</td>
+                            <td>{{ .may }}</td>
+                            <td>{{ .jun }}</td>
+                            <td>{{ .jul }}</td>
+                            <td>{{ .aug }}</td>
+                            <td>{{ .sep }}</td>
+                            <td>{{ .oct }}</td>
+                            <td>{{ .nov }}</td>
+                            <td>{{ .dec }}</td>
+                        {{ end }}
                     </tr>
-                    <tr>
-                        <td class="td-title">2019</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                    </tr>
-                    <tr>
-                        <td class="td-title">2019</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                        <td>028</td>
-                    </tr>
+                    {{end}}
                 </tbody>
             </table>
             <table class="ac-table-footer" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -244,13 +168,13 @@
                         <table class="footer-alert" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
                                 <td class="icon"><img style="vertical-align: bottom;" src="{{"images/static-images/alert-red.png" | relURL}}"></td>
-                                <td>INFORMATION UNDER DISPUTE</td>
+                                <td>{{.footer_text}}</td>
                             </tr>
                         </table>
                         <table class="footer-data" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
-                                <td><span class="td-title">CIBIL REMARKS</span><span class="colon">: </span><span class="td-desc">Written-off and Settled Status in Dispute</span></td>
-                                <td><span class="td-title">DAte Entered</span><span class="colon">: </span><span class="td-desc">16/06/2019</span></td>
+                                <td><span class="td-title">CIBIL REMARKS</span><span class="colon">: </span><span class="td-desc">{{.cibil_remark}}</span></td>
+                                <td><span class="td-title">DAte Entered</span><span class="colon">: </span><span class="td-desc">{{.date_entered}}</span></td>
                             </tr>
                         </table>
                     </td>

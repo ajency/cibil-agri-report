@@ -1,0 +1,180 @@
+{
+  "table_head1": [
+      {
+          "date_opened": "12/05/2018"
+      },
+      {
+          "date_closed": "12/05/2018"
+      },
+      {
+          "date_reported": "12/05/2018"
+      }
+  ],
+  "table_body1_leftPanel": [
+      {
+          "title":"ACCOUNT",
+          "content": [
+              {
+                "name": "MEMBER NAME",
+                "desc": "Not disclosed"
+              },
+              {
+                "name": "Account Number",
+                "desc": "Not disclosed"
+              },
+              {
+                "name": "TYPE",
+                "desc": "Housing Loan"
+              },
+              {
+                "name": "OWNERSHIP",
+                "desc": "Individual"
+              }
+          ]
+      }
+  ],
+  "table_body1_middlePanel": [
+    {
+        "title":"AMOUNTS",
+        "contentLeft": [
+            {
+              "name": "sanctioned amouNT",
+              "desc": "₹ 9,00,000"
+            },
+            {
+              "name": "current balance",
+              "desc": "₹ 5,00,000"
+            },
+            {
+              "name": "OVERDUE",
+              "desc": "₹ 10,768"
+            },
+            {
+              "name": "ACTUAL PAYMENT",
+              "desc": "₹ 5,568"
+            }
+        ],
+        "contentRight": [
+          {
+            "name": "Payment FreqUENCY",
+            "desc": "Monthly"
+          },
+          {
+            "name": "Repayment tenure",
+            "desc": "132"
+          },
+          {
+            "name": "INTEREST RATE",
+            "desc": "12.20%"
+          },
+          {
+            "name": "EMI",
+            "desc": "₹ 2,658"
+          }
+      ]
+    }
+  ],
+  "table_body1_rightPanel": [
+    {
+        "title":"STATUS",
+        "content": [
+            {
+              "name":"Written off / Settled Status",
+              "desc": "Suit - Filed"
+            },
+            {
+              "name":"Written off (total)",
+              "desc": "₹ 8,000"
+            },
+            {
+              "name":"Written off (principle)",
+              "desc": "₹ 3,000"
+            }
+        ]
+    }
+  ],
+  "table_head2": [
+      {
+          "start_date": "12/05/2018"
+      },
+      {
+          "end_date": "12/05/2018"
+      },
+      {
+          "last_payment": "12/05/2018"
+      }
+  ],
+  "table_body1_daysPastDue":[
+    {
+      "year": 2019,
+      "content":[
+        {
+          "jan":"-",
+          "feb":"-",
+          "mar":"-",
+          "apr":"-",
+          "may":"028",
+          "jun":"021",
+          "jul":"012",
+          "aug":"099",
+          "sep":"SUB",
+          "oct":"099",
+          "nov":"154",
+          "dec":"128"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "content":[
+        {
+          "jan":"XXX",
+          "feb":"SUB",
+          "mar":"XXX",
+          "apr":"DBT",
+          "may":"LOS",
+          "jun":"096",
+          "jul":"STD",
+          "aug":"XXX",
+          "sep":"000",
+          "oct":"000",
+          "nov":"000",
+          "dec":"000"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "content":[
+        {
+          "jan":"000",
+          "feb":"000",
+          "mar":"000",
+          "apr":"-",
+          "may":"-",
+          "jun":"-",
+          "jul":"-",
+          "aug":"-",
+          "sep":"-",
+          "oct":"-",
+          "nov":"-",
+          "dec":"-"
+        }
+      ]
+    }
+  ],
+  "horizontal_rows":[
+    "jan",
+    "feb",
+    "mar",
+    "apr",
+    "may",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "oct",
+    "nov",
+    "dec"
+  ]
+}
