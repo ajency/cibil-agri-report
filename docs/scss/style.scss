@@ -42,6 +42,18 @@ body {
         margin: 0px auto 10px;
         text-transform: uppercase;
     }
+    .id_details{
+        text-align: right;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+        color: #2C2C2C;
+        padding-bottom: 10px;
+        .colon{
+            margin-left: 15px;
+            margin-right: 12px;
+        }
+    }
     .td-desc{
         font-style: normal;
         font-weight: 600;
@@ -69,7 +81,7 @@ body {
         margin-bottom: 30px;
         text-transform: uppercase;
         .small-text{
-            font-weight: 400;
+            font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             text-transform: uppercase;
@@ -79,6 +91,9 @@ body {
         .colon{
             width: 33px;
             text-align: center;
+        }
+        td{
+            vertical-align: top;
         }
     }
     .inner-table {
@@ -100,7 +115,7 @@ body {
         }
     }
     .list li{
-        font-weight: 400;
+        font-weight: 600;
         font-size: 19px;
         line-height: 34px;
         color: #2C2C2C;
@@ -141,6 +156,11 @@ body {
     }
     .factors{
         .factor{
+            padding: 0 30px;
+            vertical-align: top;
+            &:not(:last-child){
+                border-right: 1px solid #ACACAC;
+            }
             .factor-value {
                 font-weight: 700;
                 font-size: 32px;
@@ -183,6 +203,7 @@ body {
         }
         thead th, tbody td{
             border-right: 1px solid #ACACAC;
+            vertical-align: top;
             &:last-child{
                 border: none;
             }
@@ -207,7 +228,7 @@ body {
             border: none;
         }
         .summary-title, .colon, .summary-desc {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 22px;
             line-height: 24px;
             display: inline;
@@ -400,10 +421,13 @@ tfoot{
 
                 img{
                     margin-right: 10px;
+                    vertical-align: middle;
                 }
 
                 span{
-                    vertical-align: super;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 2px;
                 }
             }
         }
@@ -476,4 +500,13 @@ tfoot{
             border: 0 !important;
         }
     }
+}
+.info-light-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: #707070;
+    top: -30px;
+    position: relative;
 }

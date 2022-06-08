@@ -421,10 +421,13 @@ tfoot{
 
                 img{
                     margin-right: 10px;
+                    vertical-align: middle;
                 }
 
                 span{
-                    vertical-align: super;
+                    vertical-align: middle;
+                    position: relative;
+                    top: 2px;
                 }
             }
         }
@@ -497,4 +500,13 @@ tfoot{
             border: 0 !important;
         }
     }
+}
+.info-light-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 24px;
+    color: #707070;
+    top: -30px;
+    position: relative;
 }

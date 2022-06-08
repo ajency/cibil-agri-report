@@ -1,0 +1,32 @@
+{
+    "table_head" :{
+        "name": "Mohana Parab",
+        "dob": "14/08/1963 ",
+        "gender": "Male",
+        "score": "780"
+    },
+    "table_body": [
+        {
+            "content": [
+                "mohanaparab@gmail.com"
+            ]
+        },
+        {
+            "content": [
+                "parabmohana12@yahoo.com"
+            ]
+        },
+        {
+            "content": [
+                "mp1234@hotmail.com"
+            ]
+        },
+        {
+            "content": [
+                "parabmohana12@gmail.com"
+            ]
+        }
+    ],
+    "remark": "Multiple Disputes in Name (PN) Segment",
+    "date": "25/03/2019"
+}
