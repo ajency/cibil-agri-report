@@ -1,15 +1,14 @@
 <!-- info table | start -->
 <table class="bordered-table member-details" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
-        <td>
-            <p><span class="td-title">MEMBER ID</span><span class="colon">:</span><span class="td-desc">{{.member_id}}</span></p>
-        </td>
-        <td>
-            <p><span class="td-title">reference number</span><span class="colon">:</span><span class="td-desc">{{.reference_number}}</span></p>
-        </td>
-        <td>
-            <p><span class="td-title">CONTROL NUMBER</span><span class="colon">:</span><span class="td-desc">{{.control_number}}</span></p>
-        </td>
+        {{ range $elem_index, $elem_val := .data }}
+            <td>
+                <p><span class="td-title">{{ $elem_val.property }}</span><span class="colon">:</span><span class="td-desc">{{ $elem_val.value }}</span></p>
+            </td>
+            {{ if modBool (add $elem_index 1) 3 }}
+                </tr><tr>
+            {{ end }}
+        {{ end }}
     </tr>
 </table>
 <!--info table | end -->

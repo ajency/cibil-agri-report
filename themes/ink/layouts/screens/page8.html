@@ -1,0 +1,11 @@
+{{ define "main" }}
+    
+    {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+    
+    {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
+    {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}   
+
+    {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
+
+{{ end }}

@@ -2,9 +2,12 @@
 <table id="table-title" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td>
-            <h1 class="table-title">{{ .tableTitle }}</h1>
+            <h1 class="table-title">
+                {{ .tableTitle }}
+                {{ if .subTitle }} <span class="table-subtitle">{{ .subTitle }}</span> {{ end }}
+            </h1>
         </td>
-        <td class="id_details"><span class="td-title">FARMER ID</span><span class="colon">:</span>{{ .farmer_id }}</td>
+        <td class="id_details"><span class="td-title">{{ .property }}</span><span class="colon">:</span>{{ .value }}</td>
     </tr>
 </table>
 <!-- table title | end -->

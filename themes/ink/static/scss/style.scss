@@ -23,6 +23,7 @@ body {
     .member-details{
         td{
             padding: 10px;
+            vertical-align: baseline;
         }
     }
     .td-title{
@@ -52,6 +53,7 @@ body {
         line-height: 24px;
         color: #2C2C2C;
         padding-bottom: 10px;
+        vertical-align: bottom;
         .colon{
             margin-left: 15px;
             margin-right: 12px;
@@ -677,4 +679,22 @@ tfoot{
             }
         }
     }
+}
+
+.dispute-table {
+    th,td{
+        &:first-child {
+            width: 80%;
+            padding-right: 40px;
+        }
+    }
+}
+
+.table-subtitle {
+    display: block;
+    margin-top: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
 }
