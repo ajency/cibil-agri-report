@@ -1,0 +1,84 @@
+{
+    "table_head": [
+        {
+            "title": "MEMBER NAme"
+        },
+        {
+            "title": "ENQUIRY date"
+        },
+        {
+            "title": "Enquiry Purpose"
+        },
+        {
+            "title": "ENQUIRY AMOUNT"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "ICICI",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "ICICI",
+                "04/03/2019",
+                "Education Loan",
+                "₹ 5,20,000"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "05/04/2019",
+                "House Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "ICICI",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "ICICI",
+                "04/03/2019",
+                "Education Loan",
+                "₹ 5,20,000"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "05/04/2019",
+                "Car Loan",
+                "₹ 1,39,911"
+            ]
+        }
+    ],
+    "remark": "Enquiry Ownership Error",
+    "date": "16/06/2019"
+}
