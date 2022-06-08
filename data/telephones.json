@@ -1,0 +1,45 @@
+{
+    "table_head": [
+        {
+            "title": "TYPE"
+        },
+        {
+            "title": "Telephone NUMBER"
+        },
+        {
+            "title": "TELEPHONE EXTENSION"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Residential",
+                "022 23018394",
+                "-"
+            ]
+        },
+        {
+            "content": [
+                "Office",
+                "022 23018394",
+                "-"
+            ]
+        },
+        {
+            "content": [
+                "Mobile",
+                "+91 9619741597",
+                "-"
+            ]
+        },
+        {
+            "content": [
+                "Residential",
+                "022 23018394",
+                "-"
+            ]
+        }
+    ],
+    "remark": " Telephone Extension in Dispute",
+    "date": "18/05/2019"
+}
