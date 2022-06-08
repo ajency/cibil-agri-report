@@ -1,0 +1,9 @@
+{{ define "main" }}
+    {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
+    {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.customer_address.table_head "tableBody" .Site.Data.customer_address.table_body "remark" .Site.Data.customer_address.remark "date" .Site.Data.customer_address.date "extendCol1" "true" ) }}
+    {{ partial "info-light-text" (dict "text" "(e) - Addresses reported from enquiry" )}}
+    {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
+    {{ partial "information-table.html" (dict "tableHead" .Site.Data.employment_information.table_head "tableBody" .Site.Data.employment_information.table_body "remark" .Site.Data.employment_information.remark "date" .Site.Data.employment_information.date ) }}
+    {{ partial "table-title" (dict "tableTitle" "RELATIONSHIP DETAILS") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.relationship_details.table_head "tableBody" .Site.Data.relationship_details.table_body ) }}
+{{ end }}

@@ -664,3 +664,17 @@ tfoot{
     top: -30px;
     position: relative;
 }
+
+.address-table{
+    table{
+        thead,tbody{
+            tr{
+                td,th{
+                    &:first-child{
+                        width: 610px;
+                    }
+                }
+            }
+        }
+    }
+}

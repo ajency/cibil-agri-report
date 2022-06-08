@@ -1,0 +1,59 @@
+{
+    "table_head": [
+        {
+            "title": "ACCOUNT TYPE"
+        },
+        {
+            "title": "OCCUPATION CODE"
+        },
+        {
+            "title": "Income"
+        },
+        {
+            "title": "NET/Gross Income Indicator"
+        },
+        {
+            "title": "Monthly/Annual Income indicator"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Credit Card",
+                "Not available",
+                "₹ 1,00,000",
+                "Gross Income",
+                "Monthly"
+            ]
+        },
+        {
+            "content": [
+                "Credit Card",
+                "Not available",
+                "₹ 80,000",
+                "Gross Income",
+                "Monthly"
+            ]
+        },
+        {
+            "content": [
+                "Credit Card",
+                "Not available",
+                "₹ 50,000",
+                "Gross Income",
+                "Monthly"
+            ]
+        },
+        {
+            "content": [
+                "Credit Card",
+                "Not available",
+                "₹ 40,000",
+                "Gross Income",
+                "Monthly"
+            ]
+        }
+    ],
+    "remark": "Multiple Disputes in Address (PA) Segment",
+    "date": "28/02/2019"
+}

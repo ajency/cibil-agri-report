@@ -41,6 +41,9 @@ body {
         color: #2C2C2C;
         margin: 0px auto 10px;
         text-transform: uppercase;
+        &.marginB-20 {
+            margin-bottom: 20px;
+        }
     }
     .id_details{
         text-align: right;
@@ -85,6 +88,11 @@ body {
             font-size: 16px;
             line-height: 24px;
             text-transform: uppercase;
+        }
+        &.medium {
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: -0.01em;
         }
     }
     .consumer-info{
@@ -241,6 +249,152 @@ body {
             color: #2C2C2C;
             display: table-cell;
             text-align: right;
+        }
+    }
+    .consumer-account-details-table{
+        color: #2C2C2C;
+        letter-spacing: 0.02em;
+        font-weight: 600;
+        .ac-table-head{
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ACACAC;
+            &.two{
+                .ac-dates-table{
+                    width: 69%;
+                    padding-right: 40px;
+                }
+            }
+        }
+        .ac-table-head td{
+            padding-top: 20px;
+            padding-bottom: 14px;
+        }
+        .ac-table-title{
+            text-align: left;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 20px 20px 14px;
+        }
+        .ac-width1 {
+            width: 290px;
+        }
+        .ac-width2{
+            width: 240px;
+        }
+        .ac-table-title, .active{
+            font-weight: 700;
+        }
+        .ac-dates-table{
+            .ac-dates{
+                padding: 0px;
+            }
+            .colon{
+                margin-left: 9px;
+                margin-right: 0px;
+            }
+            .line {
+                font-family: 'Intro Book';
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: #ACACAC;
+                width: 5px;
+                padding: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        .active{
+            padding: 0px !important;
+            text-align: right;
+            font-size: 19px;
+            line-height: 19px;
+            &.status{
+                width: 101px;
+            }
+            &.img {
+                width: 73px;
+                padding-left: 16px;
+                vertical-align: top;
+            }
+        }
+        .ac-table-body{
+            border-bottom: 1px solid #ACACAC;
+            .colon{
+                margin-left: 12px;
+                margin-right: 12px;
+                width: 17px;
+            }
+            td{
+                vertical-align: top;
+                text-align: left;
+            }
+            .middle-panel{
+                width: 45%;
+                border-left: 1px solid #ACACAC;
+                border-right: 1px solid #ACACAC;
+            }
+            .ac-table-inner-columns td {
+                padding-left: 10px;
+                padding-bottom: 20px;
+              }
+            .left-panel, .right-panel, .middle-panel{
+                padding: 10px 10px 0px;
+                .ac-table-columns{
+                    th{
+                        padding: 10px 0px 30px 10px;
+                        color: #707070;
+                    }
+                    .td-title{
+                        width: 128px;
+                    }
+                }
+            }
+            &.striped-table{
+                width: auto;
+                tr:nth-child(2n+2){
+                    background: #F6F7FC;
+                }
+                td{
+                    font-weight: 600;
+                    font-size: 19px;
+                    padding: 20px 20px 18px;
+                    &.td-title{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+        .ac-table-footer{
+            .footer-alert{
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-bottom: 1px solid #ACACAC;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #2C2C2C;
+                .icon{
+                    width: 40px;
+                }
+                img{
+                    width: 30px;
+                }
+            }
+            .footer-data{
+                padding-top: 15px;
+                padding-bottom: 21px;
+            }
+            .footer-alert, .footer-data{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
     }
 }
@@ -509,4 +663,18 @@ tfoot{
     color: #707070;
     top: -30px;
     position: relative;
+}
+
+.address-table{
+    table{
+        thead,tbody{
+            tr{
+                td,th{
+                    &:first-child{
+                        width: 610px;
+                    }
+                }
+            }
+        }
+    }
 }

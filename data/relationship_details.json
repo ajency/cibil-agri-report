@@ -1,0 +1,36 @@
+{
+    "table_head": [
+        {
+            "title": "NAME"
+        },
+        {
+            "title": "RELATIONSHIP TYPE"
+        },
+        {
+            "title": "REPOSITORY"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "John Doe",
+                "Guarantor",
+                "Consumer"
+            ]
+        },
+        {
+            "content": [
+                "Bobby Deol",
+                "JLG-SHG",
+                "MFI"
+            ]
+        },
+        {
+            "content": [
+                "Johnny Doedo",
+                "Guarantor",
+                "Consumer"
+            ]
+        }
+    ]
+}

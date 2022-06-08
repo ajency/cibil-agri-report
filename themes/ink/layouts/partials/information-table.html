@@ -1,5 +1,5 @@
 <div class="">
-    <table class="title-table spaced-table bordered-table padding-0 {{ if .extendCol1 }}address-table{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <table class="title-table bordered-table padding-0 {{ if .extendCol1 }}address-table{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
 
         <tbody>
             <tr>
@@ -14,7 +14,6 @@
                         </thead>
                     </table>
                     <table>
-                        <span class="flot-symbol">(e)</span>
                         {{ range .tableBody }}
                         <tr>
                             {{ range $elem_index, $elem_val := .content }}
