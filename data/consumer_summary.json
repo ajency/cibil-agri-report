@@ -1,0 +1,91 @@
+{
+  "table_head":[
+    {
+      "title": "ACCOUNTS"
+    },
+    {
+      "title": "BALANCES"
+    },
+    {
+      "title": "ACCOUNT OPENED DATE"
+    }
+  ],
+  "table_body":[
+    {
+      "columnData":[
+        {
+          "content":[
+            {
+              "name": "Total",
+              "value": "179"
+            }
+          ]
+        },
+        {
+          "content":[
+            {
+              "name": "Zero balance",
+              "value": "93"
+            }
+          ]
+        },
+        {
+          "content":[
+            {
+              "name": "Overdue",
+              "value": "00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "columnData":[
+        {
+          "content":[
+            {
+              "name": "High Cr/Sanc. Amt",
+              "value": "₹2,39,911"
+            }
+          ]
+        },
+        {
+          "content":[
+            {
+              "name": "Current",
+              "value": "₹1,00,003"
+            }
+          ]
+        },
+        {
+          "content":[
+            {
+              "name": "Overdue",
+              "value": "-"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "columnData":[
+        {
+          "content":[
+            {
+              "name": "Recent",
+              "value": "27/07/2006"
+            }
+          ]
+        },
+        {
+          "content":[
+            {
+              "name": "Oldest",
+              "value": "27/07/2018"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

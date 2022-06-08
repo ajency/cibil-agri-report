@@ -1,91 +1,31 @@
 <table class="bordered-table summary-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <thead>
         <tr>
-            <th>ACCOUNTS</th>
-            <th>BALANCES</th>
-            <th>ACCOUNT OPENED DATE</th>
+            {{ range .tableHead }}<th>{{.title}}</th>{{ end }}
         </tr>
     </thead>
     <tbody>
         <tr>
+            {{ range .tableBody }}
             <td>
                 <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                     <tr>
                         <td>
                             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                {{ range .columnData }}
                                 <tr>
-                                    <td class="summary-title">Total</td>
+                                    <td class="summary-title">{{ range .content }}{{.name}}{{ end }}</td>
                                     <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
+                                    <td class="summary-desc">{{ range .content }}{{.value}}{{ end }}</td>
                                 </tr>
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
+                                {{end}}
                             </table>
                         </td>
                         
                     </tr>
                 </table>
             </td>
-            <td>
-                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                    <tr>
-                        <td>
-                            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                                <tr>
-                                    <td class="summary-title">High Cr/Sanc. Amt</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                            </table>
-                        </td>
-                        
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                    <tr>
-                        <td>
-                            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">179</td>
-                                </tr>
-                                <tr>
-                                    <td class="summary-title">Total</td>
-                                    <td class="colon">:</td>
-                                    <td class="summary-desc">27/07/2018</td>
-                                </tr>
-                            </table>
-                        </td>
-                        
-                    </tr>
-                </table>
-            </td>
+            {{ end }}
         </tr>
     </tbody>
 </table>
