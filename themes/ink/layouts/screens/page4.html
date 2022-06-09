@@ -9,6 +9,6 @@
     {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.telephones.table_head "tableBody" .Site.Data.telephones.table_body "remark" .Site.Data.telephones.remark "date" .Site.Data.telephones.date ) }}
     {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE reported from enquiry" )}}
     {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
-    {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.customer_information.table_body "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date ) }}
+    {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body "remark" .Site.Data.email_contact.remark "date" .Site.Data.email_contact.date ) }}
     {{partial "spacer" (dict "space" "305")}}
 {{ end }}
