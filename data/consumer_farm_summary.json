@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "surveyNo": "50/1",
+            "address": "Gujarat, Rajkot, Dhoraji, Pipliya",
+            "location": "(Centroid: 21.7398° N, 70.4491° E)",
+            "area": "1 HA",
+            "crops": "Wheat, Paddy",
+            "irrigationCondition": "Irrigated",
+            "date": "04/2021",
+            "croppingIntensity": "Twice",
+            "performance": "Good"
+        },
+        {
+            "surveyNo": "24/2",
+            "address": "Gujarat, Rajkot, Dhoraji, Pipliya",
+            "location": "(Centroid: 21.7398° N, 70.4491° E)",
+            "area": "1 HA",
+            "crops": "Wheat, Paddy",
+            "irrigationCondition": "Not Irrigated",
+            "date": "04/2021",
+            "croppingIntensity": "Once",
+            "performance": "Below Average"
+        },
+        {
+            "surveyNo": "24/2",
+            "address": "Rajasthan, Chittaurgarh, Bhopalsagar, Achalpura",
+            "location": "(Centroid: 21.7398° N, 70.4491° E)",
+            "area": "1 HA",
+            "crops": "Wheat, Paddy",
+            "irrigationCondition": "Not Irrigated",
+            "date": "04/2021",
+            "croppingIntensity": "Twice",
+            "performance": "Average"
+        },
+        {
+            "surveyNo": "50/1",
+            "address": "Gujarat, Rajkot, Dhoraji, Pipliya",
+            "location": "(Centroid: 21.7398° N, 70.4491° E)",
+            "area": "1 HA",
+            "crops": "Wheat, Paddy",
+            "irrigationCondition": "Irrigated",
+            "date": "04/2021",
+            "croppingIntensity": "Twice",
+            "performance": "Good"
+        }
+    ]
+}

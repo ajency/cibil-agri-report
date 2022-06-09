@@ -1,8 +1,9 @@
 <div class="table-section">
     {{ partial "table-title.html" (dict "tableTitle" "CONSUMER FARM SUMMARY") }}
-    {{ partial "farm-survey-table.html" (dict "surveyNo" "50/1" "address" "Gujarat, Rajkot, Dhoraji, Pipliya" "location" "(Centroid: 21.7398° N, 70.4491° E)" "area" "1 HA" "crops" "Wheat, Paddy" "irrigationCondition" "Irrigated" "date" "04/2021" "croppingIntensity" "Twice" "performance" "Good") }}
-    {{ partial "farm-survey-table.html" (dict "surveyNo" "24/2" "address" "Gujarat, Rajkot, Dhoraji, Pipliya" "location" "(Centroid: 21.7398° N, 70.4491° E)" "area" "1 HA" "crops" "Wheat, Paddy" "irrigationCondition" "Not Irrigated" "date" "04/2021" "croppingIntensity" "Once" "performance" "Below Average") }}
-    {{ partial "farm-survey-table.html" (dict "surveyNo" "24/2" "address" "Rajasthan, Chittaurgarh,	Bhopalsagar, Achalpura " "location" "(Centroid: 21.7398° N, 70.4491° E)" "area" "1 HA" "crops" "Wheat, Paddy" "irrigationCondition" "Not Irrigated" "date" "04/2021" "croppingIntensity" "Twicw" "performance" "Average") }}
-    {{ partial "farm-survey-table.html" (dict "surveyNo" "50/1" "address" "Gujarat, Rajkot, Dhoraji, Pipliya" "location" "(Centroid: 21.7398° N, 70.4491° E)" "area" "1 HA" "crops" "Wheat, Paddy" "irrigationCondition" "Irrigated" "date" "04/2021" "croppingIntensity" "Twice" "performance" "Good") }}
+    
+    {{ range .tableData }}
+        {{ partial "farm-survey-table.html" (dict "surveyNo" .surveyNo "address" .address "location" .location "area" .area "crops" .crops "irrigationCondition" .irrigationCondition  "date" .date "croppingIntensity" .croppingIntensity "performance" .performance) }}
+    {{ end }}
+
     {{ partial "ownership-charge-text.html"}}
 </div>
