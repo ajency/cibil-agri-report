@@ -10,69 +10,41 @@
                 <tr>
                     <td class="left-panel">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                            {{range .leftColumn}}
                             <tr>
                                 <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
+                                    <p class="td-title">{{.title}}</p>
+                                    <p class="td-desc">{{.desc}}</p>
+                                    {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
+                            {{end}}
                         </table>
                     </td>
                     <td class="middle-panel">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                            {{range .middleColumn}}
                             <tr>
                                 <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
+                                    <p class="td-title">{{.title}}</p>
+                                    <p class="td-desc">{{.desc}}</p>
+                                    {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
+                            {{end}}
                         </table>
                     </td>
                     <td class="right-panel">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                            {{range .rightColumn}}
                             <tr>
                                 <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                    <span class="note-text">(At district level, since 2000)</span>
+                                    <p class="td-title">{{.title}}</p>
+                                    <p class="td-desc">{{.desc}}</p>
+                                    {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="td-title">Nearest Mandi</p>
-                                    <p class="td-desc">10.9 km, Dhoraji (Rajkot)</p>
-                                </td>
-                            </tr>
+                            {{end}}
                         </table>
                     </td>
                 </tr>
