@@ -20,6 +20,9 @@ body {
             margin: 0px;
         }
     }
+    .margin-bottom-0 {
+        margin-bottom: 0px;
+    }
     .member-details{
         td{
             padding: 10px;
@@ -670,6 +673,7 @@ body {
                     font-size: 16px;
                     line-height: 16px;
                     color: #00A6CA;
+                    text-transform: uppercase;
                 }
             }
             &:first-child{

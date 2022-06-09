@@ -5,16 +5,16 @@
         <thead>
             <tr>
                 {{range .table_head}}
-                <th class="border-bottom border-right td-title">{{.title}}</th>
+                <th class="border-bottom td-title">{{.title}}</th>
                 {{end}}
             </tr>
         </thead>
         <tbody class="striped-table-from1">
             {{range $index_no, $value:=.table_body}}
             <tr>
-                <td class="td-desc border-right">{{add $index_no 1}}</td>
+                <td class="td-desc">{{add $index_no 1}}</td>
                 {{range .content}}
-                    <td class="td-desc border-right">{{.}}</td>
+                    <td class="td-desc">{{.}}</td>
                 {{end}}
             </tr>
             {{end}}
