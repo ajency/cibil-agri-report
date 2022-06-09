@@ -445,13 +445,18 @@ body {
             td{
                 vertical-align: top;
             }
-            .left-panel, .middle-panel, .right-panel{
+            .single-panel{
                 padding: 15px 20px 20px;
                 tr{
                     &:not(:last-child){
                         td{
                             padding-bottom: 40px;
                         }
+                    }
+                }
+                @media(max-width:1500px){
+                    .td-desc {
+                        height: 48px;
                     }
                 }
             }

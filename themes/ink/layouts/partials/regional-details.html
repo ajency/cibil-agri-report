@@ -8,9 +8,10 @@
             </table>
             <table class="rtd-body" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
-                    <td class="left-panel">
+                    {{range .regionalDetails}}
+                    <td class="single-panel">
                         <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                            {{range .leftColumn}}
+                            {{range .column}}
                             <tr>
                                 <td>
                                     <p class="td-title">{{.title}}</p>
@@ -21,32 +22,7 @@
                             {{end}}
                         </table>
                     </td>
-                    <td class="middle-panel">
-                        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                            {{range .middleColumn}}
-                            <tr>
-                                <td>
-                                    <p class="td-title">{{.title}}</p>
-                                    <p class="td-desc">{{.desc}}</p>
-                                    {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
-                                </td>
-                            </tr>
-                            {{end}}
-                        </table>
-                    </td>
-                    <td class="right-panel">
-                        <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                            {{range .rightColumn}}
-                            <tr>
-                                <td>
-                                    <p class="td-title">{{.title}}</p>
-                                    <p class="td-desc">{{.desc}}</p>
-                                    {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
-                                </td>
-                            </tr>
-                            {{end}}
-                        </table>
-                    </td>
+                    {{end}}
                 </tr>
             </table>
         </td>
