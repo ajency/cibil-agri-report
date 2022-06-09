@@ -1,6 +1,6 @@
 {{range .surveyReports}}
     {{range .adjacentLandDetails}}
-    {{ partial "table-title" (dict "tableTitle" .table_title) }}
+    {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
     <table class="bordered-table padding-0 landDetails-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
         <thead>
             <tr>

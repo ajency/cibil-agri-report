@@ -1,0 +1,24 @@
+{
+    "table_head": [
+        {
+            "title": "GLOSSARY - FARM DATA"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "<b>Regional Prosperity Index</b> - An index to measure overall prosperity for a region, considering night light index, population data, and GDP, measured on a scale of 0-1"
+            ]
+        },
+        {
+            "content": [
+                "<b>Groundwater Condition</b> - The trend of the amount of groundwater in the region as observed from satellite data"
+            ]
+        },
+        {
+            "content": [
+                "<b>Major Crops</b> - Crops that are widely grown in a certain district"
+            ]
+        }
+    ]
+}

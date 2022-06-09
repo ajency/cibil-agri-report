@@ -45,6 +45,10 @@ body {
         &.marginB-20 {
             margin-bottom: 20px;
         }
+        &.medium{
+            font-size: 20px;
+            line-height: 20px;
+        }
     }
     .id_details{
         text-align: right;
@@ -954,4 +958,53 @@ tfoot{
 
 .secondary-color{
     color: #55B6CB;
+}
+
+.text-break-format{
+    td{
+        white-space: pre-line;
+        vertical-align: baseline;
+    }
+}
+
+.extra-table-head{
+    font-size: 18px !important;
+    letter-spacing: 0.02em;
+    border: 0 !important;
+    white-space: nowrap;
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+        display: block;
+        margin-top: 4px;
+    }
+}
+.extra-head-row{
+    &+tr{
+        th{
+            border-top: 1px solid #ACACAC;
+        }
+    }
+}
+
+.glossary-table{
+    tr{
+        td{
+            &:first-child{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.compact-row{
+    tr{
+        &:not(:last-child){
+            td{
+                padding-bottom: 0 !important;
+            }
+        }
+    }
 }

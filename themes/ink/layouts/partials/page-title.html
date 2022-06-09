@@ -1,8 +1,8 @@
 <!-- page title | start -->
-<table id="page-title" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table id="page-title" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" >
     <tr>
         <td>
-            <h1 class="page-title {{.className}}">{{ .pageTitle }}<span class="small-text">{{ .pageTitleSmall }}</span></h1>
+            <h1 class="page-title {{.className}}" {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }} >{{ .pageTitle }}<span class="small-text">{{ .pageTitleSmall }}</span></h1>
         </td>
     </tr>
 </table>
