@@ -72,6 +72,7 @@ body {
         font-size: 19px;
         line-height: 24px;
         color: #2C2C2C;
+        text-transform: none;
     }
     .colon{
         font-weight: 400;
@@ -813,6 +814,7 @@ tfoot{
     color: #707070;
     top: -30px;
     position: relative;
+    text-transform:uppercase;
 }
 
 .address-table{
@@ -983,6 +985,7 @@ tfoot{
         color: #707070;
         display: block;
         margin-top: 4px;
+        text-transform: none;
     }
 }
 .extra-head-row{

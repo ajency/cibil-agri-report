@@ -10,4 +10,5 @@
     {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE reported from enquiry" )}}
     {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
     {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.customer_information.table_body "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date ) }}
+    {{partial "spacer" (dict "space" "305")}}
 {{ end }}
