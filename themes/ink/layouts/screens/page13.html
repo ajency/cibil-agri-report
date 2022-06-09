@@ -1,0 +1,10 @@
+{{ define "main" }}
+    
+    {{ partial "table-title.html" (dict "tableTitle" "ADJACENT LAND DETAILS") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.adjacent_land_details.table_head "tableBody" .Site.Data.adjacent_land_details.table_body "customMargin" "60" ) }}
+    
+    {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table" "headerTitle" "GLOSSARY - CIR DATA <span>(Possible range for Credit Vision® Score)</span>" ) }}
+
+
+{{ end }}

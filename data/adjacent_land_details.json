@@ -1,0 +1,43 @@
+{
+    "table_head": [
+        {
+            "title": "ADJACENT LAND IDENTIFIERS"
+        },
+        {
+            "title": "LAND DETAILS"
+        },
+        {
+            "title": "DIRECTIONS"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "1",
+                "Murabba - 49, Kharsa-13",
+                "West"
+            ]
+        },
+        {
+            "content": [
+                "2",
+                "Murabba - 49, Kharsa-15",
+                "South-West"
+            ]
+        },
+        {
+            "content": [
+                "3",
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+            ]
+        },
+        {
+            "content": [
+                "4",
+                "Murabba - 49, Kharsa-1",
+                "East"
+            ]
+        }
+    ]
+}
