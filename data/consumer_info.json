@@ -1,0 +1,58 @@
+{
+    "consumerInfo":[
+        {
+            "leftColumn":[
+                {
+                    "rows":[
+                        {
+                            "title":"CONSUMER NAME",
+                            "desc":"Mohana Parab"
+                        },
+                        {
+                            "title":"DOB",
+                            "desc":"14/07/1963"
+                        },
+                        {
+                            "title":"TELEPHONE NO.",
+                            "desc":"9716549822"
+                        },
+                        {
+                            "title":"EMAIL ID",
+                            "desc":"mohanparab12@gmail.com"
+                        },
+                        {
+                            "title":"Gender",
+                            "desc":"Female"
+                        },
+                        {
+                            "title":"ADDRESS",
+                            "desc":"Mahindra City, Capgemini, Chennai, Tamil Nadu, India 603002"
+                        }
+                    ]
+                }
+            ],
+            "rightColumn":[
+                {
+                    "rows":[
+                        {
+                            "title":"PAN",
+                            "desc":"ALBPR1035C"
+                        },
+                        {
+                            "title":"Driving licence no",
+                            "desc":"34EWR9900"
+                        },
+                        {
+                            "title":"Voter ID",
+                            "desc":"ZI821555LP"
+                        },
+                        {
+                            "title":"Passport no.",
+                            "desc":"NA"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

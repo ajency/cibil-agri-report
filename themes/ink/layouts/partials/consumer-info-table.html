@@ -1,64 +1,34 @@
 <!-- consumer info table | start -->
 <table class="bordered-table consumer-info" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
+        {{range .consumerInfo}}
+        {{range .leftColumn}}
         <td class="inner-table-container first">
             <table class="inner-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                {{range .rows}}
                 <tr>
-                    <td class="td-title"><span>CONSUMER NAME</span></td>
+                    <td class="td-title"><span>{{.title}}</span></td>
                     <td class="colon">:</td>
-                    <td class="td-desc">{{.consumer_name}}</td>
+                    <td class="td-desc">{{.desc}}</td>
                 </tr>
-                <tr>
-                    <td class="td-title"><span>DOB</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.dob}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>TELEPHONE NO.</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.tel_no}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>EMAIL ID</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.email_id}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>Gender</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.gender}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>ADDRESS</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.address}}</td>
-                </tr>
+                {{end}}
             </table>
         </td>
+        {{end}}
+        {{range .rightColumn}}
         <td class="inner-table-container">
             <table class="inner-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                {{range .rows}}
                 <tr>
-                    <td class="td-title"><span>PAN</span></td>
+                    <td class="td-title"><span>{{.title}}</span></td>
                     <td class="colon">:</td>
-                    <td class="td-desc">{{.pan}}</td>
+                    <td class="td-desc">{{.desc}}</td>
                 </tr>
-                <tr>
-                    <td class="td-title"><span>Driving licence no</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.driving_licence_no}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>Voter ID</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.voter_id}}</td>
-                </tr>
-                <tr>
-                    <td class="td-title"><span>Passport no.</span></td>
-                    <td class="colon">:</td>
-                    <td class="td-desc">{{.passport_no}}</td>
-                </tr>
+                {{end}}
             </table>
         </td>
+        {{end}}
+        {{end}}
     </tr>
 </table>
 <!-- consumer info table | end -->
