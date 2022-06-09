@@ -18,7 +18,7 @@
                     {{ range .tableBody }}
                     <tr>
                         {{ range $elem_index, $elem_val := .content }}
-                        <td>{{ $elem_val }}</td>
+                        <td>{{ $elem_val | safeHTML }}</td>
                         {{ end }}
                     </tr>
                     {{ end }}
