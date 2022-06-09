@@ -1004,6 +1004,55 @@ tfoot{
         &:not(:last-child){
             td{
                 padding-bottom: 0 !important;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}
+
+.disclaimer{
+    tr{
+        td{
+            font-size: 16px !important;
+            color: #707070 !important;
+        }
+    }
+}
+
+.report-end {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #00A6CA;
+    border-top: 1px solid #ACACAC;
+    margin: 72px 0;
+
+    span{
+        padding: 0 30px;
+        position: relative;
+        top: -10px;
+        background: #fff;
+    }
+}
+
+.subtext-table{
+    thead,tbody{
+        tr{
+            th, td{
+                vertical-align: baseline;
+                & > span{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #707070;
+                    display: block;
+                }
             }
         }
     }

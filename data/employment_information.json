@@ -1,7 +1,7 @@
 {
     "table_head": [
         {
-            "title": "ACCOUNT TYPE"
+            "title": "ACCOUNT TYPE <span>(Date Reported)</span>"
         },
         {
             "title": "OCCUPATION CODE"
@@ -19,7 +19,7 @@
     "table_body": [
         {
             "content": [
-                "Credit Card",
+                "Credit Card <span>(30/04/2022)</span>",
                 "Not available",
                 "₹ 1,00,000",
                 "Gross Income",
@@ -28,7 +28,7 @@
         },
         {
             "content": [
-                "Credit Card",
+                "Credit Card <span>(12/05/2022)</span>",
                 "Not available",
                 "₹ 80,000",
                 "Gross Income",
@@ -37,7 +37,7 @@
         },
         {
             "content": [
-                "Credit Card",
+                "Credit Card <span>(18/03/2022)</span>",
                 "Not available",
                 "₹ 50,000",
                 "Gross Income",
@@ -46,7 +46,7 @@
         },
         {
             "content": [
-                "Credit Card",
+                "Credit Card <span>(24/06/2022)</span>",
                 "Not available",
                 "₹ 40,000",
                 "Gross Income",

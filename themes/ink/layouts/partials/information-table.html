@@ -1,23 +1,23 @@
 <div {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }}>
-    <table class="title-table bordered-table padding-0 {{ if .extendCol1 }}address-table{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <table class="title-table bordered-table padding-0" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
 
         <tbody>
             <tr>
                 <td class="padding-0">
-                    <table>
+                    <table class="subtext-table">
                         <thead>
                             <tr>
                                 {{ range .tableHead }}
-                                    <th >{{ .title }}</th>
+                                    <th >{{ .title | safeHTML }}</th>
                                 {{ end }}
                             </tr>
                         </thead>
                     </table>
-                    <table>
+                    <table class="subtext-table">
                         {{ range .tableBody }}
                         <tr>
                             {{ range $elem_index, $elem_val := .content }}
-                            <td>{{ $elem_val }}</td>
+                            <td>{{ $elem_val | safeHTML }}</td>
                             {{ end }}
                         </tr>
                         {{ end }}

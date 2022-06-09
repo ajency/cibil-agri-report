@@ -19,6 +19,81 @@
             "content": [
                 "<b>Major Crops</b> - Crops that are widely grown in a certain district"
             ]
+        },
+        {
+            "content": [
+                "<b>Kharif Season</b> - Cropping season from June to October"
+            ]
+        },
+        {
+            "content": [
+                "<b>Rabi Season</b> - Cropping season from November to April"
+            ]
+        },
+        {
+            "content": [
+                "<b>Hectare (ha)</b> - An area measurement unit, 1 ha - 2.47 acres"
+            ]
+        },
+        {
+            "content": [
+                "<b>Major Crops</b> - Crops that are widely grown in a certain district"
+            ]
+        },
+        {
+            "content": [
+                "<b>Cropping Intensity</b> - The number of crop cycles in a year, as identified using satellite images. For one cycle it is Once a Year, for two it is Twice a Year."
+            ]
+        },
+        {
+            "content": [
+                "<b>Irrigation Condition</b> - Can be irrigated or rainfed, as identified using satellite images"
+            ]
+        },
+        {
+            "content": [
+                "<b>Crop Performance</b> - Agricultural performance of a crop, categorized as Good, Average, or Below Average"
+            ]
+        },
+        {
+            "content": [
+                "<b>Overall Farm(s) Score</b> - The overall SatScore is calculated based on the agricultural parameters of tthe farms that belong to a farmer. It comproses of a base score (based on irrigation condition and cropping intensity of farms) and seasonal scores for the Kharof & Rabi seasons, each calculated based on the farming history in th past 3 years)"
+            ]
+        },
+        {
+            "content": [
+                "<b>Seasonal Score (Kharif & Rabi)</b> - Score reflecting the aspects of the performance of the crop(s) in a particular season in terms of agricultural as well as revenue potential and land performance over the past 3 years."
+            ]
+        },
+        {
+            "content": [
+                "<b>Base Score</b> - Score reflecting the cropping intensity and irrigation aspects of the given land."
+            ]
+        },
+        {
+            "content": [
+                "<b>Ambient Temperature</b> - The air temperature measured in a particular sub-district."
+            ]
+        },
+        {
+            "content": [
+                "<b>Mandi</b> - Agricultural market where the sale and purchase of agricultural commodities is done."
+            ]
+        },
+        {
+            "content": [
+                "<b>Yield</b> - The yield is a measurement of the quantity of a crop grown per unit area of land (kg/ha)."
+            ]
+        },
+        {
+            "content": [
+                "<b>Crop Area</b> - The total area in which a particular crop is identified using satellite analysis."
+            ]
+        },
+        {
+            "content": [
+                "<b>Agro - Ecological Sub-Zone</b> - An agro ecological zone (ACZ) is a land unit represented accurately or precisely in terms of major climate and growing period, which is climatically suitable for a certain range of crops and cultivations."
+            ]
         }
     ]
 }
