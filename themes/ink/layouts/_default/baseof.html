@@ -8,7 +8,7 @@
             <td valign="top" id="content">
                 {{ partial "header.html" }}
                 {{- block "main" . }}{{- end }}
-                {{ partial  "footer.html" }}
+                {{ partial  "footer.html" (dict "pageNo" .Params.pageNo ) }}
             </td>
         </tr>
     </table>

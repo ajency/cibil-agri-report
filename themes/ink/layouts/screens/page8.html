@@ -9,6 +9,5 @@
     {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body ) }}
 
     {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE") }}
-    {{ partial "performance-table.html" (dict "tableBody" .Site.Data.history_performance.table_body ) }}
-
+    {{ partial "performance-table.html" (dict "tableBody" .Site.Data.history_performance.table_body "targetValue" .Site.Data.history_performance.target_value ) }}
 {{ end }}

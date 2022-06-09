@@ -1,3 +1,4 @@
+{{ $total := .targetValue }}
 <table class="title-table bordered-table padding-0 white-row" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td>
@@ -37,10 +38,8 @@
                                                         <span class="left-float">
                                                             {{ $intVal := int ( replace $elem_val_2.farm "," "" ) }}
                                                             {{ $intVal2 := int ( replace $elem_val_2.district "," "" ) }}
-                                                            {{ $final := int ( div (mul $intVal 100.0) 5000 ) }}
-                                                            {{ $total := 5000 }}
-                                                            <span class="bar primary" style="width: {{ int ( div (mul $intVal 100.0) 5000 ) }}%;"></span>
-                                                            <span class="bar secondary" style="width: {{ int ( div (mul $intVal2 100.0) 5000 ) }}%;" ></span>
+                                                            <span class="bar primary" {{int (.targetValue)}} style="width: {{ int ( div (mul $intVal 100.0) $total ) }}%;"></span>
+                                                            <span class="bar secondary" style="width: {{ int ( div (mul $intVal2 100.0) $total ) }}%;" ></span>
                                                         </span>
                                                         <span class="right-float">
                                                             <span class="primary-color" >{{ $elem_val_2.farm }}</span> <span class="secondary-color">({{ $elem_val_2.district }})</span>
