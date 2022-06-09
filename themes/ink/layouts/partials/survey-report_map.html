@@ -1,0 +1,19 @@
+{{range .surveyReports}}
+    {{range .map}}
+    {{ partial "table-title" (dict "tableTitle" .table_title ) }}
+    <table class="bordered-table map-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tr>
+            {{if eq .mapPosition "left" }}
+            <td class="map-img"><img src="{{ .map_image | relURL}}"></td>
+            <td class="identifier">{{.identifier}}</td>
+            {{else if eq .mapPosition "right" }}
+            <td class="identifier">{{.identifier}}</td>
+            <td class="map-img"><img src="{{ .map_image | relURL}}"></td>
+            {{else }}
+            <td class="map-img"><img src="{{ .map_image | relURL}}"></td>
+            <td class="identifier">{{.identifier}}</td>
+            {{end}}
+        </tr>
+    </table>
+    {{end}}
+{{end}}

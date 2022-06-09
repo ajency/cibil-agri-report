@@ -1,0 +1,24 @@
+{{range .surveyReports}}
+    {{range .adjacentLandDetails}}
+    {{ partial "table-title" (dict "tableTitle" .table_title) }}
+    <table class="bordered-table padding-0 landDetails-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
+        <thead>
+            <tr>
+                {{range .table_head}}
+                <th class="border-bottom border-right td-title">{{.title}}</th>
+                {{end}}
+            </tr>
+        </thead>
+        <tbody class="striped-table-from1">
+            {{range $index_no, $value:=.table_body}}
+            <tr>
+                <td class="td-desc border-right">{{add $index_no 1}}</td>
+                {{range .content}}
+                    <td class="td-desc border-right">{{.}}</td>
+                {{end}}
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+    {{end}}
+{{end}}

@@ -196,6 +196,18 @@ body {
               }
         }
     }
+    .striped-table{
+        &-from1{
+            tr:nth-child(2n+1){
+                background: #F6F7FC;
+            }
+        }
+        &-from2{
+            tr:nth-child(2n+2){
+            background: #F6F7FC;
+            }
+        }
+    }
     .summary-table{
         padding: 0px;
         margin-bottom: 54px;
@@ -402,6 +414,11 @@ body {
     .border-bottom{
         border-bottom: 1px solid #ACACAC;
     }
+    .border-right{
+        &:not(:last-child){
+            border-right: 1px solid #ACACAC;
+        }
+    }
     .regional-details-table{
         .rdt-head{
             .td-title{
@@ -410,16 +427,12 @@ body {
             }
         }
         .rtd-body{
+            .note-text{
+                margin-top: 4px;
+            }
             .td-title{
                 line-height: 16px;
                 padding-bottom: 20px;
-            }
-            .note-text{
-                margin-top: 4px;
-                font-size: 16px;
-                line-height: 24px;
-                color: #707070;
-                font-weight: 600;
             }
             td{
                 vertical-align: top;
@@ -464,6 +477,66 @@ body {
                     }
                 }
             }
+        }
+    }
+    .note-text{
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+        font-weight: 600;
+    }
+    .map-table{
+        border-spacing: 27px;
+        padding: 2px 0px 2px 3px;
+        .map-img{
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                display: block;
+            }
+        }
+        .identifier{
+            background-color: #F6F7FC;
+            width: 473px;
+            font-weight: 400;
+            font-size: 128px;
+            line-height: 128px;
+            letter-spacing: -0.01em;
+            color: #707070;
+            text-align: center;
+        }
+    }
+    .farmLocations-table{
+        text-align: left;
+        .note-text{
+            margin-left: 10px;
+        }
+        td, th{
+            padding: 10px 30px;
+        }
+        th{
+            padding-bottom: 15px;
+        }
+        tr{
+            &:first-child{
+                td{
+                    padding-top: 20px;
+                }
+            }
+            &:last-child{
+                td{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    .landDetails-table{
+        text-align: left;
+        td, th{
+            padding: 15px 20px;
+        }
+        th{
+            padding-top: 20px;
         }
     }
 }

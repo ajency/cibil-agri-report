@@ -1,0 +1,9 @@
+{{ define "main" }}
+    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+    {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+    {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+    {{partial "spacer" (dict "space" "20")}}
+    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+    {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+    {{partial "spacer" (dict "space" "8")}}
+{{ end }}
