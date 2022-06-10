@@ -2,6 +2,7 @@
     <tr>
         <td class="left-side">
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                {{if .leftGraph}}
                 {{range .leftGraph}}
                 <tr>
                     <td>
@@ -12,6 +13,13 @@
                             <li>{{.}}</li>
                             {{end}}
                         </ul>
+                    </td>
+                </tr>
+                {{end}}
+                {{else}}
+                <tr>
+                    <td>
+                        {{ partial "graph-empty-state" (dict "message" "NA" "imageURL" "images/static-images/farm-score-graph-empty2.png" "section_title" "Scoring Factors" "className" "no-cir") }}
                     </td>
                 </tr>
                 {{end}}
