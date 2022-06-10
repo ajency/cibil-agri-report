@@ -590,6 +590,13 @@ body {
             }
         }
     }
+    .graph-empty-state{
+        &.no-cir{
+            .empty-state {
+                text-align: left;
+              }
+        }
+    }
     .empty-state {
         font-weight: 600;
         font-size: 19px;
