@@ -203,6 +203,10 @@ body {
                 color: #2C2C2C;
               }
         }
+        .empty-state{
+            margin-top: -10px;
+            display: block;
+        }
     }
     .striped-table{
         &-from1{
@@ -585,6 +589,12 @@ body {
                 padding-bottom:20px;
             }
         }
+    }
+    .empty-state {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 40px;
+        color: #2C2C2C;
     }
 }
 
