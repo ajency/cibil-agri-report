@@ -1,0 +1,41 @@
+{{range .comsumerFarmSummary}}
+<table class="bordered-table padding-0 consumer-farm-sumamry-v2" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <thead>
+        <tr>
+            {{range .table_head}}
+            <th class="border-right border-bottom">{{.title}}{{if gt (len .subtitle) 0}}<span class="note-text">{{.subtitle}}</span>{{end}}</th>
+            {{end}}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {{range .table_body}}
+            <td class="border-right details">
+                <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        {{range .content}}
+                        <td>
+                            <table class="details-rows" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                {{range .row}}
+                                <tr>
+                                    {{if gt (len .title) 0}}
+                                    <td class="td-title">{{.title}}</td>
+                                    <td class="colon">:</td>
+                                    {{end}}
+                                    <td class="td-desc">{{.desc}}</td>
+                                </tr>
+                                {{end}}
+                            </table>
+                        </td>
+                        <td class="icon">
+                            <img src="{{ .image | relURL}}">
+                        </td>
+                        {{end}}
+                    </tr>
+                </table>
+            </td>
+            {{end}}
+        </tr>
+    </tbody>
+</table>
+{{end}}

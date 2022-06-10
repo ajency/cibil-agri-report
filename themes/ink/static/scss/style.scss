@@ -552,6 +552,41 @@ body {
             padding-top: 20px;
         }
     }
+    .consumer-farm-sumamry-v2{
+        text-align: left;
+        th{
+            padding: 20px 20px 14px;
+            .note-text{
+                margin-left: 10px;
+            }
+        }
+        td{
+            vertical-align: top;
+        }
+        .colon{
+            width: 29px;
+            text-align: center;
+        }
+        .td-title{
+            width: 37%;
+        }
+        .icon{
+            vertical-align: top;
+            text-align: center;
+            width: 28%;
+        }
+        .details{
+            vertical-align: top;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+        .details-rows{
+            td{
+                padding-bottom:20px;
+            }
+        }
+    }
 }
 
 .footer-text-dark {
