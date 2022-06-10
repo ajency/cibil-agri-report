@@ -1,3 +1,4 @@
+{{if .text | or .imageURL}}
 <table class="default-table {{.className}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0"
     align="center">
     <thead>
@@ -14,3 +15,6 @@
         </tr>
     </tbody>
 </table>
+{{else}}
+{{partial "empty-state" (dict "message" "No Consumer Farm Ownership available.")}}
+{{end}}
