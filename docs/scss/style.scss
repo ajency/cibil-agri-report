@@ -814,13 +814,12 @@ tfoot{
 }
 .info-light-text {
     margin: 0;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 19px;
     line-height: 24px;
     color: #707070;
     top: -30px;
     position: relative;
-    text-transform:uppercase;
 }
 
 .address-table{
@@ -954,6 +953,8 @@ tfoot{
             border-radius: 50%;
             margin-right: 10px;
             display: inline-block;
+            top: 4px;
+            position: relative;
         }
         .primary{
             background: #006685;

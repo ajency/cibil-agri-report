@@ -22,6 +22,7 @@
                         </tr>
                         {{ end }}
                     </table>
+                    {{ if .remark | and .date }}
                     <table>
                         <tfoot>
                             <tr>
@@ -52,6 +53,7 @@
                             </tr>
                         </tfoot>
                     </table>
+                    {{ end }}
                 </td>
             </tr>
         </tbody>

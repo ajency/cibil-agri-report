@@ -162,6 +162,7 @@
                     {{end}}
                 </tbody>
             </table>
+            {{ if .cibil_remark | and .date_entered }}
             <table class="ac-table-footer" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
                     <td>
@@ -180,6 +181,7 @@
                     </td>
                 </tr>
             </table>
+            {{ end }}
         </td>
     </tr>
 </table>
