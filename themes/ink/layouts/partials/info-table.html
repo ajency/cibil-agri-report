@@ -1,3 +1,4 @@
+{{ if .data }}
 <!-- info table | start -->
 <table class="bordered-table member-details" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
@@ -12,3 +13,6 @@
     </tr>
 </table>
 <!--info table | end -->
+{{ else}}
+    {{ partial "empty-state" (dict "message" .message ) }}
+{{ end }}
