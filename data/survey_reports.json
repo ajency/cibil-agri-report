@@ -17,26 +17,31 @@
               "title":"FARM BOUNDRY"
             },
             {
+              "title":"SUB farm label"
+            },
+            {
               "title":"SUB SURVEY DETAILS"
             },
             {
-              "title":"SUB-FARM LABEL (SUB-SURVEY CENTROID)"
+              "title":"SUB-FARM CENTROID"
             }
           ],
           "table_body":[
             {
               "row":[
                 {
-                  "content":"Khewat-12, Murabba-13,Kharsa-2",
-                  "sub_content":""
-                },
-                {
-                  "content":"Khewat-10, Murabba-1 ,Kharsa-4",
+                  "content":"(G1) Khewat-12, Murabba-13,Kharsa-2",
                   "sub_content":""
                 },
                 {
                   "content":"G1-A",
-                  "sub_content":"(Centroid: 21.7398° N, 70.4491° E)"
+                  "sub_content":""
+                },
+                {
+                  "content":"Khewat-10, Murabba-1 ,Kharsa-4"
+                },
+                {
+                  "content": "Centroid: 21.7398° N, 70.4491° E"
                 }
               ]
             }
@@ -105,26 +110,31 @@
               "title":"FARM BOUNDRY"
             },
             {
+              "title":"SUB farm label"
+            },
+            {
               "title":"SUB SURVEY DETAILS"
             },
             {
-              "title":"SUB-FARM LABEL (SUB-SURVEY CENTROID)"
+              "title":"SUB-FARM CENTROID"
             }
           ],
           "table_body":[
             {
               "row":[
                 {
-                  "content":"Khewat - 415, Murabba - 49, Kharsa - 14",
-                  "sub_content":""
-                },
-                {
-                  "content":"Murabba - 49, Kharsa - 14",
+                  "content":"(G2) Khewat-415, Murabba-49, Kharsa-14",
                   "sub_content":""
                 },
                 {
                   "content":"G2-A",
-                  "sub_content":"(Centroid: 21.7398° N, 70.4491° E)"
+                  "sub_content":""
+                },
+                {
+                  "content":"Murabba-49 ,Kharsa-14"
+                },
+                {
+                  "content": "Centroid: 21.7398° N, 70.4491° E"
                 }
               ]
             }
@@ -205,26 +215,31 @@
               "title":"FARM BOUNDRY"
             },
             {
+              "title":"SUB farm label"
+            },
+            {
               "title":"SUB SURVEY DETAILS"
             },
             {
-              "title":"SUB-FARM LABEL (SUB-SURVEY CENTROID)"
+              "title":"SUB-FARM CENTROID"
             }
           ],
           "table_body":[
             {
               "row":[
                 {
-                  "content":"Khewat - 415, Murabba - 49, Kharsa - 14",
-                  "sub_content":""
-                },
-                {
-                  "content":"Murabba - 49, Kharsa - 14",
+                  "content":"(G3) Khewat-415, Murabba-49, Kharsa-14",
                   "sub_content":""
                 },
                 {
                   "content":"G3-A",
-                  "sub_content":"(Centroid: 21.7398° N, 70.4491° E)"
+                  "sub_content":""
+                },
+                {
+                  "content":"Murabba-49 ,Kharsa-14"
+                },
+                {
+                  "content": "Centroid: 21.7398° N, 70.4491° E"
                 }
               ]
             }
@@ -305,26 +320,31 @@
               "title":"FARM BOUNDRY"
             },
             {
+              "title":"SUB farm label"
+            },
+            {
               "title":"SUB SURVEY DETAILS"
             },
             {
-              "title":"SUB-FARM LABEL (SUB-SURVEY CENTROID)"
+              "title":"SUB-FARM CENTROID"
             }
           ],
           "table_body":[
             {
               "row":[
                 {
-                  "content":"Khewat - 415, Murabba - 113, Kharsa - 3",
-                  "sub_content":""
-                },
-                {
-                  "content":"Murabba - 113, Kharsa - 3",
+                  "content":"(G4) Khewat-415, Murabba-49, Kharsa-14",
                   "sub_content":""
                 },
                 {
                   "content":"G4-A",
-                  "sub_content":"(Centroid: 21.7398° N, 70.4491° E)"
+                  "sub_content":""
+                },
+                {
+                  "content":"Murabba-49 ,Kharsa-14"
+                },
+                {
+                  "content": "Centroid: 21.7398° N, 70.4491° E"
                 }
               ]
             }
@@ -393,26 +413,31 @@
               "title":"FARM BOUNDRY"
             },
             {
+              "title":"SUB farm label"
+            },
+            {
               "title":"SUB SURVEY DETAILS"
             },
             {
-              "title":"SUB-FARM LABEL (SUB-SURVEY CENTROID)"
+              "title":"SUB-FARM CENTROID"
             }
           ],
           "table_body":[
             {
               "row":[
                 {
-                  "content":"Khewat - 415, Murabba - 113, Kharsa - 3",
+                  "content":"(G5) Khewat-415, Murabba-49, Kharsa-14",
                   "sub_content":""
                 },
                 {
-                  "content":"Murabba - 113, Kharsa - 3",
+                  "content":"G5-A",
                   "sub_content":""
                 },
                 {
-                  "content":"G4-A",
-                  "sub_content":"(Centroid: 21.7398° N, 70.4491° E)"
+                  "content":"Murabba-49 ,Kharsa-14"
+                },
+                {
+                  "content": "Centroid: 21.7398° N, 70.4491° E"
                 }
               ]
             }

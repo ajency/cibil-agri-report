@@ -13,7 +13,7 @@
             {{range .table_body}}
             <tr>
                 {{range .row}}
-                <td class="td-desc border-right">{{.content}}{{ if gt (len .sub_content) 0 }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
+                <td class="td-desc border-right">{{.content}}{{ if .sub_content }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
                 {{end}}
             </tr>
             {{end}}
