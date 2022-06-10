@@ -595,6 +595,19 @@ body {
         font-size: 19px;
         line-height: 40px;
         color: #2C2C2C;
+        &.colored{
+            background-color: #F6F7FC;
+            padding: 15px 20px 14px;
+        }
+        &-icon{
+            width: 53px;
+            img{
+                display: block;
+            }
+        }
+        &-icon, &-message{
+            vertical-align: middle !important;
+        }
     }
 }
 

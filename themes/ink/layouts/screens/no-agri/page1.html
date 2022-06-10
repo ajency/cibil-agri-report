@@ -6,7 +6,7 @@
 {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
 {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
 {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-{{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.no_agri.halfcircle_graph.left_graph "rightGraph" .Site.Data.no_agri.halfcircle_graph.right_graph) }}
+{{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.halfcircle_graph.left_graph) }}
 {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
 {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
 {{ end }}

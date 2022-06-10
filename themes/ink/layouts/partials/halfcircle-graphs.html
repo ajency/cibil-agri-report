@@ -19,6 +19,7 @@
         </td>
         <td class="right-side">
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                {{if .rightGraph}}
                 {{range .rightGraph}}
                 <tr>
                     <td>
@@ -27,19 +28,26 @@
                         <table class="factors" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                             <tr>
                                 {{range .list_factors}}
-                                {{if .contr_factors | or .factor_rating | or .factor_title }}
                                 <td class="factor">
                                     <p class="factor-value"><span class="highlight">{{.contr_factors}}</span>/{{.total_factors}}</p>
                                     <p class="factor-rating">{{.factor_rating}}</p>
                                     <p class="factor-title">{{.factor_title}}</p>
                                 </td>
-                                {{else}}
-                                <td class="empty-state">No data available</td>
-                                {{end}}
                                 {{end}}
                             </tr>
                         </table>
                     </td>
+                </tr>
+                {{end}}
+                {{else}}
+                <tr>
+                    <td>
+                        <img class="graph-img" src="{{ "images/static-images/farm-score-graph-empty1.png" | relURL}}">
+                        <p class="td-title" style="margin-bottom:10px;">FACTORS AFFECTING TOWARDS SATSCORE</p> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="empty-state">No data available</td>
                 </tr>
                 {{end}}
             </table>
