@@ -20,7 +20,7 @@
                     <td class="{{.status}} img"><img style="vertical-align: bottom;" {{ if eq .status "active" }}src="{{"images/static-images/active.png" | relURL}}" {{else}} src="{{"images/static-images/inactive.png" | relURL}}" {{ end }} width="57"></td>
                 </tr>
             </table>
-            <table class="ac-table-body" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+            <table class="ac-table-body border-bottom" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
                     <td class="left-panel">
                         {{range .tableBody1_leftPanel}}
@@ -133,7 +133,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="ac-table-body striped-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+            <table class="ac-table-body striped-table {{ if .cibil_remark | and .date_entered }}border-bottom{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tbody>
                     <tr>
                         <td class="td-title">Year</td>

@@ -391,10 +391,6 @@ body {
   vertical-align: top;
 }
 
-.main-container .consumer-account-details-table .ac-table-body {
-  border-bottom: 1px solid #ACACAC;
-}
-
 .main-container .consumer-account-details-table .ac-table-body .colon {
   margin-left: 12px;
   margin-right: 12px;
