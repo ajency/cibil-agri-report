@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+    {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
+    {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+    {{ partial "information-table.html" (dict "tableHead" .Site.Data.no_cir.enquiries.table_head "tableBody" .Site.Data.no_cir.enquiries.table_body "customMargin" "70" ) }}
+
+    {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
+    {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" ) }}
+
+    {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+    {{ partial "info-table.html" (dict "message" "No Farm Details available.")}}
+
+{{ end }}

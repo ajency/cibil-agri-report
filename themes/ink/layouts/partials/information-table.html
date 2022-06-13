@@ -1,3 +1,4 @@
+{{if .tableHead | or .tableBody}}
 <div {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }}>
     <table class="title-table bordered-table padding-0" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
 
@@ -60,3 +61,6 @@
         
     </table>
 </div>
+{{else}}
+{{partial "empty-state" (dict "message" "No employment information reported for this consumer")}}
+{{end}}

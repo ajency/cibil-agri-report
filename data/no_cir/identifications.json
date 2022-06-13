@@ -1,0 +1,36 @@
+{
+    "table_head": [
+        {
+            "title": "Identification Type"
+        },
+        {
+            "title": "Identification Number"
+        },
+        {
+            "title": "ISSUE DATE"
+        },
+        {
+            "title": "Expiration Date"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "PAN Card",
+                "AHVPB6643A",
+                "NA",
+                "NA"
+            ]
+        },
+        {
+            "content": [
+                "Voter ID",
+                "RIS0012914",
+                "NA",
+                "NA"
+            ]
+        }
+    ],
+    "remark": "Multiple Disputes in Identification (ID) Segment",
+    "date": "21/04/2019"
+}

@@ -1,0 +1,36 @@
+{
+    "table_head": [
+        {
+            "title": "Address"
+        },
+        {
+            "title": "Category"
+        },
+        {
+            "title": "RESIDENCE CODE"
+        },
+        {
+            "title": "Date Reported"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Ground Floor, Sentinel House, Apollo Bandar Rd, Azmi Street, Colaba, Mumbai - 400005",
+                "Permanent",
+                "-",
+                "10/08/2022"
+            ]
+        },
+        {
+            "content": [
+                "One Indiabulls Centre, Tower 2A 19th Floor, Senapati Bapat Marg. Elphinstone Road, Mumbai - 400013",
+                "Not categorized",
+                "-",
+                "10/08/2021"
+            ]
+        }
+    ],
+    "remark": "Multiple Disputes in Address (PA) Segment",
+    "date": "08/02/2019"
+}

@@ -1,0 +1,44 @@
+{
+    "table_head": [
+        {
+            "title": "MEMBER NAme"
+        },
+        {
+            "title": "ENQUIRY date"
+        },
+        {
+            "title": "Enquiry Purpose"
+        },
+        {
+            "title": "ENQUIRY AMOUNT"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Not disclosed",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "04/03/2019",
+                "Education Loan",
+                "₹ 5,20,000"
+            ]
+        },
+        {
+            "content": [
+                "Not disclosed",
+                "08/03/2019",
+                "Microfinance - Personal Loan",
+                "₹ ₹ 20,000"
+            ]
+        }
+    ],
+    "remark": "Enquiry Ownership Error",
+    "date": "16/06/2019"
+}
