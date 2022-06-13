@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CIBIL Agri Report</title>
@@ -6,11 +6,7 @@
     <description>Recent content on CIBIL Agri Report</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 May 2022 13:46:25 +0530</lastBuildDate>
-    
-	<atom:link href="https://ajency.github.io/cibil-agri-report/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 May 2022 13:46:25 +0530</lastBuildDate><atom:link href="https://ajency.github.io/cibil-agri-report/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page14</title>
       <link>https://ajency.github.io/cibil-agri-report/screens/page14/</link>
@@ -202,10 +198,28 @@
     
     <item>
       <title>Page4</title>
+      <link>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page4/</link>
+      <pubDate>Sat, 07 May 2022 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Page4</title>
       <link>https://ajency.github.io/cibil-agri-report/screens/no-agri/page4/</link>
       <pubDate>Sat, 07 May 2022 13:46:25 +0530</pubDate>
       
       <guid>https://ajency.github.io/cibil-agri-report/screens/no-agri/page4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Page4</title>
+      <link>https://ajency.github.io/cibil-agri-report/screens/no-cir/page4/</link>
+      <pubDate>Sat, 07 May 2022 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/cibil-agri-report/screens/no-cir/page4/</guid>
       <description></description>
     </item>
     

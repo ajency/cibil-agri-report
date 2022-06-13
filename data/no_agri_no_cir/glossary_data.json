@@ -1,0 +1,169 @@
+{
+    "table_head": [
+        {
+            "title": "SECTION"
+        },
+        {
+            "title": "code"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Report",
+                "CIR",
+                "Consumer Information Report"
+            ]
+        },
+        {
+            "content": [
+                "Report",
+                "-",
+                "Information not reported"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Details",
+                "e",
+                "Enriched through Enquiry"
+            ]
+        },
+        {
+            "content": [
+                "Identification(S)",
+                "CIR",
+                "Possible ID types are: \nIncome Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
+            ]
+        },
+        {
+            "content": [
+                "Telephone (S) :",
+                "-",
+                "Telephone Details for latest 4  available will be shared. \nTypes are: \nMobile phone \nHome Phone \nOffice phone"
+            ]
+        },
+        {
+            "content": [
+                "Email Contact (S) :",
+                "-",
+                "Emails for latest 4 available will be shared"
+            ]
+        },
+        {
+            "content": [
+                "Employment Information :",
+                "-",
+                "Latest available Employment detail (Single detail) will be provided \nPossible Occupation Codes: \nSalaried \nSelf Employed Professionals \nSelf Employed \nOthers"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Reported Address (ES) :",
+                "-",
+                "Address details of latest 4 available will be shared \nPossible Address Categories are: \nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "(Date Opened)",
+                "Date of first disbursement"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "(Date Closed)",
+                "Date of account closure"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "(Date reported & Certified)",
+                "Most recent date reported by reporting member"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "(Date of Last Payment)",
+                "Most recent date a payment was made on the account"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(Start Date)",
+                "Date of the beginning of payment history"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(End Date)",
+                "Date of the End of the Payment"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(N/A)",
+                "Not applicable"
+            ]
+        },
+        {
+            "content": [
+                "Payment History - Numbers :",
+                "(End Date)",
+                "Days past dues"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(000)",
+                "Payment is made on the due date"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(001-900)",
+                " Payment is missed by number of days from the due date"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(STD)",
+                "Payments being made within 90 days"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "-",
+                "Payments being made within 90 days"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(SMA)",
+                "Special account created for reporting Standard Accounts moving toward Sub-Standard"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(SUB)",
+                "Payments being made after 90 days"
+            ]
+        }
+    ]
+}

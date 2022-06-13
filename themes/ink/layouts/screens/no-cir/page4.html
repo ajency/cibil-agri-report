@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+{{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
+{{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+{{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" ) }}
+
+{{ end }}
