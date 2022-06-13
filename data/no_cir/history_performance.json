@@ -1,0 +1,281 @@
+{
+    "table_body": [
+        {
+            "data": [
+                {
+                    "content": [
+                        "Kharif (Jun 2021 - Nov 2021)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Groundnut",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,975",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Below Average",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        },
+                        {
+                            "farm" : "2984",
+                            "district": "2,352"
+                        },
+                        {
+                            "farm" : "3,092",
+                            "district": "4,910"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Rabi (Dec 2021 - Apr 2022)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Wheat",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,956",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Average",
+                        "Good",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "2,984",
+                            "district": "2,352"
+                        },
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        },
+                        {
+                            "farm" : "3,001",
+                            "district": "3,904"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Kharif (Jun 2020 - Nov 2020)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Cotton (lint)",
+                        "Gram",
+                        "Cotton (lint)"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,868",
+                        "1,874",
+                        "1,868"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Average",
+                        "Good"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "2,984",
+                            "district": "2,352"
+                        },
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        },
+                        {
+                            "farm" : "3,123",
+                            "district": "3,045"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Rabi (Dec 2020 - Apr 2021)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Groundnut",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,975",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Below Average",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,001",
+                            "district": "3,904"
+                        },
+                        {
+                            "farm" : "2,984",
+                            "district": "3,009"
+                        },
+                        {
+                            "farm" : "3,123",
+                            "district": "2,621"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Kharif (Jun 2019 - Nov 2019)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Wheat",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,956",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Good",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,092",
+                            "district": "2,833"
+                        },
+                        {
+                            "farm" : "3,123",
+                            "district": "3,045"
+                        },
+                        {
+                            "farm" : "2,984",
+                            "district": "3,009"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "content": [
+                        "Rabi (Dec 2019 - Apr 2020)"
+                    ]
+                },
+                {
+                    "content": [
+                        "Groundnut",
+                        "Cotton (lint)",
+                        "Gram"
+                    ]
+                },
+                {
+                    "content": [
+                        "1,975",
+                        "1,868",
+                        "1,874"
+                    ]
+                },
+                {
+                    "content": [
+                        "Good",
+                        "Below Average",
+                        "Average"
+                    ]
+                },
+                {
+                    "content": [
+                        {
+                            "farm" : "3,123",
+                            "district": "3,045"
+                        },
+                        {
+                            "farm" : "2,984",
+                            "district": "3,009"
+                        },
+                        {
+                            "farm" : "3,001",
+                            "district": "3,000"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "target_value": 5000
+}

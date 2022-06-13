@@ -1,0 +1,50 @@
+{
+    "table_head": [
+        {
+            "title": "SECTION"
+        },
+        {
+            "title": "code"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Payment History :",
+                "(DBT)",
+                "The account has remained Sub-Standard for 12 months"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(LSS)",
+                "An account where loss has been identified and remains uncollectible"
+            ]
+        },
+        {
+            "content": [
+                "Payment History :",
+                "(XXX)",
+                "Data not reported by Institution"
+            ]
+        },
+        {
+            "content": [
+                "Information under dispute :",
+                "-",
+                "Consumer has raised grievance request regarding issue in correctness of the data reported by Financial Institution"
+            ]
+        },
+        {
+            "content": [
+                "Enquiry Member :",
+                "(Not Disclosed)",
+                "Enquiry made with other Members"
+            ]
+        }
+    ]
+}
