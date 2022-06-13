@@ -83,5 +83,5 @@
     </table>
 </div>
 {{else}}
-{{partial "empty-state" (dict "message" "No emails reported for this consumer")}}
+{{partial "empty-state" (dict "message" .message)}}
 {{end}}

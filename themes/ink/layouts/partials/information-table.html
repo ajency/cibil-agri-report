@@ -62,5 +62,5 @@
     </table>
 </div>
 {{else}}
-{{partial "empty-state" (dict "message" "No employment information reported for this consumer")}}
+{{partial "empty-state" (dict "message" .message )}}
 {{end}}
