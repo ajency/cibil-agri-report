@@ -1,0 +1,10 @@
+{{ define "main" }}
+    
+    {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+    {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
+    
+    {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS") }}
+    {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "graph_image" "images/dynamic-images/bar-graph1.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
+    {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "graph_image" "images/dynamic-images/bar-graph2.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
+
+{{ end }}
