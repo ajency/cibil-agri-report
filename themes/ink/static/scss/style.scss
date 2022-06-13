@@ -834,23 +834,14 @@ tfoot{
     tbody{
         position: relative;
     }
-    tr{
-        td,th{
-            &:first-of-type{
-                padding-left: 60px;
-            }
-        }
-    }
-    .flot-symbol {
-        position: absolute;
+    .float-symbol {
+        width: 26px;
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.02em;
         color: #00A6CA;
-        top: 73px;
-        left: 20px;
-        z-index: 2;
+        vertical-align: baseline;
     }
 }
 
@@ -891,7 +882,10 @@ tfoot{
         thead,tbody{
             tr{
                 td,th{
-                    &:first-child{
+                    // &:first-child{
+                    //     width: 26px;
+                    // }
+                    &:nth-child(2){
                         width: 610px;
                     }
                 }

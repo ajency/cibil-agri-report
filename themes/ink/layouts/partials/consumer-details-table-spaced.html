@@ -7,6 +7,7 @@
                     <table>
                         <thead>
                             <tr>
+                                <th class="float-symbol"></th>
                                 {{ range .tableHead }}
                                     <th >{{ .title }}</th>
                                 {{ end }}
@@ -14,11 +15,17 @@
                         </thead>
                     </table>
                     <table>
-                        <span class="flot-symbol">(e)</span>
                         {{ range .tableBody }}
                         <tr>
+                            <td class="float-symbol">
+                                {{ if .eTag }}
+                                        <span>(e)</span>
+                                {{ end }}
+                            </td>
                             {{ range $elem_index, $elem_val := .content }}
-                            <td>{{ $elem_val }}</td>
+                            <td>
+                                {{ $elem_val }}
+                            </td>
                             {{ end }}
                         </tr>
                         {{ end }}

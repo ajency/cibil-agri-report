@@ -20,7 +20,8 @@
                 "Permanent",
                 "-",
                 "10/08/2022"
-            ]
+            ],
+            "eTag" : true
         },
         {
             "content": [
@@ -28,7 +29,8 @@
                 "Not categorized",
                 "-",
                 "10/08/2021"
-            ]
+            ],
+            "eTag" : true
         }
     ],
     "remark": "Multiple Disputes in Address (PA) Segment",
