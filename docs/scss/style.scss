@@ -1000,6 +1000,19 @@ tfoot{
     }
 }
 
+.inverted-color-table{
+    tbody{
+        tr{
+            &:nth-child(odd){
+                background-color: #fff !important;
+            }
+            &:nth-child(even){
+                background-color: #F6F7FC !important;
+            }
+        }
+    }
+}
+
 .yeild-indicators {
     .indicator{
         font-weight: 600;

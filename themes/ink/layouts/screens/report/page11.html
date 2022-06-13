@@ -3,6 +3,6 @@
     {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
     {{partial "spacer" (dict "space" "20")}}
     {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
-    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
 
 {{ end }}

@@ -9,6 +9,6 @@
     {{ partial "info-table.html" (dict "message" "No Farm Details available." )}}
     
     {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
-    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
 
 {{ end }}
