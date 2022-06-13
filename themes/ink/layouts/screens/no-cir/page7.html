@@ -1,0 +1,6 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
+{{ partial "title-table" (dict "tableHead" .Site.Data.no_agri_no_cir.glossary_data.table_head "tableBody" .Site.Data.no_agri_no_cir.glossary_data.table_body "className" "text-break-format glossary-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
+
+{{ end }}
