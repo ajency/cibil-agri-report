@@ -1151,3 +1151,7 @@ tfoot{
         border-bottom: 1px solid #ACACAC !important;
     }
 }
+
+.title-table, .bordered-table {
+    page-break-inside: avoid;
+}
