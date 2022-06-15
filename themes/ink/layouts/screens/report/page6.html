@@ -1,14 +1,37 @@
 {{ define "main" }}
     
-    {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
-    
-    {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
-    {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}   
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+            <table class="no-break">
+                <tr>
+                    <td>
+                        {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
+                        {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}   
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
-    {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
-    {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body ) }}
+<table class="no-break">
+    <tr>
+        <td>
+                {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
+                {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body ) }}
+        </td>
+    </tr>
+</table>
 
-    {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE") }}
-    {{ partial "performance-table.html" (dict "tableBody" .Site.Data.history_performance.table_body "targetValue" .Site.Data.history_performance.target_value ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.history_performance.table_body "targetValue" .Site.Data.history_performance.target_value ) }}
+        </td>
+    </tr>
+</table>
 
 {{ end }}
