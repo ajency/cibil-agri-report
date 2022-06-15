@@ -1,24 +1,30 @@
 {{range .surveyReports}}
     {{range .adjacentLandDetails}}
-    {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
-    <table class="bordered-table padding-0 landDetails-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
-        <thead>
-            <tr>
-                {{range .table_head}}
-                <th class="border-bottom td-title">{{.title}}</th>
-                {{end}}
-            </tr>
-        </thead>
-        <tbody class="striped-table-from1">
-            {{range $index_no, $value:=.table_body}}
-            <tr>
-                <td class="td-desc">{{add $index_no 1}}</td>
-                {{range .content}}
-                    <td class="td-desc">{{.}}</td>
-                {{end}}
-            </tr>
-            {{end}}
-        </tbody>
+    <table class="no-break">
+        <tr>
+            <td>
+                {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
+                <table class="bordered-table padding-0 landDetails-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
+                    <thead>
+                        <tr>
+                            {{range .table_head}}
+                            <th class="border-bottom td-title">{{.title}}</th>
+                            {{end}}
+                        </tr>
+                    </thead>
+                    <tbody class="striped-table-from1">
+                        {{range $index_no, $value:=.table_body}}
+                        <tr>
+                            <td class="td-desc">{{add $index_no 1}}</td>
+                            {{range .content}}
+                                <td class="td-desc">{{.}}</td>
+                            {{end}}
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
     </table>
     {{end}}
 {{end}}

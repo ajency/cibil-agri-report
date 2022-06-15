@@ -1,13 +1,7 @@
 {{ define "main" }}
 
-    <table class="no-break">
-        <tr>
-            <td>
-                {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
-                {{partial "spacer" (dict "space" "20")}}
-            </td>
-        </tr>
-    </table>
+    {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+    {{partial "spacer" (dict "space" "20")}}
 
     <table class="no-break">
         <tr>

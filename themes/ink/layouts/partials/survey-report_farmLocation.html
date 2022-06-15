@@ -1,23 +1,29 @@
 {{range .surveyReports}}
     {{range .farmLocations}}
-    {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
-    <table class="bordered-table padding-0 farmLocations-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-        <thead>
-            <tr>
-                {{range .table_head}}
-                <th class="border-bottom border-right td-title">{{.title}}</th>
-                {{end}}
-            </tr>
-        </thead>
-        <tbody>
-            {{range .table_body}}
-            <tr>
-                {{range .row}}
-                <td class="td-desc border-right">{{.content}}{{ if .sub_content }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
-                {{end}}
-            </tr>
-            {{end}}
-        </tbody>
+    <table class="no-break">
+        <tr>
+            <td>
+                {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
+                <table class="bordered-table padding-0 farmLocations-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <thead>
+                        <tr>
+                            {{range .table_head}}
+                            <th class="border-bottom border-right td-title">{{.title}}</th>
+                            {{end}}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .table_body}}
+                        <tr>
+                            {{range .row}}
+                            <td class="td-desc border-right">{{.content}}{{ if .sub_content }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
+                            {{end}}
+                        </tr>
+                        {{end}}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
     </table>
     {{end}}
 {{end}}
