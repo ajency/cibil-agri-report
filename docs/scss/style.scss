@@ -1155,3 +1155,7 @@ tfoot{
 .title-table, .bordered-table, .no-break {
     page-break-inside: avoid;
 }
+
+.break{
+    page-break-inside: auto !important;
+}
