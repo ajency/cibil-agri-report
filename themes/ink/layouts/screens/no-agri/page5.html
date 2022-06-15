@@ -1,14 +1,37 @@
 {{ define "main" }}
 
-    {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
-    {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
-    {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
+            <table class="no-break">
+                <tr>
+                    <td>
+                        {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+                        {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" ) }}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
-    {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+            {{ partial "info-table.html" (dict "message" "No Farm Details available." )}}
+        </td>
+    </tr>
+</table>
     
-    {{ partial "info-table.html" (dict "message" "No Farm Details available." )}}
-    
-    {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
-    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data.table_head "tableBody" .Site.Data.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
+        </td>
+    </tr>
+</table>
 
 {{ end }}

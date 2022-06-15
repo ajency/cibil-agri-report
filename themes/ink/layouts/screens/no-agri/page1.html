@@ -1,12 +1,43 @@
 {{ define "main" }}
-{{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
-{{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
-{{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
-{{ partial "consumer-info-table.html" ( dict "consumerInfo" .Site.Data.consumer_info.consumerInfo) }}
-{{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
-{{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
-{{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-{{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.halfcircle_graph.left_graph) }}
-{{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
-{{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-info-table.html" ( dict "consumerInfo" .Site.Data.consumer_info.consumerInfo) }}
+        </td>
+    </tr>
+</table>
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
+        </td>
+    </tr>
+</table>
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
+            {{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.halfcircle_graph.left_graph) }}
+        </td>
+    </tr>
+</table>
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
+            {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
 {{ end }}

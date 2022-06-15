@@ -1,10 +1,27 @@
 {{ define "main" }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "2. Account" "className" "marginB-20") }}
+            {{ partial "consumer-account-details" (dict "table1Name" "account information" "table2Name" "DAYS PAST DUE/ASSET CLASSIFICATION" "table_title_class" "ac-width1" "table_headDates_class" "ac-width2" "status" "inactive" "footer_text" "INFORMATION UNDER DISPUTE" "cibil_remark" "Written-off and Settled Status in Dispute" "date_entered" "16/06/2019" "tableHead1" .Site.Data.consumer_account_details2.table_head1 "tableBody1" .Site.Data.consumer_account_details2.table_body1 "tableBody1_leftPanel" .Site.Data.consumer_account_details2.table_body1_leftPanel "tableBody1_middlePanel" .Site.Data.consumer_account_details2.table_body1_middlePanel "tableBody1_rightPanel" .Site.Data.consumer_account_details2.table_body1_rightPanel  "tableHead2" .Site.Data.consumer_account_details2.table_head2 "tableBody_daysPastDue" .Site.Data.consumer_account_details2.table_body1_daysPastDue "horizontal_rows" .Site.Data.consumer_account_details2.horizontal_rows "customMargin" "60" ) }}
+        </td>
+    </tr>
+</table>
 
-    {{ partial "table-title" (dict "tableTitle" "2. Account" "className" "marginB-20") }}
-    {{ partial "consumer-account-details" (dict "table1Name" "account information" "table2Name" "DAYS PAST DUE/ASSET CLASSIFICATION" "table_title_class" "ac-width1" "table_headDates_class" "ac-width2" "status" "inactive" "footer_text" "INFORMATION UNDER DISPUTE" "cibil_remark" "Written-off and Settled Status in Dispute" "date_entered" "16/06/2019" "tableHead1" .Site.Data.consumer_account_details2.table_head1 "tableBody1" .Site.Data.consumer_account_details2.table_body1 "tableBody1_leftPanel" .Site.Data.consumer_account_details2.table_body1_leftPanel "tableBody1_middlePanel" .Site.Data.consumer_account_details2.table_body1_middlePanel "tableBody1_rightPanel" .Site.Data.consumer_account_details2.table_body1_rightPanel  "tableHead2" .Site.Data.consumer_account_details2.table_head2 "tableBody_daysPastDue" .Site.Data.consumer_account_details2.table_body1_daysPastDue "horizontal_rows" .Site.Data.consumer_account_details2.horizontal_rows "customMargin" "60" ) }}
-
-    {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
-    {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
-    {{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body "remark" .Site.Data.enquiries.remark "date" .Site.Data.enquiries.date "customMargin" "70" ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
+            <table class="no-break">
+                <tr>
+                    <td>
+                        {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+                        {{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body "remark" .Site.Data.enquiries.remark "date" .Site.Data.enquiries.date "customMargin" "70" ) }}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 
 {{ end }}
