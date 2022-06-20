@@ -5,7 +5,8 @@
                 <thead>
                     {{ if .headerTitle }}
                     <tr class="extra-head-row">
-                        <th class="extra-table-head">{{ .headerTitle | safeHTML  }}</th>
+                        {{ $arrayFirstElement := index .tableBody 0 }}
+                        <th class="extra-table-head" colspan="{{ (len $arrayFirstElement.content) }}">{{ .headerTitle | safeHTML  }}</th>
                     </tr>
                     {{ end }}
                     <tr>
