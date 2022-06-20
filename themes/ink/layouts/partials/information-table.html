@@ -5,6 +5,8 @@
         <tbody>
             <tr>
                 <td class="padding-0">
+                    <!-- <table class="subtext-table"> 
+                    </table> -->
                     <table class="subtext-table">
                         <thead>
                             <tr>
@@ -13,48 +15,48 @@
                                 {{ end }}
                             </tr>
                         </thead>
-                    </table>
-                    <table class="subtext-table">
-                        {{ range .tableBody }}
-                        <tr>
-                            {{ range $elem_index, $elem_val := .content }}
-                            <td>{{ $elem_val | safeHTML }}</td>
-                            {{ end }}
-                        </tr>
-                        {{ end }}
-                    </table>
-                    {{ if .remark | and .date }}
-                    <table>
-                        <tfoot>
+                        <tbody>
+                            {{ range .tableBody }}
                             <tr>
-                                <td class="padding-0">
-                                    <table class="white-row">
-                                        <tr>
-                                            <td class="foot-alert-info" colspan="">
-                                                <img src="{{ "images/static-images/alert-red.png" | relURL }}">
-                                                <span>INFORMATION UNDER DISPUTE</span>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <table class="white-row">
-                                        <tr>
-                                            <td style="width: 690px;">
-                                                <span class="td-title">CIBIL REMARKS</span>
-                                                <span class="colon">:</span>
-                                                <span class="td-desc">{{ .remark }}</span>
-                                            </td>
-                                            <td colspan="">
-                                                <span class="td-title">DAte Entered</span>
-                                                <span class="colon">:</span>
-                                                <span class="td-desc">{{ .date }}</span>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
+                                {{ range $elem_index, $elem_val := .content }}
+                                <td>{{ $elem_val | safeHTML }}</td>
+                                {{ end }}
                             </tr>
+                            {{ end }}
+                        </tbody>
+                        <tfoot>
+                            {{ if .remark | and .date }}
+                                <tr>
+                                    <td class="padding-0" colspan="4" >
+                                        <table class="white-row">
+                                            <tr>
+                                                <td class="foot-alert-info" colspan="">
+                                                    <img src="{{ "images/static-images/alert-red.png" | relURL }}">
+                                                    <span>INFORMATION UNDER DISPUTE</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="white-row">
+                                            <tr>
+                                                <td style="width: 690px;">
+                                                    <span class="td-title">CIBIL REMARKS</span>
+                                                    <span class="colon">:</span>
+                                                    <span class="td-desc">{{ .remark }}</span>
+                                                </td>
+                                                <td colspan="">
+                                                    <span class="td-title">DAte Entered</span>
+                                                    <span class="colon">:</span>
+                                                    <span class="td-desc">{{ .date }}</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            {{ end }}
                         </tfoot>
                     </table>
-                    {{ end }}
+                    <!-- <table>
+                    </table> -->
                 </td>
             </tr>
         </tbody>

@@ -12,14 +12,8 @@
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
-            <table class="no-break">
-                <tr>
-                    <td>
-                        {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
-                        {{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body "remark" .Site.Data.enquiries.remark "date" .Site.Data.enquiries.date "customMargin" "70" ) }}
-                    </td>
-                </tr>
-            </table>
+            {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+            {{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body "remark" .Site.Data.enquiries.remark "date" .Site.Data.enquiries.date "customMargin" "70" "break" true ) }}
         </td>
     </tr>
 </table>
