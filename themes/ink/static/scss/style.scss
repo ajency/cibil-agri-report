@@ -253,7 +253,8 @@ body {
             border-right: 1px solid #ACACAC;
             vertical-align: top;
             &:last-child{
-                border: none;
+                // border: none;
+                border-right: none;
             }
         }
         tbody td table{
@@ -1191,6 +1192,20 @@ tfoot {
     & .white-row:first-child {
         border-top: 1px solid #A4A4A4 !important;
     }
+}
+.horizontal-border{
+    border-top: 1px solid #A4A4A4;
+    border-bottom: 1px solid #A4A4A4;
+}
+.bottom-border{
+    border-bottom: 1px solid #A4A4A4;
+}
+.top-border{
+    border-top: 1px solid #A4A4A4;
+}
+.empty-td{
+    padding: 0 !important;
+    border-bottom: 1px solid #A4A4A4;
 }
 
 @page{

@@ -23,6 +23,10 @@
                     </tr>
                     {{ end }}
                 </tbody>
+                <tfoot>
+                    {{ $arrayFirstElement := index .tableBody 0 }}
+                    <tr><td class="empty-td" colspan="{{ (len $arrayFirstElement.content) }}"></td></tr>
+                </tfoot>
             </table>
         </td>
     </tr>
