@@ -27,7 +27,8 @@
                         <tfoot>
                             {{ if .remark | and .date }}
                                 <tr>
-                                    <td class="padding-0" colspan="4" >
+                                    {{ $arrayFirstElement := index .tableBody 0 }}
+                                    <td class="padding-0" colspan="{{ len $arrayFirstElement.content }}" >
                                         <table class="white-row">
                                             <tr>
                                                 <td class="foot-alert-info" colspan="">
