@@ -1,10 +1,10 @@
 {{ define "main" }}
-<table class="no-break">
+<table class="break">
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
             {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
-            {{ partial "information-table.html" (dict "tableHead" .Site.Data.no_cir.enquiries.table_head "tableBody" .Site.Data.no_cir.enquiries.table_body "customMargin" "70" ) }}
+            {{ partial "information-table.html" (dict "tableHead" .Site.Data.no_cir.enquiries.table_head "tableBody" .Site.Data.no_cir.enquiries.table_body "customMargin" "70" "break" true ) }}
         </td>
     </tr>
 </table>
@@ -14,7 +14,7 @@
         <td>
             {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
             {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" ) }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" "break" "true" ) }}
         </td>
     </tr>
 </table>
