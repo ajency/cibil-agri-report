@@ -1,6 +1,6 @@
 {{if .tableHead | or .tableBody }}
 <div>
-    <table class="title-table bordered-table padding-0 {{if .tableHead }}top-border{{ end }} {{if .tableBody }}horizontal-border{{ end }} {{if .break }}break{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <table class="title-table bordered-table padding-0 {{if .tableHead }}top-border{{ end }} {{if .tableBody }}horizontal-border{{ end }} {{if .break }}break{{ end }} {{ if .remark | and .date }} {{ else }} bottom-border {{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
         
         <tbody>
             <tr class="padding-0">

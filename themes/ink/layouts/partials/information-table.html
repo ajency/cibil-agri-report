@@ -53,6 +53,11 @@
                                         </table>
                                     </td>
                                 </tr>
+                                {{ else }}
+                                <tr>
+                                    {{ $arrayFirstElement := index .tableBody 0 }}
+                                    <td class="empty-td" colspan="{{ len $arrayFirstElement.content }}" ></td>
+                                </tr>
                             {{ end }}
                         </tfoot>
                     </table>
