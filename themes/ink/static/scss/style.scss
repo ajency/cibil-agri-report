@@ -59,6 +59,9 @@ body {
         color: #2C2C2C;
         margin: 0px auto 10px;
         text-transform: uppercase;
+        position: relative;
+        top: 1px;
+
         &.marginB-20 {
             margin-bottom: 20px;
         }
@@ -107,6 +110,8 @@ body {
         margin-top: 42px;
         margin-bottom: 30px;
         text-transform: uppercase;
+        position: relative;
+        top: 1px;
         .small-text{
             font-weight: 600;
             font-size: 16px;
@@ -940,7 +945,7 @@ tfoot{
 
 .boxed-table{
     &, table{
-        border-collapse: collapse;
+        border-collapse: separate;
         border: 0;
     }
     thead{
@@ -959,7 +964,21 @@ tfoot{
                 &:not(:last-child){
                     border-right: 1px solid #ACACAC;  
                 }
-                border: 1px solid #ACACAC;  
+                border: 1px solid #ACACAC;
+                border-style: none solid solid none;
+                &:first-child{
+                    border-left-style: solid;
+                }
+            }
+            &:first-child{
+                & > th {
+                    &:first-child{
+                        border-top-left-radius: 8px;
+                    }
+                    &:last-child{
+                        border-top-right-radius: 8px;
+                    }
+                }
             }
         }
     }
@@ -976,8 +995,24 @@ tfoot{
                 & > td{
                     // border-bottom: 1px solid #ACACAC;
                     border: 1px solid #ACACAC;
+                    border-style: none solid solid none;
+                    &:first-child{
+                        border-left-style: solid;
+                    }
                 }
             // }
+
+            &:last-child{
+                & > td {
+                    &:first-child{
+                        border-bottom-left-radius: 8px;
+                    }
+                    &:last-child{
+                        border-bottom-right-radius: 8px;
+                        overflow: hidden;
+                    }
+                }
+            }
         }
     }
 
