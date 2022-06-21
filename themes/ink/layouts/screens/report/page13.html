@@ -1,12 +1,6 @@
 {{ define "main" }}
 
-    <table class="no-break">
-        <tr>
-            <td>
-                {{ partial "title-table" (dict "tableBody" .Site.Data.glossary_farm_data.table_body "className" "white-row compact-row" "headerTitle" "FARM DATA GLOSSARY" ) }}
-            </td>
-        </tr>
-    </table>
+    {{ partial "title-table" (dict "tableBody" .Site.Data.glossary_farm_data.table_body "className" "white-row compact-row" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
 
     <table class="no-break">
         <tr>
@@ -16,12 +10,7 @@
         </tr>
     </table>
 
-    <table class="no-break">
-        <tr>
-            <td>
-                {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
-            </td>
-        </tr>
-    </table>
+    {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
+
 
 {{ end }}

@@ -1,11 +1,3 @@
 {{ define "main" }}
-
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data_2.table_head "tableBody" .Site.Data.glossary_data_2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
-        </td>
-    </tr>
-</table>
-
+    {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data_2.table_head "tableBody" .Site.Data.glossary_data_2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
 {{ end }}
