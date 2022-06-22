@@ -195,6 +195,17 @@ body {
         .right-side .td-title{
             margin-bottom: 20px;
         }
+        .graph-error {
+            margin: 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center !important;
+            color: #D74025;
+            position: relative;
+            top: -140px;
+            text-transform: none;
+        }
     }
     .factors{
         .factor{
@@ -1253,6 +1264,24 @@ tfoot {
 .empty-td{
     padding: 0 !important;
     border-bottom: 1px solid #A4A4A4;
+}
+
+.section-title{
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    line-height: 44px !important;
+    letter-spacing: -0.01em;
+}
+
+.error-block{
+    .error-message{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        color: #D74025;
+        margin: 0 0 60px;
+    }
 }
 
 @page{
