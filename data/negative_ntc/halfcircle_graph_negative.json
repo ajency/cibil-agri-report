@@ -1,0 +1,11 @@
+{
+    "left_graph" : [
+      {
+        "graph_image": "images/static-images/negative-score.png",
+        "list_title": "Scoring Factors",
+        "list_factors":[
+          "Insufficient history to score"
+        ]
+      }
+    ]
+}

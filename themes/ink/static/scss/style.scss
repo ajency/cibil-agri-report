@@ -179,6 +179,11 @@ body {
         .left-side .td-title, .left-side .list{
             text-align: left;
         }
+        &.negative {
+            .left-side .td-title, .left-side .list{
+                text-align: center;
+            }
+        }
         .left-side, .right-side{
             padding: 20px;
             text-align: center;
