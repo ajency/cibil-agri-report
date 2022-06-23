@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <table class="no-break">
+        <tr>
+            <td>
+                {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
+            </td>
+        </tr>
+    </table>
+
+    {{ partial "error-block.html" (dict "errorMessage" "YOUR REQUEST HAS BEEN REJECTED BY THE CREDIT BUREAU SERVER. PLEASE MAKE THE APPROPRIATE CHANGE AND RESUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR." "title" "CONSUMER FARM DETAILS") }}
+
+    {{ partial "error-block.html" (dict "errorMessage" "YOUR REQUEST HAS BEEN REJECTED BY THE CREDIT BUREAU SERVER. PLEASE MAKE THE APPROPRIATE CHANGE AND RESUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR." "title" "CONSUMER CIR DETAILS") }}
+
+    {{partial "spacer" (dict "space" "800")}}
+
+    {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
+
+{{ end }}
