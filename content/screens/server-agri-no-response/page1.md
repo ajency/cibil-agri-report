@@ -1,6 +1,6 @@
 ---
 title: "Page"
 date: 2022-06-22T13:46:25+05:30
-layout: "server-no-agri/page1"
+layout: "server-agri-no-response/page1"
 pageNo: 1
 ---
