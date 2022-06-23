@@ -54,6 +54,13 @@
                         </td>
                     </tr>
                     {{end}}
+                {{ else if .rightError }}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src='{{ "images/static-images/empty-farm-score.png" | relURL}}'>
+                            <p class="td-title graph-error">{{ .errorMessage }}</p>
+                        </td>
+                    </tr>
                 {{else}}
                     <tr>
                         <td>
