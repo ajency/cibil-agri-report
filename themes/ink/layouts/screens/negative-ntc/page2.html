@@ -1,0 +1,88 @@
+{{ define "main"}}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "ENQUIRY SUMMARY") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.enquiry_summary.table_head "tableBody" .Site.Data.enquiry_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM SUMMARY") }}
+            {{ partial "consumer-farm-summary-v2.html" }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+                {{ partial "table-title.html" (dict "tableTitle" "CONSUMER FARM OWNERSHIP") }}
+                {{ partial "farm-ownership-table.html"}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.no_cir.customer_information.table_head )  }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.identifications.table_head "tableBody" .Site.Data.no_cir.identifications.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - IDENTIFICATION REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+    
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.telephones.table_head "tableBody" .Site.Data.no_cir.telephones.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+    
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+            {{ partial "consumer-details-table.html" (dict "message" "No emails reported for this consumer") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.customer_address.table_head "tableBody" .Site.Data.no_cir.customer_address.table_body "extendCol1" "true" "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
+            {{ partial "information-table.html" (dict "message" "No employment information reported for this consumer") }}
+        </td>
+    </tr>
+</table>
+
+{{ end }}
