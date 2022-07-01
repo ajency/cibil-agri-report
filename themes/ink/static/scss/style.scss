@@ -1284,6 +1284,51 @@ tfoot {
     }
 }
 
+.info-icon{
+    margin-left: 10px;
+    cursor: pointer;
+    position: absolute;
+
+    .tooltip{
+        position: absolute;
+        color: #fff;
+        background: #2C2C2C;
+        border-radius: 2px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: none;
+        width: 324px;
+        bottom: calc(100% + 11px);
+        left: -10px;
+        visibility: hidden;
+        transition: 0.25s;
+        cursor: default; 
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: calc( 100% - 1px );
+            left: 10px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 10px solid #2C2C2C;
+        }
+    }
+
+    img{
+        position: relative;
+        top: 2px;
+    }
+
+    &:hover .tooltip{
+        visibility: visible;
+    }
+}
+
 @page{
     margin: 40px 0;
     size: a3;

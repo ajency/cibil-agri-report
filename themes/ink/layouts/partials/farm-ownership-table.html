@@ -3,7 +3,7 @@
     align="center">
     <thead>
         <tr>
-            <th>Survey No. {{ .surveyNo }}</th>
+            <th>Survey No. {{ .surveyNo }}  {{ if .infoMessage }} {{ partial "info-icon" (dict "message" .infoMessage ) }} {{ end }}</th>
         </tr>
     </thead>
     <tbody>
