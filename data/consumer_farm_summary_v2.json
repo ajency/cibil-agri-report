@@ -4,15 +4,18 @@
             "table_head":[
                 {
                     "title": "IRRIGATION CONDITION",
-                    "subtitle": "(as per 04/2021)"
+                    "subtitle": "(as per 04/2021)",
+                    "info": "Higher crop yield in irrigated farms in compare to non-irrigated forms"
                 },
                 {
                     "title": "CROPPING INTENSITY",
-                    "subtitle": "(as per 04/2021)"
+                    "subtitle": "(as per 04/2021)",
+                    "info": "Denotes level of land utilization for crop cultivation."
                 },
                 {
                     "title": "CROPS GROWN",
-                    "subtitle": ""
+                    "subtitle": "",
+                    "info": "Name of the crops grown in the farm in last one year"
                 }
             ],
             "table_body":[
@@ -22,11 +25,13 @@
                             "row":[
                                 {
                                     "title":"IRRIGATED",
-                                    "desc":"50/1, 34/2, 54. 23/4"
+                                    "desc":"50/1, 34/2, 54. 23/4",
+                                    "info": "Survey Nos equiped with Irrigation system e.g. Pump, Drip etc."
                                 },
                                 {
                                     "title":"NOT IRRIGATED",
-                                    "desc":"32/1"
+                                    "desc":"32/1",
+                                    "info": "Survey Nos depend on rain for irrigation"
                                 }
                             ],
                             "image":"images/dynamic-images/irrigated.png"
@@ -39,15 +44,18 @@
                             "row":[
                                 {
                                     "title":"TWICE A YEAR",
-                                    "desc":"50/1, 34/2, 54. 23/4, 32/1"
+                                    "desc":"50/1, 34/2, 54. 23/4, 32/1",
+                                    "info": "Survey Nos having one cultivation cycle of crop production. Partial land utilization for crop production."
                                 },
                                 {
                                     "title":"ONCE A YEAR",
-                                    "desc":"-"
+                                    "desc":"-",
+                                    "info": "Survey Nos having two cultivation cycle of crop production. Total land utilization for crop production."
                                 },
                                 {
                                     "title":"NONE",
-                                    "desc":"-"
+                                    "desc":"-",
+                                    "info": "No crop cultivation in the farm. Land not utilized for farming."
                                 }
                             ],
                             "image":"images/dynamic-images/croping-intensity.png"
