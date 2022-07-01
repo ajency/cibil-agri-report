@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screens on CIBIL Agri Report</title>
@@ -6,7 +6,11 @@
     <description>Recent content in Screens on CIBIL Agri Report</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jun 2022 13:46:25 +0530</lastBuildDate><atom:link href="https://ajency.github.io/cibil-agri-report/screens/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jun 2022 13:46:25 +0530</lastBuildDate>
+    
+	<atom:link href="https://ajency.github.io/cibil-agri-report/screens/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Page</title>
       <link>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page1/</link>
@@ -31,6 +35,15 @@
       <pubDate>Wed, 22 Jun 2022 13:46:25 +0530</pubDate>
       
       <guid>https://ajency.github.io/cibil-agri-report/screens/server-no-agri-no-cir/page1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Page1</title>
+      <link>https://ajency.github.io/cibil-agri-report/screens/consumer-farm-report/page1/</link>
+      <pubDate>Wed, 22 Jun 2022 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/cibil-agri-report/screens/consumer-farm-report/page1/</guid>
       <description></description>
     </item>
     
