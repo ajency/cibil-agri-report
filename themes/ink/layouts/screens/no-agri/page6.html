@@ -1,11 +1,6 @@
 {{ define "main" }}
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data_2.table_head "tableBody" .Site.Data.glossary_data_2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" ) }}
-        </td>
-    </tr>
-</table>
+
+{{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data_2.table_head "tableBody" .Site.Data.glossary_data_2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
 
 <table class="no-break">
     <tr>
@@ -15,12 +10,6 @@
     </tr>
 </table>
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
-        </td>
-    </tr>
-</table>
+{{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
 
 {{ end }}

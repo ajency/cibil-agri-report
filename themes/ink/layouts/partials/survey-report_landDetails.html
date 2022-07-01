@@ -4,7 +4,7 @@
         <tr>
             <td>
                 {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
-                <table class="bordered-table padding-0 landDetails-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
+                <table class="bordered-table padding-0 landDetails-table break" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
                     <thead>
                         <tr>
                             {{range .table_head}}
@@ -22,6 +22,9 @@
                         </tr>
                         {{end}}
                     </tbody>
+                    <tfoot>
+                        <tr><td class="empty-td" colspan="{{ (len .table_head) }}"></td></tr>
+                    </tfoot>
                 </table>
             </td>
         </tr>

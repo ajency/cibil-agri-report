@@ -1,5 +1,5 @@
 {{ $total := .targetValue }}
-<table class="title-table bordered-table padding-0 white-row {{if .break}}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table class="title-table bordered-table padding-0 white-row {{if .break}}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" style="border-collapse: collapse;">
     <tr>
         <td>
             <table class="{{.className}} boxed-table inverted-color" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -57,6 +57,9 @@
                     </tr>
                     {{ end }}
                 </tbody>
+                <!-- <tfoot>
+                    <tr><td class="empty-td" style="border: 0;"></td></tr>
+                </tfoot> -->
             </table>
         </td>
     </tr>

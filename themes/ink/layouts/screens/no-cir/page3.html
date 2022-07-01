@@ -1,25 +1,13 @@
 {{ define "main" }}
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "farm-ownership-table.html" (dict "surveyNo" "32/1" "text" "खसरा नंबर 58/1 | ह कू सह पु याम सह। जा त यादव | पता शमशाबाद व दशा म य देश | सपूर्ण भाग | भूम वामी | भू-राज व 5.95 | फेल :1.2020 है टेयरकै फयत : ना.प. 8 आ द 12/9/2017 के अनुसार | यायालय तहसीलदार के करण मांक 17/ अ-27/2020-21 एवं आदेश दनांक 29/07/2020 के अनुसार दज ।। यायालय तहसीलदार के करण. 214/a27/2020-21 आदेश द. 22/12/2020 के अनुसार भू-अ भलेख अ य तत |")}}
-        </td>
-    </tr>
-</table>
+    {{ partial "farm-ownership-table.html" (dict "surveyNo" "32/1" "text" "खसरा नंबर 58/1 | ह कू सह पु याम सह। जा त यादव | पता शमशाबाद व दशा म य देश | सपूर्ण भाग | भूम वामी | भू-राज व 5.95 | फेल :1.2020 है टेयरकै फयत : ना.प. 8 आ द 12/9/2017 के अनुसार | यायालय तहसीलदार के करण मांक 17/ अ-27/2020-21 एवं आदेश दनांक 29/07/2020 के अनुसार दज ।। यायालय तहसीलदार के करण. 214/a27/2020-21 आदेश द. 22/12/2020 के अनुसार भू-अ भलेख अ य तत |")}}
 
 <table class="no-break">
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
-            <table class="no-break">
-                <tr>
-                    <td>
-                        {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
-                        {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.no_cir.customer_information.table_head )  }}
-                    </td>
-                </tr>
-            </table>
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.no_cir.customer_information.table_head )  }}
         </td>
     </tr>
 </table>
@@ -28,7 +16,7 @@
     <tr>
         <td>
             {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.identifications.table_head "tableBody" .Site.Data.no_cir.identifications.table_body ) }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.identifications.table_head "tableBody" .Site.Data.no_cir.identifications.table_body "break" true ) }}
             {{ partial "info-light-text" (dict "text" "(e) - IDENTIFICATION REPORTED FROM ENQUIRY" )}}
         </td>
     </tr>
@@ -38,7 +26,7 @@
     <tr>
         <td>
             {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.telephones.table_head "tableBody" .Site.Data.no_cir.telephones.table_body ) }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.telephones.table_head "tableBody" .Site.Data.no_cir.telephones.table_body "break" true ) }}
             {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
         </td>
     </tr>
@@ -57,7 +45,7 @@
     <tr>
         <td>
             {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.customer_address.table_head "tableBody" .Site.Data.no_cir.customer_address.table_body "extendCol1" "true" ) }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.customer_address.table_head "tableBody" .Site.Data.no_cir.customer_address.table_body "extendCol1" "true" "break" true ) }}
             {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
         </td>
     </tr>

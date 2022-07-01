@@ -1,5 +1,5 @@
 <div class="">
-    <table class="title-table spaced-table bordered-table padding-0 {{ if .extendCol1 }}address-table{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <table class="title-table spaced-table bordered-table padding-0 {{ if .extendCol1 }}address-table{{ end }} {{if .break }}break{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
 
         <tbody>
             <tr>
@@ -13,8 +13,9 @@
                                 {{ end }}
                             </tr>
                         </thead>
-                    </table>
-                    <table>
+                    <!-- </table>
+                    <table> -->
+                        <tbody>
                         {{ range .tableBody }}
                         <tr>
                             <td class="float-symbol">
@@ -29,9 +30,10 @@
                             {{ end }}
                         </tr>
                         {{ end }}
-                    </table>
+                        </tbody>
+                    <!-- </table> -->
                     {{ if .remark | and .date }}
-                    <table>
+                    <!-- <table> -->
                         <tfoot>
                             <tr>
                                 <td class="padding-0">
@@ -60,8 +62,15 @@
                                 </td>
                             </tr>
                         </tfoot>
+                        {{ else }}
+                        <tfoot>
+                            <tr>
+                                {{ $arrayFirstElement := index .tableBody 0 }}
+                                <td class="empty-td" colspan="{{ add (len $arrayFirstElement.content) 1 }}"></td>
+                            </tr>
+                        </tfoot>
+                        {{ end }}
                     </table>
-                    {{ end }}
                 </td>
             </tr>
         </tbody>

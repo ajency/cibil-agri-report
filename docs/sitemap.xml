@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ajency.github.io/cibil-agri-report/</loc>
-    <lastmod>2022-05-09T13:46:25+05:30</lastmod>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page1/</loc>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page1/</loc>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-no-agri-no-cir/page1/</loc>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/negative-ntc/page1/</loc>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/</loc>
+    <lastmod>2022-06-22T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/page14/</loc>
     <lastmod>2022-05-09T13:46:25+05:30</lastmod>
@@ -11,7 +26,7 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/page15/</loc>
     <lastmod>2022-05-09T13:46:25+05:30</lastmod>
   </url><url>
-    <loc>https://ajency.github.io/cibil-agri-report/screens/</loc>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/page16/</loc>
     <lastmod>2022-05-09T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/page10/</loc>
@@ -56,6 +71,9 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page9/</loc>
     <lastmod>2022-05-08T13:46:25+05:30</lastmod>
   </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/negative-ntc/page3/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page3/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
@@ -69,6 +87,15 @@
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page3/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page3/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page3/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/negative-ntc/page4/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page4/</loc>
@@ -86,6 +113,15 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page4/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page4/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page4/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/negative-ntc/page5/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page5/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
@@ -93,6 +129,12 @@
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-cir/page5/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page5/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page5/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-agri/page6/</loc>
@@ -107,6 +149,12 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page6/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page6/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page6/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-cir/page7/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
@@ -116,7 +164,13 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page7/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page7/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-cir/page8/</loc>
+    <lastmod>2022-05-07T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page8/</loc>
     <lastmod>2022-05-07T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/page/</loc>
@@ -137,6 +191,9 @@
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page1/</loc>
     <lastmod>2022-05-05T13:46:25+05:30</lastmod>
   </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/negative-ntc/page2/</loc>
+    <lastmod>2022-05-05T13:46:25+05:30</lastmod>
+  </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/no-agri-no-cir/page2/</loc>
     <lastmod>2022-05-05T13:46:25+05:30</lastmod>
   </url><url>
@@ -150,6 +207,12 @@
     <lastmod>2022-05-05T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/screens/report/page2/</loc>
+    <lastmod>2022-05-05T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-agri-no-response/page2/</loc>
+    <lastmod>2022-05-05T13:46:25+05:30</lastmod>
+  </url><url>
+    <loc>https://ajency.github.io/cibil-agri-report/screens/server-cir-no-response/page2/</loc>
     <lastmod>2022-05-05T13:46:25+05:30</lastmod>
   </url><url>
     <loc>https://ajency.github.io/cibil-agri-report/categories/</loc>

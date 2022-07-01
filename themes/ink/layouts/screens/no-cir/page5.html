@@ -14,7 +14,7 @@
     <tr>
         <td>
             {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(Based on the district where the farm is located)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body ) }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
         </td>
     </tr>
 </table>

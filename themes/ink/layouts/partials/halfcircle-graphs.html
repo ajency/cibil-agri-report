@@ -1,27 +1,34 @@
-<table class="bordered-table circle-graph-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table class="bordered-table horizontal-border circle-graph-table {{ if .negative }}negative{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td class="left-side">
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 {{if .leftGraph}}
-                {{range .leftGraph}}
-                <tr>
-                    <td>
-                        <img class="graph-img" src="{{ .graph_image | relURL}}">
-                        <p class="td-title">{{.list_title}}</p>
-                        <ul class="list">
-                            {{range .list_factors}}
-                            <li>{{.}}</li>
-                            {{end}}
-                        </ul>
-                    </td>
-                </tr>
-                {{end}}
+                    {{range .leftGraph}}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src="{{ .graph_image | relURL}}">
+                            <p class="td-title">{{.list_title}}</p>
+                            <ul class="list">
+                                {{range .list_factors}}
+                                <li>{{.}}</li>
+                                {{end}}
+                            </ul>
+                        </td>
+                    </tr>
+                    {{ end }}
+                {{ else if .leftError }}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src='{{ "images/static-images/empty-score.png" | relURL}}'>
+                            <p class="td-title graph-error">{{ .errorMessage }}</p>
+                        </td>
+                    </tr>
                 {{else}}
-                <tr>
-                    <td>
-                        {{ partial "graph-empty-state" (dict "message" "NA" "imageURL" "images/static-images/farm-score-graph-empty2.png" "section_title" "Scoring Factors" "className" "no-cir") }}
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            {{ partial "graph-empty-state" (dict "message" "NA" "imageURL" "images/static-images/farm-score-graph-empty2.png" "section_title" "Scoring Factors" "className" "no-cir") }}
+                        </td>
+                    </tr>
                 {{end}}
             </table>
         </td>
@@ -47,6 +54,13 @@
                         </td>
                     </tr>
                     {{end}}
+                {{ else if .rightError }}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src='{{ "images/static-images/empty-farm-score.png" | relURL}}'>
+                            <p class="td-title graph-error">{{ .errorMessage }}</p>
+                        </td>
+                    </tr>
                 {{else}}
                     <tr>
                         <td>

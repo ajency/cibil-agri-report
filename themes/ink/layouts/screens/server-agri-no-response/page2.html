@@ -1,0 +1,51 @@
+{{ define "main"}}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "ENQUIRY SUMMARY") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.enquiry_summary.table_head "tableBody" .Site.Data.enquiry_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date )  }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.identifications.table_head "tableBody" .Site.Data.identifications.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - IDENTIFICATION REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.telephones.table_head "tableBody" .Site.Data.telephones.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+            {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body ) }}
+
+        </td>
+    </tr>
+</table>
+
+{{ end }}

@@ -4,13 +4,7 @@
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
-            <table class="no-break">
-                <tr>
-                    <td>
-                        {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
-                    </td>
-                </tr>
-            </table>
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
         </td>
     </tr>
 </table>
@@ -28,7 +22,7 @@
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body ) }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body "break" "true" ) }}
         </td>
     </tr>
 </table>

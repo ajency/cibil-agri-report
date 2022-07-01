@@ -1,0 +1,8 @@
+{{ define "main" }}
+    {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)") }}
+    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+    {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+    {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+    {{partial "spacer" (dict "space" "20")}}
+    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G2 )}}
+{{ end }}
