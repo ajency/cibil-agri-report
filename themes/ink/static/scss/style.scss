@@ -1322,6 +1322,7 @@ tfoot {
     img{
         position: relative;
         top: 2px;
+        width: 16px;
     }
 
     &:hover .tooltip{
@@ -1337,5 +1338,8 @@ tfoot {
 @media print {
     body {
         zoom:  0.6;
+    }
+    .info-icon{
+        display: none;
     }
 }
