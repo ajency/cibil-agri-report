@@ -1,4 +1,4 @@
-<table {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }} class="title-table bordered-table padding-0 {{if .break }}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }} class="title-table bordered-table padding-0 default-data-title-table {{if .break }}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td>
             <table class="{{.className}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -11,7 +11,7 @@
                     {{ end }}
                     <tr>
                         {{ range .tableHead }}
-                        <th>{{ .title }}</th>
+                        <th>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
                         {{ end }}
                     </tr>
                 </thead>

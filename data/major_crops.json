@@ -1,16 +1,20 @@
 {
     "table_head": [
         {
-            "title": "SEASON"
+            "title": "SEASON",
+            "info": "To asses the seasonal cropping pattern in a year (Kharif & Rabi)"
         },
         {
-            "title": "CROP NAME"
+            "title": "CROP NAME",
+            "info": "Major crops cultivated at district level"
         },
         {
-            "title": "CROP Area (% share)"
+            "title": "CROP Area (% share)",
+            "info": "Area under major crops at district level"
         },
         {
-            "title": "Avg. Crop Yield (kg/ha)"
+            "title": "Avg. Crop Yield (kg/ha)",
+            "info": "Average Yield/unit area of the major crops at distict level"
         }
     ],
     "table_body": [
