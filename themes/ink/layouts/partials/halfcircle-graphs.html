@@ -33,21 +33,30 @@
             </table>
         </td>
         <td class="right-side">
-            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" style="position: relative;">
                 {{if .rightGraph}}
                     {{range .rightGraph}}
                     <tr>
                         <td>
+                            {{ partial "info-icon" (dict "message" "Score reflects Overall Productivity & Revenue potential of the Farm" "className" "center farm-score-info small" ) }}
                             <img class="graph-img" src="{{ .graph_image | relURL}}">
                             <p class="td-title">{{.list_title}}</p> 
                             <table class="factors" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                                 <tr>
                                     {{range .list_factors}}
-                                    <td class="factor">
-                                        <p class="factor-value"><span class="highlight">{{.contr_factors}}</span>/{{.total_factors}}</p>
-                                        <p class="factor-rating">{{.factor_rating}}</p>
-                                        <p class="factor-title">{{.factor_title}}</p>
-                                    </td>
+                                        <td class="factor">
+                                            <p class="factor-value"><span class="highlight">{{.contr_factors}}</span>/{{.total_factors}}</p>
+                                            <p class="factor-rating">{{.factor_rating}}</p>
+                                            <p class="factor-title">{{.factor_title}} 
+                                                {{if .factor_info }} 
+                                                    {{ if in .factor_title "RABI" }} 
+                                                        {{ partial "info-icon" (dict "message" .factor_info "className" "small bottom left" )}} 
+                                                    {{ else }} 
+                                                        {{ partial "info-icon" (dict "message" .factor_info "className" "small bottom " )}}  
+                                                    {{ end }}
+                                                {{ end }}
+                                            </p>
+                                        </td>
                                     {{end}}
                                 </tr>
                             </table>

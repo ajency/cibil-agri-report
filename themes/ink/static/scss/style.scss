@@ -25,6 +25,7 @@ body {
         visibility: hidden;
         transition: 0.25s;
         cursor: default; 
+        text-align: left;
 
         &::after{
             content: '';
@@ -43,6 +44,44 @@ body {
         position: relative;
         top: 2px;
         width: 16px;
+    }
+
+    &.center{
+        .tooltip{
+            left: 100%;
+            transform: translateX(-50%);
+            &::after{
+                left: 50%;
+                transform: translateX(-100%);
+            }
+        }
+    }
+    &.small{
+        .tooltip{
+             width: 270px;
+        }
+    }
+    &.bottom{
+        .tooltip {
+            bottom: unset;
+            top: calc(100% + 11px);
+            &::after {
+                top: unset;
+                bottom: calc( 100% - 1px);
+                border-top: 0;
+                border-bottom: 10px solid #2C2C2C;
+            }
+        }
+    }
+    &.left{
+        .tooltip{
+            left: unset;
+            right: calc( 100% - 25px);
+            &::after{
+                left: unset;
+                right: 10px;
+            }
+        }
     }
 
     &:hover .tooltip{
@@ -212,6 +251,7 @@ body {
     }
     .circle-graph-table{
         padding-bottom: 5px;
+        overflow: visible;
         .graph-img{
             width: 420px;
             margin-bottom: 46px;
@@ -250,6 +290,19 @@ body {
             position: relative;
             top: -140px;
             text-transform: none;
+        }
+        .info-icon{
+            &.farm-score-info {
+                left: 50%;
+                top: 0;
+                width: 240px;
+                transform: translateX(-50%);
+                margin: 0;
+                text-align: right;
+                @media (min-width: 1200px){
+                    top: 5px;
+                }
+            }
         }
     }
     .factors{

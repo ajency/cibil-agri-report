@@ -21,19 +21,22 @@
             "contr_factors":"200",
             "total_factors":"200",
             "factor_rating":"(Base)",
-            "factor_title":"BASE SCORE"
+            "factor_title":"BASE SCORE",
+            "factor_info": "Scores reflects , well equiped Irrigation system and better land utilization for crop cultivation at Farm."
         },
         {
             "contr_factors":"315",
             "total_factors":"400",
             "factor_rating":"(Good)",
-            "factor_title":"AVERAGE KHARIF SCORE"
+            "factor_title":"AVERAGE KHARIF SCORE",
+            "factor_info":"Scores reflects Productivity & revenue potential of the farm in Kharif season"
         },
         {
             "contr_factors":"318",
             "total_factors":"400",
             "factor_rating":"(Good)",
-            "factor_title":"AVERAGE RABI SCORE"
+            "factor_title":"AVERAGE RABI SCORE",
+            "factor_info": "Scores reflects Productivity & revenue potential of the farm in Rabi Season"
         }
       ]
     }
