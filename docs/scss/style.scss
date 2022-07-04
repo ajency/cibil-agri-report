@@ -67,6 +67,11 @@ body {
             top: -2px;
         }
     }
+    &.up1{
+        img{
+            top: -1px;
+        }
+    }
     &.bottom{
         .tooltip {
             bottom: unset;
