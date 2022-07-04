@@ -3,7 +3,7 @@
     <tr>
         <td>
             <h1 class="table-title">
-                {{ .tableTitle }}
+                {{ .tableTitle }}{{ if .info }}{{partial "info-icon" (dict "message" .info )}}{{ end }}
                 {{ if .subTitle }} <span class="table-subtitle">{{ .subTitle }}</span> {{ end }}
             </h1>
         </td>
