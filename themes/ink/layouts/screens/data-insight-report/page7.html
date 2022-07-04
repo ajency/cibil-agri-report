@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)") }}
+    {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)" "info" "Geospatial image of the location of survey details with geographical boudary to verify the land details") }}
     {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
     {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
     {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
