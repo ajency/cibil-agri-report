@@ -1,0 +1,71 @@
+{
+    "table_head": [
+        {
+            "title": "SECTION"
+        },
+        {
+            "title": "code"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Report name",
+                "-",
+                "CIBIL Farm Report"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Details",
+                "e",
+                "Enriched through Enquiry"
+            ]
+        },
+        {
+            "content": [
+                "Identification(S)",
+                "ID Types",
+                "Income Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
+            ]
+        },
+        {
+            "content": [
+                "Telephone(S) :",
+                "Telephone Types",
+                "Latest 4 Telephone details reported.\nMobile phone \nHome Phone \nOffice phone"
+            ]
+        },
+        {
+            "content": [
+                "Email Contact(S) :",
+                "-",
+                "Last 4 emails reported."
+            ]
+        },
+        {
+            "content": [
+                "Employment Information(s) :",
+                "Occupation Codes",
+                "Latest Employment detail reported.\nSalaried \nSelf Employed Professionals \nSelf Employed \nOthers"
+            ]
+        },
+        {
+            "content": [
+                "Address(ES) :",
+                "Address Category",
+                "Latest 4 address reported.\nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Account Information",
+                "Active: Account not closed\nInactive: Closed account\nDate Opened: Date of first disbursement\nDate Closed: Date of account closure\nDate reported & Certified: Most recent date reported by reporting member"
+            ]
+        }
+    ]
+}

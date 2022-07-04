@@ -1,0 +1,11 @@
+{{ define "main" }}
+    {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+    <table class="no-break">
+        <tr>
+            <td>
+                {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
+                {{ partial "title-table" (dict "tableHead" .Site.Data.data_insight_report.glossary_data.table_head "tableBody" .Site.Data.data_insight_report.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
+            </td>
+        </tr>
+    </table>
+{{ end }}

@@ -1,0 +1,109 @@
+{
+    "table_head": [
+        {
+            "title": "GLOSSARY - FARM DATA"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "<b>Agro-Ecological Sub-Zone</b> - The sub-agro ecological zone is a land unit represented accurately or precisely in terms of major climate and growing period, which is climatically suitable for a certain range of crops for cultivations."
+            ]
+        },
+        {
+            "content": [
+                "<b>Base Score</b> - Score reflecting the year round capabilities - currently a combination of cropping intensity and irrigation mapping."
+            ]
+        },
+        {
+            "content": [
+                "<b>Crop Area</b> - It is the total area for a particular crop grown in a district over the season"
+            ]
+        },
+        {
+            "content": [
+                "<b>Crop Performance</b> - Categorical index (upto farm level) to evaluate the relative risk based on crop performance and potential crop damage generated for a specific season ranked as Goood, average or below average."
+            ]
+        },
+        {
+            "content": [
+                "<b>Cropping Intensity</b> - The number of crop cycles in a year, as identified using satellite images. For one cycle it is Once a Year, for two it is Twice a Year."
+            ]
+        },
+        {
+            "content": [
+                "<b>Geotag (Centroid)</b> - A georeferenced boundary of an area, as defined by joining the vertices which are marked using latitudes and longitudes"
+            ]
+        },
+        {
+            "content": [
+                "<b>Groundwater Thickness</b> - Terrestrial water storage (TWS) defined as an integrated estimate of water stored on and beneath the surface of Earth. Terrestrial water storage can be defined as the summation of all water on the land surface and in the subsurface. It includes surface soil moisture, root zone soil moisture, groundwater, snow, ice, water stored in the vegetation, river and lake water. "
+            ]
+        },
+        {
+            "content": [
+                "<b>Hectare (ha)</b> - An area measurement unit, 1 ha = 2.47 acres"
+            ]
+        },
+        {
+            "content": [
+                "<b>Irrigation Condition</b> - Agricultural water content measured by using multispectral data to classify if a land parcel is irrigated or not."
+            ]
+        },
+        {
+            "content": [
+                "<b>Kharif Season</b> - Cropping season from June to October"
+            ]
+        },
+        {
+            "content": [
+                "<b>Major Crops</b> - Crops that are widely grown in a certain district"
+            ]
+        },
+        {
+            "content": [
+                "<b>Mandi</b> - An agricultural market where the sale and purchase of agricultural commodities is done."
+            ]
+        },
+        {
+            "content": [
+                "<b>Overall Farm(s) Score</b> - The overall SatScore is calculated based on the agricultural parameters of tthe farms that belong to a farmer. It comproses of a base score (based on irrigation condition and cropping intensity of farms) and seasonal scores for the Kharof & Rabi seasons, each calculated based on the farming history in th past 3 years"
+            ]
+        },
+        {
+            "content":[
+                "<b>Price</b> - Market prices or Minimum Support Price (set by the Central Government) in a season."
+            ]
+        },
+        {
+            "content": [
+                "<b>Potential Yield</b> - Maximum yield which could be reached by a crop in given environment per unit area"
+            ]
+        },
+        {
+            "content": [
+                "<b>Rabi Season</b> - Cropping season from November to April"
+            ]
+        },
+        {
+            "content": [
+                "<b>Regional prosperity index</b> - An index to measure overall prosperity for a region, considering night light index, latest census data, and GDP, measured on a scale of 0-1"
+            ]
+        },
+        {
+            "content": [
+                "<b>Seasonal Score (Kharif & Rabi)</b> - It reflects capacity of a farm/farmer based on the agricultural performance in the respective season."
+            ]
+        },
+        {
+            "content": [
+                "<b>Threshold Yield</b> - The Threshold yield (TY) or Guaranteed yield for acrop is the moving average based on five years average yield."
+            ]
+        },
+        {
+            "content": [
+                "<b>Ambient Temperature</b> - The air temperature measured in a particular sub-district."
+            ]
+        }
+    ]
+}
