@@ -3,7 +3,7 @@
         <td>
             <table class="rdt-head border-bottom" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tr>
-                    <td class="td-title">{{.headTitle}}</td>
+                    <td class="td-title">{{.headTitle}} {{ if .headInfo }} {{ partial "info-icon" (dict "message" .headInfo ) }} {{ end }}</td>
                 </tr>
             </table>
             <table class="rtd-body" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -14,7 +14,7 @@
                             {{range .column}}
                             <tr>
                                 <td>
-                                    <p class="td-title">{{.title}}</p>
+                                    <p class="td-title">{{.title}} {{ if .info }} {{ partial "info-icon" (dict "message" .info "className" "small up") }} {{ end }}</p>
                                     <p class="td-desc">{{.desc}}</p>
                                     {{if gt (len .note) 0}}<span class="note-text">{{.note}}</span>{{end}}
                                 </td>

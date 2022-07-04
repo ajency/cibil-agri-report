@@ -1395,7 +1395,7 @@ tfoot {
     }
 }
 
-.default-data-title-table table thead tr > th:last-child .info-icon .tooltip.tooltip{
+.default-data-title-table table thead tr > th:last-child .info-icon .tooltip.tooltip, .regional-details-table .rtd-body tbody tr > .single-panel:last-child .info-icon .tooltip.tooltip{
     left: unset;
     right: calc( 100% - 25px);
     &::after{
