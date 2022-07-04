@@ -8,7 +8,7 @@
                     <thead>
                         <tr>
                             {{range .table_head}}
-                            <th class="border-bottom border-right td-title">{{.title}}</th>
+                            <th class="border-bottom border-right td-title">{{.title}} {{ if .info }} {{ partial "info-icon" (dict "message" .info "className" "small")}} {{ end }}</th>
                             {{end}}
                         </tr>
                     </thead>
@@ -16,7 +16,7 @@
                         {{range .table_body}}
                         <tr>
                             {{range .row}}
-                            <td class="td-desc border-right">{{.content}}{{ if .sub_content }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
+                            <td class="td-desc border-right">{{.content | safeHTML }}{{ if .sub_content }}<span class="note-text">{{.sub_content}}</span>{{end}}</td>
                             {{end}}
                         </tr>
                         {{end}}

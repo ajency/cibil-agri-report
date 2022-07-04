@@ -663,8 +663,10 @@ body {
             background-color: #F6F7FC;
             width: 473px;
             font-weight: 400;
-            font-size: 128px;
-            line-height: 128px;
+            // font-size: 128px;
+            // line-height: 128px;
+            font-size: 32px;
+            line-height: 32px;  
             letter-spacing: -0.01em;
             color: #707070;
             text-align: center;
@@ -677,6 +679,7 @@ body {
         }
         td, th{
             padding: 10px 30px;
+            vertical-align: top;
         }
         th{
             padding-bottom: 15px;
@@ -690,6 +693,16 @@ body {
             &:last-child{
                 td{
                     padding-bottom: 20px;
+                }
+            }
+        }
+        td {
+            &:nth-child(3), &:last-child {
+                span{
+                    display: block;
+                    &:not(:first-child){
+                        padding-top: 20px;
+                    }
                 }
             }
         }
@@ -1395,7 +1408,10 @@ tfoot {
     }
 }
 
-.default-data-title-table table thead tr > th:last-child .info-icon .tooltip.tooltip, .regional-details-table .rtd-body tbody tr > .single-panel:last-child .info-icon .tooltip.tooltip{
+.default-data-title-table table thead tr > th:last-child .info-icon .tooltip.tooltip, 
+.regional-details-table .rtd-body tbody tr > .single-panel:last-child .info-icon .tooltip.tooltip, 
+.farmLocations-table thead tr > th:last-child .info-icon .tooltip.tooltip, 
+.landDetails-table thead tr > th:last-child .info-icon .tooltip.tooltip{
     left: unset;
     right: calc( 100% - 25px);
     &::after{
