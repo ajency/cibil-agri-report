@@ -34,7 +34,7 @@
                                     "info": "Survey Nos depend on rain for irrigation"
                                 }
                             ],
-                            "image":"images/dynamic-images/irrigated.png"
+                            "image":"images/dynamic-images/irrigated.svg"
                         }
                     ]
                 },
@@ -58,7 +58,7 @@
                                     "info": "No crop cultivation in the farm. Land not utilized for farming."
                                 }
                             ],
-                            "image":"images/dynamic-images/croping-intensity.png"
+                            "image":"images/dynamic-images/croping-intensity.svg"
                         }
                     ]
                 },
@@ -71,7 +71,7 @@
                                     "desc":"Wheat, Paddy, Groundnut, Cotton, Gram"
                                 }
                             ],
-                            "image":"images/dynamic-images/crops-grown.png"
+                            "image":"images/dynamic-images/crops-grown.svg"
                         }
                     ]
                 }

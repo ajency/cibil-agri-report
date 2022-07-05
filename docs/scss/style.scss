@@ -64,7 +64,8 @@ body {
     }
     &.up{
         img{
-            top: -2px;
+            // top: -2px;
+            top: -1px;
         }
     }
     &.up1{
@@ -566,6 +567,10 @@ body {
                 color: #2C2C2C;
                 .icon{
                     width: 40px;
+                    & + td {
+                        position: relative;
+                        top: 2px;
+                    }
                 }
                 img{
                     width: 30px;
@@ -689,7 +694,8 @@ body {
             margin-left: 10px;
         }
         td, th{
-            padding: 10px 30px;
+            // padding: 10px 30px;
+            padding: 20px 20px 15px;
             vertical-align: top;
         }
         th{
@@ -829,12 +835,14 @@ body {
             position: absolute;
             top: -9px;
             left: 0;
-            width: 144px;
+            // width: 144px;
+            width: 119px;
             height: auto;
             max-width: unset;
             margin-left: 25px;
             padding-left: 25px;
             border-left: 2.2px solid #000;
+            box-sizing: unset;
         }
     }
 }
@@ -1067,9 +1075,11 @@ tfoot{
     margin: 0;
     font-weight: 600;
     font-size: 19px;
-    line-height: 24px;
+    // line-height: 24px;
+    line-height: 30px;
     color: #707070;
-    top: -30px;
+    // top: -30px;
+    top: -34px;
     position: relative;
 }
 
