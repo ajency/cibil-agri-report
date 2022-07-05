@@ -73,6 +73,11 @@ body {
             top: -1px;
         }
     }
+    &.middle{
+        img{
+            top: 0;
+        }
+    }
     &.bottom{
         .tooltip {
             bottom: unset;
