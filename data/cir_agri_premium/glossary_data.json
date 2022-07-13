@@ -1,0 +1,92 @@
+{
+    "table_head": [
+        {
+            "title": "SECTION"
+        },
+        {
+            "title": "code"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Report name",
+                "-",
+                "CIBIL Farm Report"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Details",
+                "e",
+                "Enriched through Enquiry"
+            ]
+        },
+        {
+            "content": [
+                "Identification(S)",
+                "ID Types",
+                "Income Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
+            ]
+        },
+        {
+            "content": [
+                "Telephone(S) :",
+                "Telephone Types",
+                "Latest 4 Telephone details reported.\nMobile phone \nHome Phone \nOffice phone"
+            ]
+        },
+        {
+            "content": [
+                "Email Contact(S) :",
+                "-",
+                "Last 4 emails reported."
+            ]
+        },
+        {
+            "content": [
+                "Employment Information(s) :",
+                "Occupation Codes",
+                "Latest Employment detail reported.\nSalaried \nSelf Employed Professionals \nSelf Employed \nOthers"
+            ]
+        },
+        {
+            "content": [
+                "Address(ES) :",
+                "Address Category",
+                "Latest 4 address reported.\nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Account Information",
+                "Active: Account not closed\nInactive: Closed account\nDate Opened: Date of first disbursement\nDate Closed: Date of account closure\nDate reported & Certified: Most recent date reported by reporting member"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Day Past Due/Asset Classification",
+                "Start date: Date of begining of payment history\nEnd Date: Date of end of payment history\nLast Payment date:  Most recent date a payment was made on the account\n000: Payment is made on the due date\n001-900: Payment is missed by number of days from the due date\nSTD: Payments being made within 90 days\nSMA: Special account created for reporting Standard Accounts moving toward Sub-Standard\nSUB: Payments being made after 90 days\nDBT : The account has remained Sub-Standard for 12 months\nLSS : The account has remained Sub-Standard for 12 months \nXXX : Data not reported by Institution"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Information under dispute",
+                "Consumer has raised grievance request regarding issue in correctness of the data reported by Financial Institution"
+            ]
+        },
+        {
+            "content": [
+                "Enquiry Details :",
+                "Not Disclosed",
+                "Enquiry made with other Members"
+            ]
+        }
+    ]
+}

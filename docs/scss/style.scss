@@ -852,6 +852,20 @@ body {
     }
 }
 
+.single-circle-graph-table{
+    .list{
+        li{
+            line-height: 40px;
+        }
+    }
+    .graph-img{
+        margin-bottom: 0 !important;
+    }
+    .info-icon.farm-score-info{
+        left: 22.7% !important;
+    }
+}
+
 .title-table{
     // margin-top: 40px;
     margin-bottom: 40px; 

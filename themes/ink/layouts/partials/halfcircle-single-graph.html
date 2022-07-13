@@ -1,0 +1,92 @@
+<table class="bordered-table horizontal-border circle-graph-table single-circle-graph-table {{ if .negative }}negative{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr>
+        {{ if eq .graphType "cir" }}
+        <td class="left-side">
+            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                {{if .leftGraph}}
+                    {{range .leftGraph}}
+                    <tr>
+                        <td style="padding-right: 30px; width: 45%;">
+                            <img class="graph-img" src="{{ .graph_image | relURL}}">
+                        </td>
+                        <td>
+                            <p class="td-title">{{.list_title}}</p>
+                            <ul class="list">
+                                {{range .list_factors}}
+                                <li>{{.}}</li>
+                                {{end}}
+                            </ul>
+                        </td>
+                    </tr>
+                    {{ end }}
+                {{ else if .leftError }}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src='{{ "images/static-images/empty-score.png" | relURL}}'>
+                            <p class="td-title graph-error">{{ .errorMessage }}</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td>
+                            {{ partial "graph-single-empty-state" (dict "message" "NA" "imageURL" "images/static-images/farm-score-graph-empty2.png" "section_title" "Scoring Factors" "className" "no-cir") }}
+                        </td>
+                    </tr>
+                {{end}}
+            </table>
+        </td>
+        {{ else if eq .graphType "agri" }}
+        <td class="right-side" style="border: 0;">
+            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" style="position: relative;">
+                {{if .rightGraph}}
+                    {{range .rightGraph}}
+                    <tr>
+                        <td style="width: 45%;">
+                            {{ partial "info-icon" (dict "message" "Score reflects Overall Productivity & Revenue potential of the Farm" "className" "center farm-score-info small" ) }}
+                            <img class="graph-img" src="{{ .graph_image | relURL}}">
+                        </td>
+                        <td>
+                            <p class="td-title">{{.list_title}}</p> 
+                            <table class="factors" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    {{range .list_factors}}
+                                        <td class="factor">
+                                            <p class="factor-value"><span class="highlight">{{.contr_factors}}</span>/{{.total_factors}}</p>
+                                            <p class="factor-rating">{{.factor_rating}}</p>
+                                            <p class="factor-title">{{.factor_title}} 
+                                                {{if .factor_info }} 
+                                                    {{ if in .factor_title "RABI" }} 
+                                                        {{ partial "info-icon" (dict "message" .factor_info "className" "small bottom left" )}} 
+                                                    {{ else }} 
+                                                        {{ partial "info-icon" (dict "message" .factor_info "className" "small bottom " )}}  
+                                                    {{ end }}
+                                                {{ end }}
+                                            </p>
+                                        </td>
+                                    {{end}}
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    {{end}}
+                {{ else if .rightError }}
+                    <tr>
+                        <td>
+                            <img class="graph-img" src='{{ "images/static-images/empty-farm-score.png" | relURL}}'>
+                            <p class="td-title graph-error">{{ .errorMessage }}</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td>
+                            {{ partial "graph-single-empty-state" (dict "message" "No data available" "imageURL" "images/static-images/farm-score-graph-empty1.png" "section_title" "FACTORS AFFECTING TOWARDS SATSCORE" "className" "no-agri") }}
+                        </td>
+                    </tr>
+                {{end}}
+            </table>
+        </td>
+        {{ end }}
+    </tr>
+</table>
