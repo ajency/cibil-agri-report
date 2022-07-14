@@ -3,9 +3,18 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+            {{ partial "page-title.html" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
             {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
             {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data "break" true )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body "break" "true" ) }}
         </td>
     </tr>
 </table>
@@ -31,15 +40,7 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body "break" "true" ) }}
-        </td>
-    </tr>
-</table>
-
-<table class="no-break">
-    <tr>
-        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM DETAILS" "className" "medium") }}
             {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "Benchmark to verify the cropping pattern of the farm vis a vis the district level.") }}
             {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
         </td>
