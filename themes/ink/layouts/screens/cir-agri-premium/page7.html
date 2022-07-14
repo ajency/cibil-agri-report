@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "Cropping pattern & performance of the Farm.") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "headInfo" "Parameters affecting the farming in the region & availability of market for sale of end produce." "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+{{ end }}
