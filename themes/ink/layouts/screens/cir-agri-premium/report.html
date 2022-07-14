@@ -1,0 +1,320 @@
+{{ define "main" }}
+<!-- page1 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT"  ) }}
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER CIR" "className" "section-title") }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-info-table.html" ( dict "consumerInfo" .Site.Data.consumer_info.consumerInfo) }}
+        </td>
+    </tr>
+</table>
+
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s)") }}
+            {{ partial "halfcircle-single-graph" (dict "graphType" "cir" "leftGraph" .Site.Data.halfcircle_graph.left_graph "rightGraph" .Site.Data.halfcircle_graph.right_graph ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
+            {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "ENQUIRY SUMMARY") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.enquiry_summary.table_head "tableBody" .Site.Data.enquiry_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" "className" "medium" ) }}
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
+            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date )  }}
+        </td>
+    </tr>
+</table>
+<!-- page1 -->
+
+<!-- page2 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.identifications.table_head "tableBody" .Site.Data.identifications.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - IDENTIFICATION REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.telephones.table_head "tableBody" .Site.Data.telephones.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+            {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body ) }}
+
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.customer_address.table_head "tableBody" .Site.Data.customer_address.table_body "extendCol1" "true" "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+<!-- page2 -->
+
+<!-- page3 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
+            {{ partial "information-table.html" (dict "tableHead" .Site.Data.employment_information.table_head "tableBody" .Site.Data.employment_information.table_body "remark" .Site.Data.employment_information.remark "date" .Site.Data.employment_information.date "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER ACCOUNT DETAILS" "className" "medium") }}
+            {{ partial "table-title" (dict "tableTitle" "1. Account" "className" "marginB-20") }}
+            {{ partial "consumer-account-details" (dict "table1Name" "account information" "table2Name" "DAYS PAST DUE/ASSET CLASSIFICATION" "table_title_class" "ac-width1" "table_headDates_class" "ac-width2" "status" "active" "footer_text" "INFORMATION UNDER DISPUTE" "cibil_remark" "Written-off and Settled Status in Dispute" "date_entered" "16/06/2019" "tableHead1" .Site.Data.consumer_account_details1.table_head1 "tableBody1" .Site.Data.consumer_account_details1.table_body1 "tableBody1_leftPanel" .Site.Data.consumer_account_details1.table_body1_leftPanel "tableBody1_middlePanel" .Site.Data.consumer_account_details1.table_body1_middlePanel "tableBody1_rightPanel" .Site.Data.consumer_account_details1.table_body1_rightPanel  "tableHead2" .Site.Data.consumer_account_details1.table_head2 "tableBody_daysPastDue" .Site.Data.consumer_account_details1.table_body1_daysPastDue "horizontal_rows" .Site.Data.consumer_account_details1.horizontal_rows  "break" true) }}
+        </td>
+    </tr>
+</table>
+<!-- page3 -->
+
+<!-- page4 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "2. Account" "className" "marginB-20") }}
+            {{ partial "consumer-account-details" (dict "table1Name" "account information" "table2Name" "DAYS PAST DUE/ASSET CLASSIFICATION" "table_title_class" "ac-width1" "table_headDates_class" "ac-width2" "status" "inactive" "footer_text" "INFORMATION UNDER DISPUTE" "cibil_remark" "Written-off and Settled Status in Dispute" "date_entered" "16/06/2019" "tableHead1" .Site.Data.consumer_account_details2.table_head1 "tableBody1" .Site.Data.consumer_account_details2.table_body1 "tableBody1_leftPanel" .Site.Data.consumer_account_details2.table_body1_leftPanel "tableBody1_middlePanel" .Site.Data.consumer_account_details2.table_body1_middlePanel "tableBody1_rightPanel" .Site.Data.consumer_account_details2.table_body1_rightPanel  "tableHead2" .Site.Data.consumer_account_details2.table_head2 "tableBody_daysPastDue" .Site.Data.consumer_account_details2.table_body1_daysPastDue "horizontal_rows" .Site.Data.consumer_account_details2.horizontal_rows "customMargin" "40" "break" true) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS" "className" "medium") }}
+            {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+            {{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body "remark" .Site.Data.enquiries.remark "date" .Site.Data.enquiries.date "customMargin" "40" "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS" "className" "medium") }}
+            {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" "break" true ) }}
+        </td>
+    </tr>
+</table>
+<!-- page4 -->
+
+<!-- page5 -->
+<table class="no-break" style="page-break-after: always;">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "className" "medium" "customMargin" "30") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.cir_agri_premium.glossary_data.table_head "tableBody" .Site.Data.cir_agri_premium.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
+        </td>
+    </tr>
+</table>
+<!-- page5 -->
+
+<!-- page6 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
+            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data "break" true )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "FARM INFORMATION") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.farmInformation.table_head "tableBody" .Site.Data.farmInformation.table_body "break" "true" ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM(s) Score") }}
+            {{ partial "halfcircle-single-graph" (dict "graphType" "agri" "rightGraph" .Site.Data.halfcircle_graph.right_graph ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM SUMMARY") }}
+            {{ partial "consumer-farm-summary-v2" (dict "comsumerFarmSummary" .Site.Data.consumer_farm_summary_v2.comsumerFarmSummary) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM DETAILS" "className" "medium") }}
+            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "Benchmark to verify the cropping pattern of the farm vis a vis the district level.") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
+        </td>
+    </tr>
+</table>
+<!-- page6 -->
+
+<!-- page7 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "Cropping pattern & performance of the Farm.") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "headInfo" "Parameters affecting the farming in the region & availability of market for sale of end produce." "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+<!-- page7 -->
+
+<!-- page8 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS" "tableInfo" "Pattern of Rainfall & Groundwater condition to fullfill the Irrigation requirement of the farm") }}
+            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "Average rainfall and rainfall pattern in the last 10 years" "graph_image" "images/dynamic-images/bar-graph1.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR THE LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "Average groundwater level and groundwater level pattern in last year " "graph_image" "images/dynamic-images/bar-graph2.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
+        {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR THE LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+<!-- page8 -->
+
+<!-- page9 -->
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)" ) }}
+            {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+        </td>
+    </tr>
+</table>
+{{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+{{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
+{{partial "spacer" (dict "space" "20")}}
+{{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G2 )}}
+<!-- page9 -->
+
+<!-- page10 -->
+{{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G2 )}}
+{{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G2 )}}
+{{partial "spacer" (dict "space" "20")}}
+{{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G3 )}}
+{{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G3 )}}
+{{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G3 )}}
+{{partial "spacer" (dict "space" "20")}}
+<!-- page10 -->
+
+<!-- page11 -->
+{{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+{{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+{{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G4 )}}
+{{partial "spacer" (dict "space" "20")}}
+{{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+{{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+<!-- page11 -->
+
+<!-- page12 -->
+{{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G5 )}}
+{{ partial "spacer" (dict "space" "20" )}}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "30") }}
+            {{ partial "title-table" (dict "tableBody" .Site.Data.data_insight_report.glossary_farm_data.table_body "className" "white-row compact-row row-pt-20" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "report-end" (dict "text" "END OF REPORT ON Mohana Parab") }}
+        </td>
+    </tr>
+</table>
+<!-- page12 -->
+
+<!-- page13 -->
+{{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
+<!-- page13 -->
+
+
+
+
+{{ end }}
