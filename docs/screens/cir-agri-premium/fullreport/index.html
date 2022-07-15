@@ -84,6 +84,51 @@
             border-bottom: 0 !important;
             cursor: default !important;
         }
+
+        /* PDF generation header footer */
+        .empty-hidden-header ,.empty-hidden-footer{
+            display: none;
+        }
+        .empty-hidden-header{
+            height: 207px;
+        }
+        .empty-hidden-footer{
+            height: 155px;
+        }
+
+        @media print{
+            .empty-hidden-header ,.empty-hidden-footer{
+                display: table-cell;
+            }
+            .site-header {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                max-width: 1641px;
+                min-width: 1300px;
+                width: 100%;
+                padding: 80px 60px 40px !important;
+                margin: auto;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+            .main-container{
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+            .site-footer{
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                max-width: 1641px;
+                min-width: 1300px;
+                width: 100%;
+                padding: 20px 60px 40px !important;
+                margin: auto;
+                transform: translateX(-50%);
+                z-index: 10;
+            }
+        }
     </style>
 </head>
 <body>
@@ -5327,10 +5372,10 @@ b)The CIR is not a recommendation by TransUnion CIBIL to any Member to (i) lend 
 
 
 
-<table role="presentation" aria-hidden="true" class="no-break" cellspacing="0" cellpadding="0" border="0" align="center"
-    style="padding-top: 20px; margin-top: 40px; border-top: 1px solid #ACACAC;">
+<table role="presentation" aria-hidden="true" class="no-break site-footer" cellspacing="0" cellpadding="0" border="0" align="center"
+    style=" margin-top: 40px;">
     <tr class="footer-text-light">
-        <td style="text-align: left;" colspan="2">
+        <td style="text-align: left; padding-top: 20px; border-top: 1px solid #ACACAC;" colspan="2">
             <span>© 2022 TransUnion CIBIL Limited. (Formerly: Credit Information Bureau (India) Limited). All rights
                 reserved.</span>
             
