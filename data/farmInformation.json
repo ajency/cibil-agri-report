@@ -2,52 +2,57 @@
   "table_body" : [
     {
       "content":[
-        "Gujarat",
-        "Rajkot",
-        "-",
-        "Pipliya",
-        "50/1",
-        "-"
+        "Haryana",
+        "Faridabad",
+        "Ballabgarh",
+        "Dyalpur",
+        "100",
+        "20",
+        "10"
       ]
     },
     {
       "content":[
-        "Gujarat",
-        "Dhanu",
-        "-",
-        "Dhanu",
-        "24/2",
-        "-"
+        "Haryana",
+        "Faridabad",
+        "Ballabgarh",
+        "Dyalpur",
+        "100",
+        "20",
+        "18"
       ]
     },
     {
       "content":[
-        "Gujarat",
-        "Valsad",
-        "-",
-        "Umarsadi",
-        "58/1",
-        "-"
+        "Haryana",
+        "Faridabad",
+        "Ballabgarh",
+        "Dyalpur",
+        "100",
+        "20",
+        "20"
       ]
     },
     {
       "content":[
-        "Gujarat",
-        "Daman",
-        "-",
-        "Atul",
-        "42/1",
-        "-"
+        "Haryana",
+        "Faridabad",
+        "Ballabgarh",
+        "Dyalpur",
+        "100",
+        "20",
+        "21"
       ]
     },
     {
       "content":[
-        "Gujarat",
-        "Vapi",
-        "-",
-        "Udwada",
-        "32/1",
-        "-"
+        "Haryana",
+        "Faridabad",
+        "Ballabgarh",
+        "Dyalpur",
+        "100",
+        "20",
+        "22"
       ]
     }
   ],
@@ -59,16 +64,19 @@
       "title": "DISTRICT"
     },
     {
-      "title": "SUB-DISTRICT"
+      "title": "TEHSIL"
     },
     {
       "title": "VILLAGE"
     },
     {
-      "title": "SURVEY NO."
+      "title": "KHEWAT"
     },
     {
-      "title": "SUB-SURVEY NO."
+      "title": "MURABBA"
+    },
+    {
+      "title": "KHARSA"
     }
   ]
 }

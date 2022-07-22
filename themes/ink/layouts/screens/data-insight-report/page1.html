@@ -2,7 +2,7 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "in partnership with <b>SatSure</b>" ) }}
+            {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT" "pageTitleSmall" "in partnership with <b>SatSure</b>" ) }}
             {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
         </td>
     </tr>
@@ -35,12 +35,4 @@
     </tr>
 </table>
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
-            {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
-        </td>
-    </tr>
-</table>
 {{ end }}

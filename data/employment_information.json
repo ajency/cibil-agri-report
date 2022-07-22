@@ -25,33 +25,6 @@
                 "Gross Income",
                 "Monthly"
             ]
-        },
-        {
-            "content": [
-                "Credit Card <span>(12/05/2022)</span>",
-                "Not available",
-                "₹ 80,000",
-                "Gross Income",
-                "Monthly"
-            ]
-        },
-        {
-            "content": [
-                "Credit Card <span>(18/03/2022)</span>",
-                "Not available",
-                "₹ 50,000",
-                "Gross Income",
-                "Monthly"
-            ]
-        },
-        {
-            "content": [
-                "Credit Card <span>(24/06/2022)</span>",
-                "Not available",
-                "₹ 40,000",
-                "Gross Income",
-                "Monthly"
-            ]
         }
     ],
     "remark": "Net/Gross Income Indicator in Dispute",

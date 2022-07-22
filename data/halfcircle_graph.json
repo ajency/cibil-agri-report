@@ -15,7 +15,7 @@
   "right_graph" : [
     {
       "graph_image": "images/dynamic-images/farm-score-graph-810.png",
-      "list_title": "FACTORS CONTRIBUTING TOWARDS SATSCORE",
+      "list_title": "FACTORS CONTRIBUTING TOWARDS FARM SCORE",
       "list_factors":[
         {
             "contr_factors":"200",
