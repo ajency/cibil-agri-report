@@ -15,7 +15,7 @@
             "content": [
                 "Report name",
                 "-",
-                "CIBIL Farm Report"
+                "CIBIL Credit and Farm Report"
             ]
         },
         {
@@ -27,21 +27,21 @@
         },
         {
             "content": [
-                "Identification(S)",
+                "Identification(s)",
                 "ID Types",
                 "Income Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
             ]
         },
         {
             "content": [
-                "Telephone(S) :",
+                "Telephone(s) :",
                 "Telephone Types",
                 "Latest 4 Telephone details reported.\nMobile phone \nHome Phone \nOffice phone"
             ]
         },
         {
             "content": [
-                "Email Contact(S) :",
+                "Email Contact(s) :",
                 "-",
                 "Last 4 emails reported."
             ]
@@ -55,7 +55,7 @@
         },
         {
             "content": [
-                "Address(ES) :",
+                "Address(es) :",
                 "Address Category",
                 "Latest 4 address reported.\nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
             ]
@@ -64,7 +64,7 @@
             "content": [
                 "Consumer Account Details :",
                 "Account Information",
-                "Active: Account not closed\nInactive: Closed account\nDate Opened: Date of first disbursement\nDate Closed: Date of account closure\nDate reported & Certified: Most recent date reported by reporting member"
+                "Active: Account not closed\nInactive: Closed account\nDate Opened: Date of first disbursement\nDate Closed: Date of account closure\nDate reported & Certified: Most recent date reported by reporting member\nLast Payment Date: Most recent date a payment was made on the account."
             ]
         }
     ]

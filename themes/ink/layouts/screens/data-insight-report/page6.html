@@ -3,9 +3,9 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
-            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "headInfo" "Parameters affecting the farming in the region & availability of market for sale of end produce." "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
-            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data "break" true )}}
         </td>
     </tr>
 </table>
@@ -13,9 +13,8 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS" "tableInfo" "Pattern of Rainfall & Groundwater condition to fullfill the Irrigation requirement of the farm") }}
-            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "Average rainfall and rainfall pattern in the last 10 years" "graph_image" "images/dynamic-images/bar-graph1.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
-            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(Based on the district where the farm is located)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "Benchmark to verify the cropping pattern of the farm vis a vis the district level.") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
         </td>
     </tr>
 </table>
@@ -23,8 +22,8 @@
 <table class="no-break">
     <tr>
         <td>
-        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "Average groundwater level and groundwater level pattern in last year " "graph_image" "images/dynamic-images/bar-graph2.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
-        {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "Cropping pattern & performance of the Farm.") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
         </td>
     </tr>
 </table>

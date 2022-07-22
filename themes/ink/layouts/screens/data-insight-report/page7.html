@@ -1,8 +1,34 @@
 {{ define "main" }}
-    {{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)" ) }}
-    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
-    {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
-    {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.survey_reports.G1 )}}
-    {{partial "spacer" (dict "space" "20")}}
-    {{partial "survey-report_map" (dict "surveyReports" .Site.Data.survey_reports.G2 )}}
+
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "headInfo" "Parameters affecting the farming in the region & availability of market for sale of end produce." "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS" "tableInfo" "Pattern of Rainfall & Groundwater condition to fullfill the Irrigation requirement of the farm") }}
+            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "Average rainfall and rainfall pattern in the last 10 years" "graph_image" "images/dynamic-images/bar-graph1.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "Average groundwater level and groundwater level pattern in last year " "graph_image" "images/dynamic-images/bar-graph2.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
+        {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+    
 {{ end }}

@@ -15,7 +15,7 @@
             "content": [
                 "Consumer Account Details :",
                 "Day Past Due/Asset Classification",
-                "Start date: Date of begining of payment history\nEnd Date: Date of end of payment history\nLast Payment date:  Most recent date a payment was made on the account\n000: Payment is made on the due date\n001-900: Payment is missed by number of days from the due date\nSTD: Payments being made within 90 days\nSMA: Special account created for reporting Standard Accounts moving toward Sub-Standard\nSUB: Payments being made after 90 days\nDBT : The account has remained Sub-Standard for 12 months\nLSS : The account has remained Sub-Standard for 12 months \nXXX : Data not reported by Institution"
+                "Start date: Beginning of the payment history\nEnd Date: End of the payment history\n000: Payment is made on the due date\n001-900: Payment is missed by number of days from the due date\nSTD: Payments being made within 90 days\nSMA: Special account created for reporting Standard Accounts moving toward Sub-Standard\nSUB: Payments being made after 90 days\nDBT : The account has remained Sub-Standard for 12 months\nLSS : The account where loss has been identified and remains uncollectable\nXXX : Data not reported by Institution"
             ]
         },
         {

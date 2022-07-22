@@ -1,29 +1,15 @@
 {{ define "main" }}
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
-            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data "break" true )}}
-        </td>
-    </tr>
-</table>
+{{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS") }}
+{{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+{{ partial "information-table.html" (dict "tableHead" .Site.Data.enquiries.table_head "tableBody" .Site.Data.enquiries.table_body  "customMargin" "70" "break" true ) }}
 
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(Based on the district where the farm is located)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "Benchmark to verify the cropping pattern of the farm vis a vis the district level.") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
-        </td>
-    </tr>
-</table>
-
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "Cropping pattern & performance of the Farm.") }}
-            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
+            {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" "break" true ) }}
         </td>
     </tr>
 </table>

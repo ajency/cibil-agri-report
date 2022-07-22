@@ -110,19 +110,24 @@
         </td>
     </tr>
 </table>
-
     <table  class="title-table bordered-table padding-0 default-data-title-table break" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td>
-            <table class="white-row compact-row" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+            <table class="text-break-format glossary-table inverted-color-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <thead>
                     
                     <tr class="extra-head-row">
                         
-                        <th class="extra-table-head" colspan="1">FARM DATA GLOSSARY</th>
+                        <th class="extra-table-head" colspan="3">CIR DATA GLOSSARY</th>
                     </tr>
                     
                     <tr>
+                        
+                        <th>SECTION</th>
+                        
+                        <th>code</th>
+                        
+                        <th>DEscription</th>
                         
                     </tr>
                 </thead>
@@ -130,177 +135,52 @@
                     
                     <tr>
                         
-                        <td><b>Agro-Ecological Sub-Zone</b> - The sub-agro ecological zone is a land unit represented accurately or precisely in terms of major climate and growing period, which is climatically suitable for a certain range of crops for cultivations.</td>
+                        <td>Consumer Account Details :</td>
+                        
+                        <td>Day Past Due/Asset Classification</td>
+                        
+                        <td>Start date: Beginning of the payment history
+End Date: End of the payment history
+000: Payment is made on the due date
+001-900: Payment is missed by number of days from the due date
+STD: Payments being made within 90 days
+SMA: Special account created for reporting Standard Accounts moving toward Sub-Standard
+SUB: Payments being made after 90 days
+DBT : The account has remained Sub-Standard for 12 months
+LSS : The account where loss has been identified and remains uncollectable
+XXX : Data not reported by Institution</td>
                         
                     </tr>
                     
                     <tr>
                         
-                        <td><b>Base Score</b> - Score reflecting the year round capabilities - currently a combination of cropping intensity and irrigation mapping.</td>
+                        <td>Consumer Account Details :</td>
+                        
+                        <td>Information under dispute</td>
+                        
+                        <td>Consumer has raised grievance request regarding issue in correctness of the data reported by Financial Institution</td>
                         
                     </tr>
                     
                     <tr>
                         
-                        <td><b>Crop Area</b> - It is the total area for a particular crop grown in a district over the season</td>
+                        <td>Enquiry Details :</td>
                         
-                    </tr>
-                    
-                    <tr>
+                        <td>Not Disclosed</td>
                         
-                        <td><b>Crop Performance</b> - Categorical index (upto farm level) to evaluate the relative risk based on crop performance and potential crop damage generated for a specific season ranked as Goood, average or below average.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Cropping Intensity</b> - The number of crop cycles in a year, as identified using satellite images. For one cycle it is Once a Year, for two it is Twice a Year.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Geotag (Centroid)</b> - A georeferenced boundary of an area, as defined by joining the vertices which are marked using latitudes and longitudes</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Groundwater Thickness</b> - Terrestrial water storage (TWS) defined as an integrated estimate of water stored on and beneath the surface of Earth. Terrestrial water storage can be defined as the summation of all water on the land surface and in the subsurface. It includes surface soil moisture, root zone soil moisture, groundwater, snow, ice, water stored in the vegetation, river and lake water. </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Hectare (ha)</b> - An area measurement unit, 1 ha = 2.47 acres</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Irrigation Condition</b> - Agricultural water content measured by using multispectral data to classify if a land parcel is irrigated or not.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Kharif Season</b> - Cropping season from June to October</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Major Crops</b> - Crops that are widely grown in a certain district</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Mandi</b> - An agricultural market where the sale and purchase of agricultural commodities is done.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Overall Farm(s) Score</b> - The overall SatScore is calculated based on the agricultural parameters of tthe farms that belong to a farmer. It comproses of a base score (based on irrigation condition and cropping intensity of farms) and seasonal scores for the Kharof & Rabi seasons, each calculated based on the farming history in th past 3 years</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Price</b> - Market prices or Minimum Support Price (set by the Central Government) in a season.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Potential Yield</b> - Maximum yield which could be reached by a crop in given environment per unit area</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Rabi Season</b> - Cropping season from November to April</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Regional prosperity index</b> - An index to measure overall prosperity for a region, considering night light index, latest census data, and GDP, measured on a scale of 0-1</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Seasonal Score (Kharif & Rabi)</b> - It reflects capacity of a farm/farmer based on the agricultural performance in the respective season.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Threshold Yield</b> - The Threshold yield (TY) or Guaranteed yield for acrop is the moving average based on five years average yield.</td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td><b>Ambient Temperature</b> - The air temperature measured in a particular sub-district.</td>
+                        <td>Enquiry made with other Members</td>
                         
                     </tr>
                     
                 </tbody>
                 <tfoot>
                     
-                    <tr><td class="empty-td" colspan="1"></td></tr>
+                    <tr><td class="empty-td" colspan="3"></td></tr>
                 </tfoot>
             </table>
         </td>
     </tr>
 </table>
-
-    <table class="no-break">
-        <tr>
-            <td>
-                <div class="report-end">
-    <span>END OF REPORT ON Mohana Parab</span>
-</div>
-            </td>
-        </tr>
-    </table>
-
-    <table  class="title-table bordered-table padding-0 default-data-title-table " role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-    <tr>
-        <td>
-            <table class="white-row disclaimer text-break-format" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
-                <thead>
-                    
-                    <tr>
-                        
-                        <th>Disclaimer</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                    <tr>
-                        
-                        <td>All information ("Information") contained in this credit information report (CIR) is the current and up to date information collated by TransUnion CIBIL Limited based on information provided by its various members ("Members") and Partners (“Partners”). By accessing and using the Information, the user acknowledges and accepts the following: 
-a) While TransUnion CIBIL takes reasonable care in preparing the CIR, TransUnion CIBIL shall not be responsible for any errors and/or omissions caused by inaccurate or inadequate information submitted to it by its Members and Partners. However, TransUnion CIBIL shall take reasonable steps to ensure accurate reproduction of the information submitted by the Members and Partners, and to the extent statutorily permitted, it shall correct any such inaccuracies in the CIR. Further, TransUnion CIBIL does not guarantee the accuracy, adequacy or completeness of the information and/or its suitability for any specific purpose nor is TransUnion CIBIL responsible for any access or reliance on the CIR. 
-b)The CIR is not a recommendation by TransUnion CIBIL to any Member to (i) lend or not to lend; (ii) enter into or not to enter into any financial transaction with the concerned individual/entity. Credit Scores do not form part of the CIR. The use of the CIR is governed by the provisions of the Credit Information Companies (Regulation) Act, 2005, the Credit Information Companies Regulations, 2006, Credit Information Companies Rules, 2006 and the terms and conditions of the Operating Rules for TransUnion CIBIL and its Members.</td>
-                        
-                    </tr>
-                    
-                </tbody>
-                <tfoot>
-                    
-                    <tr><td class="empty-td" colspan="1"></td></tr>
-                </tfoot>
-            </table>
-        </td>
-    </tr>
-</table>
-
-
 <table role="presentation" aria-hidden="true" class="no-break" cellspacing="0" cellpadding="0" border="0" align="center"
     style="padding-top: 20px; margin-top: 40px; border-top: 1px solid #ACACAC;">
     <tr class="footer-text-light">
