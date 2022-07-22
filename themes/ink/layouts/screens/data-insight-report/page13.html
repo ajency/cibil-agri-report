@@ -1,16 +1,5 @@
 {{ define "main" }}
 
-    {{ partial "title-table" (dict "tableBody" .Site.Data.data_insight_report.glossary_farm_data.table_body "className" "white-row compact-row" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
-
-    <table class="no-break">
-        <tr>
-            <td>
-                {{ partial "report-end" (dict "text" "END OF REPORT ON Mohana Parab") }}
-            </td>
-        </tr>
-    </table>
-
-    {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
-
+{{ partial "farm-data-glossary" (dict "tableHead" .Site.Data.data_insight_report.farm_glossary_data.table_head "tableBody" .Site.Data.data_insight_report.farm_glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
 
 {{ end }}

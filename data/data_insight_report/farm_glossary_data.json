@@ -1,0 +1,158 @@
+{
+    "table_head": [
+        {
+            "title": "REPORT SECTION"
+        },
+        {
+            "title": "FARM DATA"
+        },
+        {
+            "title": "FARM CONTENT"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Consumer Farm Score",
+                "Farm Score",
+                "Farm Score",
+                "The farm score is calculated based on the agricultural parameters of the farms that belong to a farmer. It comprises of a base score (based on irrigation condition and cropping intensity of farms) and seasonal scores for kharif & rabi seasons, each calculated based on the farming history in the past 3 years.\n\nInsight: Farm Score reflects Overall Productivity & Revenue potential of the Farm"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Base Score",
+                "Score reflecting the year round capabilities -currently a combination of cropping intensity and irrigation mapping.\n\nInsight:  Base Score reflects well equiped irrigation system and better land utilization for crop cultivation at Farm."            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Average Kharif /Rabi Score",
+                "It reflects capacity of a farm/farmer based on agricultural performance in the kharif/Rabi season.\n\nInsight:  Score reflects Productivity & revenue potential of the farm in Kharif/Rabi season"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Farm Summary",
+                "Irrigation Condition",
+                "Irrigation Condition",
+                "Agricultural water content masured by using multipspectral data to classify if a land parcel is irrigated or not.\n\nInsight: Higher crop yield in irrigated farms compare to non-irrigated farms"
+            ],
+            "line": true
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Irrigated",
+                "Insight: Survey Nos equiped with Irrigation system e.g. Pump, Drip etc."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Non-Irrigated",
+                "Insight: Survey Nos depend on rain for irrigation"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "Cropping Intensity",
+                "Cropping Intensity",
+                "Number of crop cycles in a year, as identified  using satellite image. For one cycle it is Once in a Year, for two it is a twice in a year. \n\nInsight: Cropping Intensity denotes level of land utilization for crop cultivation. "
+            ],
+            "halfLine": true
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Once in a Year",
+                "Insight: Survey Nos having one cultivation cycle of crop production. Partial land utilization for crop production."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Twice in a Year",
+                "Insight: Survey Nos having two cultivation cycle of crop production. Total land utilization for crop production."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "None",
+                "Insight: No crop cultivation in the farm. Land not utilized for farming."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "Crops Grown",
+                "Crops Grown",
+                "Insight:Name of the crops grown in the farm in last one year"
+            ],
+            "halfLine": true
+        },
+        {
+            "content": [
+                "Consumer Farm Details",
+                "Major Crops in region",
+                "Major Crops in region",
+                "Insight: Crops that are wildely grown in a certain unit area/region. Benchmark to verify the cropping pattern of the farm vis a vis the district."
+            ],
+            "line": true
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Season",
+                "Insight: To asses the seasonal cropping pattern in a year (Kharif & Rabi). Kharif Season is from June to October & Rabi Season is from November to April."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Crop Name",
+                "Insight: Major crops cultivated at district level"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Crop Area",
+                "It is the total area for a particular crop grown in a district over the season.\n\nInsight: Area under major crops at district level"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Hactare (Ha)",
+                "An area measurement unit, 1 ha = 2.47 acre"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Average Yield",
+                "Average Yield/unit area of the major crops at distict level"
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "table_head": [
+        {
+            "title": "REPORT SECTION"
+        },
+        {
+            "title": "FARM DATA"
+        },
+        {
+            "title": "FARM CONTENT"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Consumer Farm Details",
+                "Cropping Histrory & Performance (3 yrs data)",
+                "Cropping Histrory & Performance (3 yrs data)",
+                "Cropping pattern & performance of the Farm."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Season",
+                "Insight: To asses the seasonal cropping pattern in a year (Kharif & Rabi)"            
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Crop Name",
+                "Crops grown in the farm in different seasons"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Price",
+                "Market Price or Minimum Support Price (Set by Central Government) in a season."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Crop Performance",
+                "Categorical index (upto farm level) to evaluate the risk based on crop performance and potential crop damage geenrated for a specific season ranked as Good, Average & Below average.\n\nInsight: Crop performance indicates the performance of the crop grown in the farm basis the yield and revenue potential"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Crop Yield ( potential Farm Yield Vs Threshold District Yield)",
+                "Potential Yield is the maximum yield which could reached by a crop in given environemnt per unit area. The threshold yield (TY) or Guaranteed Yield for a crop is the moving average based on five years avearage yield.\n\nInsight: Crop Yield Compares the yield/unit area at farm vis a vis district to determine the productivity level of the farm "
+            ]
+        },
+        
+        {
+            "content": [
+                "",
+                "Regional Details",
+                "Regional Details",
+                "Parameters affecting the farming in the region & availability of market for sale of end produce."
+            ],
+            "halfLine": true
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Nearest Mandi",
+                "An agricultural market where the sales and purchase of agricultural commodities are done.\n\nInsight: Connectivity to Market for sale of the end produce."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Proximity Nearest Road/Rail",
+                "Insight: Ease in transfering the farm produce from field to nearest market"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Proximity to Nearest Water Body",
+                "Insight: Alternate Irrigation facility"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Drought Instances",
+                "Insight: Drought prone or Drought resistent region"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Village Population",
+                "Insight: Extent of farming & farming practices"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Ambient Temperature",
+                "The air temprature measured in a particular sub-district.\n\nInsight: Temprature conducive for cropping."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Type of Soil",
+                "Soil type conducive for cropping"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Agro Ecological Sub-zone",
+                "The Sub-agro ecological zone is a land unit represented accurately or precisely in term of major climate and growing period which is climatically suitable for a certain range of crops for cultivations.\n\nInsight: Agro-ecological sub-zones to understand overall weather conditions & agricultural practices"
+            ]
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Regional Prosperity Index",
+                "Index to measure overall prosperity of a region, considering night light index, latest census data & GDP, measured on a sacle of 0-1."
+            ]
+        },
+        {
+            "content": [
+                "",
+                "Water Condition",
+                "Water Condition",
+                "Insight: Pattern of Rainfall & Groundwater condition to fullfill the Irrigation requirement of the farm"
+            ],
+            "halfLine": true
+        },
+        {
+            "content": [
+                "",
+                "",
+                "Rainfall",
+                "Average rainfall and rainfall pattern in the last 10 years"
+            ]
+        }
+
+    ]
+}

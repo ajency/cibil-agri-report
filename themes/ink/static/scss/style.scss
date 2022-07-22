@@ -1485,6 +1485,25 @@ tfoot {
     }
 }
 
+.line td, .halfLine > td:not(:first-child) {
+    border-top: 1px solid #ACACAC;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.farm-glossary-table{
+    tbody{
+        tr{
+            td{
+                &:first-child{
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
 @page{
     margin: 40px 0;
     size: a3;

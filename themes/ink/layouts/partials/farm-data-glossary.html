@@ -1,0 +1,34 @@
+<table {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }} class="title-table bordered-table padding-0 default-data-title-table {{if .break }}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr>
+        <td>
+            <table class="farm-glossary-table {{.className}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                <thead>
+                    {{ if .headerTitle }}
+                    <tr class="extra-head-row">
+                        {{ $arrayFirstElement := index .tableBody 0 }}
+                        <th class="extra-table-head" colspan="{{ (len $arrayFirstElement.content) }}">{{ .headerTitle | safeHTML  }}</th>
+                    </tr>
+                    {{ end }}
+                    <tr>
+                        {{ range .tableHead }}
+                        <th>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
+                        {{ end }}
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ range .tableBody }}
+                    <tr class="{{if .line}}line{{ end }} {{ if .halfLine }}halfLine{{ end }}">
+                        {{ range $elem_index, $elem_val := .content }}
+                        <td>{{ $elem_val | safeHTML }}</td>
+                        {{ end }}
+                    </tr>
+                    {{ end }}
+                </tbody>
+                <tfoot>
+                    {{ $arrayFirstElement := index .tableBody 0 }}
+                    <tr><td class="empty-td" colspan="{{ (len $arrayFirstElement.content) }}"></td></tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>
