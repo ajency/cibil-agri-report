@@ -15,12 +15,12 @@
           "title":"ACCOUNT",
           "content": [
               {
-                "name": "MEMBER NAME",
-                "desc": "Not disclosed"
-              },
-              {
                 "name": "TYPE",
                 "desc": "Personal Loan"
+              },
+              {
+                "name": "MEMBER NAME",
+                "desc": "Not disclosed"
               },
               {
                 "name": "Account Number",
