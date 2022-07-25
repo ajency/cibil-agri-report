@@ -1,10 +1,10 @@
 {
     "table_head": [
         {
-            "title": "SECTION"
+            "title": "REPORT SECTION"
         },
         {
-            "title": "code"
+            "title": "KEY TERM / CODE"
         },
         {
             "title": "DEscription"
@@ -15,7 +15,7 @@
             "content": [
                 "Consumer Account Details :",
                 "Day Past Due/Asset Classification",
-                "Start date: Beginning of the payment history\nEnd Date: End of the payment history\n000: Payment is made on the due date\n001-900: Payment is missed by number of days from the due date\nSTD: Payments being made within 90 days\nSMA: Special account created for reporting Standard Accounts moving toward Sub-Standard\nSUB: Payments being made after 90 days\nDBT : The account has remained Sub-Standard for 12 months\nLSS : The account where loss has been identified and remains uncollectable\nXXX : Data not reported by Institution"
+                "<span>Start date: Beginning of the payment history\n</span><span>End Date: End of the payment history\n</span><span>000: Payment is made on the due date\n</span><span>001-900: Payment is missed by number of days from the due date\n</span><span>STD: Payments being made within 90 days\n</span><span>SMA: Special account created for reporting Standard Accounts moving toward Sub-Standard\n</span><span>SUB: Payments being made after 90 days\n</span><span>DBT : The account has remained Sub-Standard for 12 months\n</span><span>LSS : The account where loss has been identified and remains uncollectable\n</span><span>XXX : Data not reported by Institution</span>"
             ]
         },
         {

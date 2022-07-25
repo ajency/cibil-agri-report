@@ -1,10 +1,10 @@
 {
     "table_head": [
         {
-            "title": "SECTION"
+            "title": "REPORT SECTION"
         },
         {
-            "title": "code"
+            "title": "KEY TERM / CODE"
         },
         {
             "title": "DEscription"
@@ -29,14 +29,14 @@
             "content": [
                 "Identification(s)",
                 "ID Types",
-                "Income Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
+                "<span>Income Tax ID Number (PAN) \n</span><span>Passport Number \n</span><span>Voter ID \n</span><span>Driver’s License Number \n</span><span>Ration Card Number \n</span><span>Universal ID Number (UID)</span>"
             ]
         },
         {
             "content": [
                 "Telephone(s) :",
                 "Telephone Types",
-                "Latest 4 Telephone details reported.\nMobile phone \nHome Phone \nOffice phone"
+                "<span>Latest 4 Telephone details reported.\n</span><span>Mobile phone \n</span><span>Home Phone \n</span><span>Office phone</span>"
             ]
         },
         {
@@ -50,21 +50,21 @@
             "content": [
                 "Employment Information(s) :",
                 "Occupation Codes",
-                "Latest Employment detail reported.\nSalaried \nSelf Employed Professionals \nSelf Employed \nOthers"
+                "<span>Latest Employment detail reported.\n</span><span>Salaried \n</span><span>Self Employed Professionals \n</span><span>Self Employed \n</span><span>Others</span>"
             ]
         },
         {
             "content": [
                 "Address(es) :",
                 "Address Category",
-                "Latest 4 address reported.\nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
+                "<span>Latest 4 address reported.\n</span><span>Permanent Address \n</span><span>Residence Address \n</span><span>Office Address \n</span><span>Not categorized</span>"
             ]
         },
         {
             "content": [
                 "Consumer Account Details :",
                 "Account Information",
-                "Active: Account not closed\nInactive: Closed account\nDate Opened: Date of first disbursement\nDate Closed: Date of account closure\nDate reported & Certified: Most recent date reported by reporting member\nLast Payment Date: Most recent date a payment was made on the account."
+                "<span>Active: Account not closed\n</span><span>Inactive: Closed account\n</span><span>Date Opened: Date of first disbursement\n</span><span>Date Closed: Date of account closure\n</span><span>Date reported & Certified: Most recent date reported by reporting member\n</span><span>Last Payment Date: Most recent date a payment was made on the account.</span>"
             ]
         }
     ]
