@@ -19,12 +19,12 @@
                 "desc": "Not disclosed"
               },
               {
-                "name": "Account Number",
-                "desc": "Not disclosed"
-              },
-              {
                 "name": "TYPE",
                 "desc": "Housing Loan"
+              },
+              {
+                "name": "Account Number",
+                "desc": "Not disclosed"
               },
               {
                 "name": "OWNERSHIP",

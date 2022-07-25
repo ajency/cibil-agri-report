@@ -11,7 +11,10 @@
             <td colspan="3" class="td-desc">{{.chart_desc}}</td>
         </tr>
         <tr>
-            <td colspan="3" class="graph-img"><img src="{{ .graph_image | relURL}}"></td>
+            <td colspan="3" class="graph-img">
+                {{ if .yAxis }}<p class="y-axis-lable">{{ .yAxis }}</p>{{ end}}
+                <img src="{{ .graph_image | relURL}}">
+            </td>
         </tr>
     </tbody>
 </table>

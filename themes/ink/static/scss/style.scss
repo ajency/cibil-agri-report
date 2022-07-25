@@ -659,7 +659,9 @@ body {
                     }
                     &.graph-img{
                         text-align: center;
-                        padding: 20px 50px 40px 106px;
+                        // padding: 20px 50px 40px 106px;
+                        padding: 20px 50px 40px 40px;
+                        position: relative;
                     }
                 }
             }
@@ -1504,6 +1506,15 @@ tfoot {
         }
     }
 }
+
+.y-axis-lable {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: rotate(-90deg) translateX(-40%) translateY(55px);
+    transform-origin: 0;
+}
+
 @page{
     margin: 40px 0;
     size: a3;
