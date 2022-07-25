@@ -6,12 +6,12 @@
                     {{ if .headerTitle }}
                     <tr class="extra-head-row">
                         {{ $arrayFirstElement := index .tableBody 0 }}
-                        <th class="extra-table-head" colspan="{{ (len $arrayFirstElement.content) }}">{{ .headerTitle | safeHTML  }}</th>
+                        <th class="extra-table-head" colspan="{{ add (len $arrayFirstElement.content) 1 }}">{{ .headerTitle | safeHTML  }}</th>
                     </tr>
                     {{ end }}
                     <tr>
-                        {{ range .tableHead }}
-                        <th>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
+                        {{ range $elem_index, $tableHeadd := .tableHead }}
+                        <th {{ if eq $elem_index 3 }}colspan="2"{{ end }}>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
                         {{ end }}
                     </tr>
                 </thead>
@@ -19,14 +19,14 @@
                     {{ range .tableBody }}
                     <tr class="{{if .line}}line{{ end }} {{ if .halfLine }}halfLine{{ end }}">
                         {{ range $elem_index, $elem_val := .content }}
-                        <td>{{ $elem_val | safeHTML }}</td>
+                        <td {{ if eq $elem_index 3 }}colspan="2"{{ end }}>{{ $elem_val | safeHTML }}</td>
                         {{ end }}
                     </tr>
                     {{ end }}
                 </tbody>
                 <tfoot>
                     {{ $arrayFirstElement := index .tableBody 0 }}
-                    <tr><td class="empty-td" colspan="{{ (len $arrayFirstElement.content) }}"></td></tr>
+                    <tr><td class="empty-td" colspan="{{ add (len $arrayFirstElement.content) 1 }}"></td></tr>
                 </tfoot>
             </table>
         </td>

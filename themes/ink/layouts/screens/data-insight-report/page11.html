@@ -4,7 +4,7 @@
         <tr>
             <td>
                 {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10") }}
-                {{ partial "title-table" (dict "tableHead" .Site.Data.data_insight_report.glossary_data.table_head "tableBody" .Site.Data.data_insight_report.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
+                {{ partial "title-table" (dict "tableHead" .Site.Data.data_insight_report.glossary_data.table_head "tableBody" .Site.Data.data_insight_report.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true "glossaryDataTable" true ) }}
             </td>
         </tr>
     </table>
