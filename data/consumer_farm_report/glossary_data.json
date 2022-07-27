@@ -1,0 +1,18 @@
+{
+    "table_head": [
+        {
+            "title": "REPORT SECTION"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Farm Ownership",
+                "Digitized land record available on the Government website containing Survey\ndetails/Ownership structure/land holding/land address/encumbrance details etc. The land ownership data populated in the report is as per the latest refreshed information from the Government website."
+            ]
+        }
+    ]
+}

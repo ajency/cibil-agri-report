@@ -1355,6 +1355,27 @@ tfoot{
         }
     }
 }
+.farm-ownership-glossary{
+    tr{
+        td,th{
+            &:nth-child(2){
+                width: 70%;
+            }
+        }
+    }
+}
+.farm-ownership-desclaimer{
+    tr{
+        td{
+            span{
+                &:not(:last-child){
+                    display: block;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
 
 .compact-row{
     tr{
