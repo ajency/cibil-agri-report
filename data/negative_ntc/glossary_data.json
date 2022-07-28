@@ -1,0 +1,93 @@
+{
+    "table_head": [
+        {
+            "title": "REPORT SECTION"
+        },
+        {
+            "title": "KEY TERM / CODE"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Report name",
+                "-",
+                "CIBIL Credit and Farm Report"
+            ]
+        },
+
+        {
+            "content": [
+                "Consumer Details",
+                "e",
+                "Enriched through Enquiry"
+            ]
+        },
+        {
+            "content": [
+                "Identification(S)",
+                "ID Types",
+                "Income Tax ID Number (PAN) \nPassport Number \nVoter ID \nDriver’s License Number \nRation Card Number \nUniversal ID Number (UID)"
+            ]
+        },
+        {
+            "content": [
+                "Telephone (S) :",
+                "Telephone Types",
+                "Latest 4 Telephone details reported. \nMobile phone \nHome Phone \nOffice phone"
+            ]
+        },
+        {
+            "content": [
+                "Email Contact (S) :",
+                "-",
+                "Last 4 emails reported."
+            ]
+        },
+        {
+            "content": [
+                "Employment Information(s) :",
+                "Occupation Codes",
+                "Latest employment details reported. \nSalaried \nSelf Employed Professionals \nSelf Employed \nOthers"
+            ]
+        },
+        {
+            "content": [
+                "Address(es) :",
+                "Address Category",
+                "Latest 4 addresses reported \nPermanent Address \nResidence Address \nOffice Address \nNot categorized"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Account Information",
+                "Active: Account not closed \nInactive: Closed account \nDate Opened: Date of first disbursement \nDate Closed: Date of account closure \nDate reported & Certified: Most recent date reported by reporting member \nLast Payment Date: Most recent date a payment was made on the account."
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Day Past Due/Asset Classification",
+                "Start date: Beginning of the payment history \nEnd Date: End of the payment history \n000: Payment is made on the due date \n001-900: Payment is missed by number of days from the due date \nSTD: Payments being made within 90 days \nSMA: Special account created for reporting Standard Accounts moving toward Sub-Standard \nSUB: Payments being made after 90 days \nDBT : The account has remained Sub-Standard for 12 months \nLSS : The account where loss has been identified and remains uncollectable \nXXX : Data not reported by Institution"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Account Details :",
+                "Information under dispute",
+                "Consumer has raised grievance request regarding issue in correctness of the data reported by Financial Institution"
+            ]
+        },
+        {
+            "content": [
+                "Enquiry Details :",
+                "Not Disclosed",
+                "Enquiry made with other Members"
+            ]
+        }
+    ]
+}
