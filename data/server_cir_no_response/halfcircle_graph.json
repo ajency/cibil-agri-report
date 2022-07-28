@@ -16,28 +16,24 @@
     {
       "graph_image": "images/dynamic-images/farm-score-graph-810.png",
       "list_title": "FACTORS CONTRIBUTING TOWARDS FARM SCORE",
-      "info": "Score reflects Overall Productivity & Revenue potential of the Farm",
       "list_factors":[
         {
             "contr_factors":"200",
             "total_factors":"200",
             "factor_rating":"(Base)",
-            "factor_title":"BASE SCORE",
-            "factor_info": "Scores reflects , well equiped Irrigation system and better land utilization for crop cultivation at Farm."
+            "factor_title":"BASE SCORE"
         },
         {
             "contr_factors":"315",
             "total_factors":"400",
             "factor_rating":"(Good)",
-            "factor_title":"AVERAGE KHARIF SCORE",
-            "factor_info":"Scores reflects Productivity & revenue potential of the farm in Kharif season"
+            "factor_title":"AVERAGE KHARIF SCORE"
         },
         {
             "contr_factors":"318",
             "total_factors":"400",
             "factor_rating":"(Good)",
-            "factor_title":"AVERAGE RABI SCORE",
-            "factor_info": "Scores reflects Productivity & revenue potential of the farm in Rabi Season"
+            "factor_title":"AVERAGE RABI SCORE"
         }
       ]
     }

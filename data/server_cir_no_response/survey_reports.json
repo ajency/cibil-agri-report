@@ -1,0 +1,491 @@
+{
+  "G1": [
+    {
+      "map": [
+        {
+          "table_title": "Report survey Identifier: G1",
+          "map_image": "images/dynamic-images/map-g1.png",
+          "identifier": "FARM LABEL (G1)",
+          "mapPosition": "left"
+        }
+      ],
+      "farmLocations": [
+        {
+          "table_title": "FARM LOCATION(S)",
+          "table_head": [
+            {
+              "title": "SURVEY DETAILS"
+            },
+            {
+              "title": "FARM LABEL"
+            },
+            {
+              "title": "SUB farm label"
+            },
+            {
+              "title": "SUB FARM CENTROID"
+            }
+          ],
+          "table_body": [
+            {
+              "row": [
+                {
+                  "content": "Khewat-10, Murabba-1 ,Kharsa-4"
+                },
+                {
+                  "content": "(G1) Khewat-12, Murabba-13,Kharsa-2",
+                  "sub_content": ""
+                },
+                {
+                  "content": "G1-A",
+                  "sub_content": ""
+                },
+                {
+                  "content": "21.7398° N, 70.4491° E"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "adjacentLandDetails": [
+        {
+          "table_title": "ADJACENT LAND DETAILS",
+          "table_head": [
+            {
+              "title": "ADJACENT LAND LABELS"
+            },
+            {
+              "title": "adjacent LAND survey DETAILS"
+            },
+            {
+              "title": "DIRECTIONS"
+            }
+          ],
+          "table_body": [
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15/2",
+                "West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15/3",
+                "South - West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-18",
+                "East"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "G2": [
+    {
+      "map": [
+        {
+          "table_title": "Report survey Identifier: G2",
+          "map_image": "images/dynamic-images/map-g2.png",
+          "identifier": "FARM LABEL (G2)",
+          "mapPosition": "left"
+        }
+      ],
+      "farmLocations": [
+        {
+          "table_title": "FARM LOCATION(S)",
+          "table_head": [
+            {
+              "title": "SURVEY DETAILS"
+            },
+            {
+              "title": "FARM LABEL"
+            },
+            {
+              "title": "SUB farm label"
+            },
+            {
+              "title": "SUB FARM CENTROID"
+            }
+          ],
+          "table_body": [
+            {
+              "row": [
+                {
+                  "content": "Khewat-10, Murabba-76, Kharsa-9/1"
+                },
+                {
+                  "content": "(G2) Murabba-76, Kharsa-9/1",
+                  "sub_content": ""
+                },
+                {
+                  "content": "<span>G2-A</span><span>G2-B</span>",
+                  "sub_content": ""
+                },
+                {
+                  "content": "<span>21.7398° N, 70.4491° E</span><span>76.438901° N, 29.328890° E</span>"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "adjacentLandDetails": [
+        {
+          "table_title": "ADJACENT LAND DETAILS",
+          "table_head": [
+            {
+              "title": "ADJACENT LAND LABELS"
+            },
+            {
+              "title": "adjacent LAND survey DETAILS"
+            },
+            {
+              "title": "DIRECTIONS"
+            }
+          ],
+          "table_body": [
+            {
+              "content": [
+                "Murabba - 49, Kharsa-13",
+                "West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15",
+                "South - West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-1",
+                "East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-2",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-4",
+                "East"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "G3": [
+    {
+      "map": [
+        {
+          "table_title": "Report survey Identifier: G3",
+          "map_image": "images/dynamic-images/map-g3.png",
+          "identifier": "FARM LABEL (G3)",
+          "mapPosition": "left"
+        }
+      ],
+      "farmLocations": [
+        {
+          "table_title": "FARM LOCATION(S)",
+          "table_head": [
+            {
+              "title": "SURVEY DETAILS"
+            },
+            {
+              "title": "FARM LABEL"
+            },
+            {
+              "title": "SUB farm label"
+            },
+            {
+              "title": "SUB FARM CENTROID"
+            }
+          ],
+          "table_body": [
+            {
+              "row": [
+                {
+                  "content": "Murabba-49 ,Kharsa-14"
+                },
+                {
+                  "content": "(G3) Khewat-415, Murabba-49, Kharsa-14",
+                  "sub_content": ""
+                },
+                {
+                  "content": "G3-A",
+                  "sub_content": ""
+                },
+                {
+                  "content": "21.7398° N, 70.4491° E"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "adjacentLandDetails": [
+        {
+          "table_title": "ADJACENT LAND DETAILS",
+          "table_head": [
+            {
+              "title": "ADJACENT LAND LABELS"
+            },
+            {
+              "title": "adjacent LAND survey DETAILS"
+            },
+            {
+              "title": "DIRECTIONS"
+            }
+          ],
+          "table_body": [
+            {
+              "content": [
+                "Murabba - 49, Kharsa-13",
+                "West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15",
+                "South - West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-1",
+                "East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-2",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-4",
+                "East"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "G4": [
+    {
+      "map": [
+        {
+          "table_title": "Report survey Identifier: G4",
+          "map_image": "images/dynamic-images/map-g4.png",
+          "identifier": "FARM LABEL (G4)",
+          "mapPosition": "left"
+        }
+      ],
+      "farmLocations": [
+        {
+          "table_title": "FARM LOCATION(S)",
+          "table_head": [
+            {
+              "title": "SURVEY DETAILS"
+            },
+            {
+              "title": "FARM LABEL"
+            },
+            {
+              "title": "SUB farm label"
+            },
+            {
+              "title": "SUB FARM CENTROID"
+            }
+          ],
+          "table_body": [
+            {
+              "row": [
+                {
+                  "content": "Khewat-415, Murabba-113, Khasra-3"
+                },
+                {
+                  "content": "(G4) Murabba-113, Kharsa-3",
+                  "sub_content": ""
+                },
+                {
+                  "content": "G4-A",
+                  "sub_content": ""
+                },
+                {
+                  "content": "21.7398° N, 70.4491° E"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "adjacentLandDetails": [
+        {
+          "table_title": "ADJACENT LAND DETAILS",
+          "table_head": [
+            {
+              "title": "ADJACENT LAND LABELS"
+            },
+            {
+              "title": "adjacent LAND survey DETAILS"
+            },
+            {
+              "title": "DIRECTIONS"
+            }
+          ],
+          "table_body": [
+            {
+              "content": [
+                "Murabba - 49, Kharsa-13",
+                "West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15",
+                "South - West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-1",
+                "East"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "G5": [
+    {
+      "map": [
+        {
+          "table_title": "Report survey Identifier: G5",
+          "map_image": "images/dynamic-images/map-g5.png",
+          "identifier": "FARM LABEL (G5)",
+          "mapPosition": "left"
+        }
+      ],
+      "farmLocations": [
+        {
+          "table_title": "FARM LOCATION(S)",
+          "table_head": [
+            {
+              "title": "SURVEY DETAILS"
+            },
+            {
+              "title": "FARM LABEL"
+            },
+            {
+              "title": "SUB farm label"
+            },
+            {
+              "title": "SUB FARM CENTROID"
+            }
+          ],
+          "table_body": [
+            {
+              "row": [
+                {
+                  "content": "Khewat-415, Murabba-113, Khasra-4/2"
+                },
+                {
+                  "content": "(G5) Murabba-113, Khasra-4/2",
+                  "sub_content": ""
+                },
+                {
+                  "content": "G5-A",
+                  "sub_content": ""
+                },
+                {
+                  "content": "21.7398° N, 70.4491° E"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "adjacentLandDetails": [
+        {
+          "table_title": "ADJACENT LAND DETAILS",
+          "table_head": [
+            {
+              "title": "ADJACENT LAND LABELS"
+            },
+            {
+              "title": "adjacent LAND survey DETAILS"
+            },
+            {
+              "title": "DIRECTIONS"
+            }
+          ],
+          "table_body": [
+            {
+              "content": [
+                "Murabba - 49, Kharsa-13",
+                "West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-15",
+                "South - West"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-16",
+                "South-East"
+              ]
+            },
+            {
+              "content": [
+                "Murabba - 49, Kharsa-1",
+                "East"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

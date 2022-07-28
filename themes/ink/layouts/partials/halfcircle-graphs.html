@@ -38,7 +38,7 @@
                     {{range .rightGraph}}
                     <tr>
                         <td>
-                            {{ partial "info-icon" (dict "message" "Score reflects Overall Productivity & Revenue potential of the Farm" "className" "center farm-score-info small" ) }}
+                            {{ partial "info-icon" (dict "message" .info "className" "center farm-score-info small" ) }}
                             <img class="graph-img" src="{{ .graph_image | relURL}}">
                             <p class="td-title">{{.list_title}}</p> 
                             <table class="factors" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -73,7 +73,7 @@
                 {{else}}
                     <tr>
                         <td>
-                            {{ partial "graph-empty-state" (dict "message" "No data available" "imageURL" "images/static-images/farm-score-graph-empty3.png" "section_title" "FACTORS AFFECTING TOWARDS SATSCORE" "className" "no-agri") }}
+                            {{ partial "graph-empty-state" (dict "message" "No data available" "imageURL" "images/static-images/farm-score-graph-empty3.png" "section_title" "FACTORS CONTRIBUTING TOWARDS FARM SCORE" "className" "no-agri") }}
                         </td>
                     </tr>
                 {{end}}

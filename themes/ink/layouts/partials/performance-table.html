@@ -5,12 +5,12 @@
             <table class="{{.className}} boxed-table inverted-color" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                 <thead>
                     <tr>
-                        <th>SEASON {{ partial "info-icon" (dict "message" "To asses the seasonal cropping pattern in a year (Kharif & Rabi)") }}</th>
-                        <th>CROP NAME {{ partial "info-icon" (dict "message" "Crops grown in the farm in different seasons") }}</th>
+                        <th>SEASON {{if ne .hideInfo true }} {{ partial "info-icon" (dict "message" "To asses the seasonal cropping pattern in a year (Kharif & Rabi)") }} {{end}}</th>
+                        <th>CROP NAME {{if ne .hideInfo true }} {{ partial "info-icon" (dict "message" "Crops grown in the farm in different seasons") }} {{end}}</th>
                         <th>PRICE <br>(₹/100KG)</th>
-                        <th style="width: 180px;">CROP PERFORMANCE {{ partial "info-icon" (dict "message" "Performance of the crop grown in the farm basis the yield and revenue potential") }}</th>
+                        <th style="width: 180px;">CROP PERFORMANCE {{if ne .hideInfo true }}{{ partial "info-icon" (dict "message" "Performance of the crop grown in the farm basis the yield and revenue potential") }}{{end}}</th>
                         <th colspan="3">
-                            CROP YIELD (KG/Ha) {{ partial "info-icon" (dict "message" "Comparision between yield/unit area at farm vis a vis district to determine the productivity level of the farm") }}
+                            CROP YIELD (KG/Ha) {{if ne .hideInfo true }}{{ partial "info-icon" (dict "message" "Comparision between yield/unit area at farm vis a vis district to determine the productivity level of the farm") }}{{end}}
                             <p class="yeild-indicators">
                                 <span class="indicator">
                                     <span class="primary"></span>

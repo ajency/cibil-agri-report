@@ -3,22 +3,21 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER FARM OWNERSHIP") }}
-            {{ partial "farm-ownership-table.html" (dict "surveyNo" "50/1" "text" "खसरा नंबर:50/1/ ह कू सह पुयाम सह जातयादव | पता शमशाबाद व दता म यदेशस पूण भागमवामीराज4595/फैल1.2020हैटेयर के फयत:ना.प.8 आद 12/9/2017 के अनुसार यायालय तहसीलदार के करण मांक 17/म-27/2020-21 एवं आदेश दनांक 29/07/2020 के अनुसार दज।। यायालय तहसीलदार के करण. 214/a27/2020-21 आदेश द.22/12/2020 के अनुसार भू-अमलेश भय तत।")}}
+            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
+
+            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.server_cir_no_response.major_crops.table_head "tableBody" .Site.Data.server_cir_no_response.major_crops.table_body "break" true ) }}
         </td>
     </tr>
 </table>
-    {{ partial "farm-ownership-table.html" (dict "surveyNo" "24/2" "imageURL" ("images/dynamic-images/survey-image-2.png" | relURL) )}}
-    {{ partial "farm-ownership-table.html" (dict "surveyNo" "58/2" "imageURL" ("images/dynamic-images/survey-image.png" | relURL) )}}
-    {{ partial "farm-ownership-table.html" (dict "surveyNo" "42/1" "text" "खसरा नंबर 24/2 | ह कू सह पु याम सह। जा त यादव | पता शमशाबाद व दशा म य देश | सपूर्ण भाग | भूम वामी | भू-राज व 5.95 | फेल :1.2020 है टेयर कै फयत : ना.प. 8 आ द 12/9/2017 के अनुसार | यायालय तहसीलदार के करण मांक 17/ अ-27/2020-21 एवं आदेश दनांक 29/07/2020 के अनुसार दज ।। यायालय तहसीलदार के करण. 214/a27/2020-21 आदेश द. 22/12/2020 के अनुसार भू-अ भलेख अ य तत |")}}
-    {{ partial "farm-ownership-table.html" (dict "surveyNo" "32/1" "text" "खसरा नंबर 58/1 | ह कू सह पु याम सह। जा त यादव | पता शमशाबाद व दशा म य देश | सपूर्ण भाग | भूम वामी | भू-राज व 5.95 | फेल :1.2020 है टेयरकै फयत : ना.प. 8 आ द 12/9/2017 के अनुसार | यायालय तहसीलदार के करण मांक 17/ अ-27/2020-21 एवं आदेश दनांक 29/07/2020 के अनुसार दज ।। यायालय तहसीलदार के करण. 214/a27/2020-21 आदेश द. 22/12/2020 के अनुसार भू-अ भलेख अ य तत |")}}
 
-    <table class="no-break">
-        <tr>
-            <td>
-                {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(Based on the district where the farm is located)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
-                {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
-            </td>
-        </tr>
-    </table>
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true "hideInfo" true ) }}
+        </td>
+    </tr>
+</table>
+
 {{ end }}

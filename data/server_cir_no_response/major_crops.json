@@ -1,0 +1,50 @@
+{
+    "table_head": [
+        {
+            "title": "SEASON"
+        },
+        {
+            "title": "CROP NAME"
+        },
+        {
+            "title": "CROP Area (% share)"
+        },
+        {
+            "title": "Avg. Crop Yield (kg/ha)"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Kharif",
+                "Groundnut",
+                "2,61,785 ha (43%)",
+                "1,460"
+            ]
+        },
+        {
+            "content": [
+                "Kharif",
+                "Cotton (lint)",
+                "2,37,053 ha (39%)",
+                "2,244"
+            ]
+        },
+        {
+            "content": [
+                "Rabi",
+                "Wheat",
+                "24,456 ha (4%)",
+                "3,739"
+            ]
+        },
+        {
+            "content": [
+                "Horticulture",
+                "Onion",
+                "2,201 ha (1%)",
+                "30,189"
+            ]
+        }
+    ]
+}

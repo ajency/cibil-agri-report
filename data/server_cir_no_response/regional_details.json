@@ -1,0 +1,61 @@
+{
+"regionalDetails":[
+  {
+    "column" : [
+      {
+        "title":"Nearest Mandi",
+        "desc":"10.9 km, Dhoraji (Rajkot)",
+        "note":""
+      },
+      {
+        "title":"Drought Instances",
+        "desc":"2000, 2001, 2002, 2003, 2009, 2011, 2012, 2015",
+        "note":"(At district level, since 2000)"
+      },
+      {
+        "title":"Type of Soil",
+        "desc":"Black Soil",
+        "note":""
+      }
+    ]
+  },
+  {
+    "column" : [
+      {
+        "title":"Proximity to nearest road/rail",
+        "desc":"2.6 km",
+        "note":""
+      },
+      {
+        "title":"Village Population",
+        "desc":"45,404",
+        "note":" (As per census 2011)"
+      },
+      {
+        "title":"Agro-Ecological Sub-Zone",
+        "desc":"Gujrat Plain and Hill Region",
+        "note":""
+      }
+    ]
+  },
+  {
+    "column" : [
+      {
+        "title":"Proximity to nearest water body",
+        "desc":"5.4 Km",
+        "note":""
+      },
+      {
+        "title":"Ambient Temperature",
+        "desc":"10.4°C - 40.7°C",
+        "note":"(Annual min/max in the year 2021, at sub-district level)"
+      },
+      {
+        "title":"Regional Prosperity Index",
+        "desc":"0.57/1",
+        "note":"(Based on night light index and population at sub-district level)"
+      }
+    ]
+  }
+]
+}

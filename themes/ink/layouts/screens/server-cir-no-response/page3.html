@@ -1,10 +1,12 @@
 {{ define "main" }}
 
+
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE") }}
-            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
+            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "regionalDetails" .Site.Data.server_cir_no_response.regional_details.regionalDetails) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
         </td>
     </tr>
 </table>
@@ -12,8 +14,18 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
-            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "regionalDetails" .Site.Data.regional_details.regionalDetails) }}
+            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS" "tableInfo" "") }}
+            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "" "graph_image" "images/dynamic-images/rainfall-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "" "graph_image" "images/dynamic-images/ground-water-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
+        {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
         </td>
     </tr>
 </table>

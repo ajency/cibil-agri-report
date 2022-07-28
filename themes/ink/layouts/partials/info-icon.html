@@ -1,4 +1,6 @@
+{{ if .message }}
 <span class="info-icon {{ if .className }}{{.className}}{{ end }}">
     <img src='{{ "images/static-images/info-icon.png" | relURL}}'>
     <span class="tooltip">{{ .message }}</span>
 </span>
+{{ end }}
