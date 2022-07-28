@@ -12,6 +12,7 @@
       "farmLocations": [
         {
           "table_title": "FARM LOCATION(S)",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "SURVEY DETAILS"
@@ -51,6 +52,7 @@
       "adjacentLandDetails": [
         {
           "table_title": "ADJACENT LAND DETAILS",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "ADJACENT LAND LABELS"
@@ -105,6 +107,7 @@
       "farmLocations": [
         {
           "table_title": "FARM LOCATION(S)",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "SURVEY DETAILS"
@@ -144,6 +147,7 @@
       "adjacentLandDetails": [
         {
           "table_title": "ADJACENT LAND DETAILS",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "ADJACENT LAND LABELS"
@@ -210,6 +214,7 @@
       "farmLocations": [
         {
           "table_title": "FARM LOCATION(S)",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "SURVEY DETAILS"
@@ -249,6 +254,7 @@
       "adjacentLandDetails": [
         {
           "table_title": "ADJACENT LAND DETAILS",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "ADJACENT LAND LABELS"
@@ -315,6 +321,7 @@
       "farmLocations": [
         {
           "table_title": "FARM LOCATION(S)",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "SURVEY DETAILS"
@@ -354,6 +361,7 @@
       "adjacentLandDetails": [
         {
           "table_title": "ADJACENT LAND DETAILS",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "ADJACENT LAND LABELS"
@@ -408,6 +416,7 @@
       "farmLocations": [
         {
           "table_title": "FARM LOCATION(S)",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "SURVEY DETAILS"
@@ -447,6 +456,7 @@
       "adjacentLandDetails": [
         {
           "table_title": "ADJACENT LAND DETAILS",
+          "hideInfo": true,
           "table_head": [
             {
               "title": "ADJACENT LAND LABELS"

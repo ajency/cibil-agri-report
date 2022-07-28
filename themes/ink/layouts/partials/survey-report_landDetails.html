@@ -3,7 +3,11 @@
     <table class="no-break">
         <tr>
             <td>
+            {{if .hideInfo}}
+            {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
+            {{else}}
                 {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium" "tableInfo" "'CHATURDISHA' information for precise land verification") }}
+            {{end}}
                 <table class="bordered-table padding-0 landDetails-table break" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="left">
                     <thead>
                         <tr>

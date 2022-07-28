@@ -3,7 +3,11 @@
     <table class="no-break">
         <tr>
             <td>
-                {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium" "tableInfo" "Geospatial image of the location of survey details with geographical boudary to verify the land details") }}
+                {{if .hideInfo}}
+                    {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium") }}
+                {{else}}
+                    {{ partial "table-title" (dict "tableTitle" .table_title "className" "medium" "tableInfo" "Geospatial image of the location of survey details with geographical boudary to verify the land details") }}
+                {{end}}
                 <table class="bordered-table padding-0 farmLocations-table break bottom-border" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
                     <thead>
                         <tr>
