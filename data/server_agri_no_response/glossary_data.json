@@ -1,0 +1,64 @@
+{
+    "table_head": [
+        {
+            "title": "REPORT SECTION"
+        },
+        {
+            "title": "KEY TERM / CODE"
+        },
+        {
+            "title": "DEscription"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Report name",
+                "-",
+                "CIBIL Credit and Farm Report"
+            ]
+        },
+        {
+            "content": [
+                "Consumer Details",
+                "e",
+                "Enriched through Enquiry"
+            ]
+        },
+        {
+            "content": [
+                "Identification(s)",
+                "ID Types",
+                "<span>Income Tax ID Number (PAN) \n</span><span>Passport Number \n</span><span>Voter ID \n</span><span>Driver’s License Number \n</span><span>Ration Card Number \n</span><span>Universal ID Number (UID)</span>"
+            ]
+        },
+        {
+            "content": [
+                "Telephone(s) :",
+                "Telephone Types",
+                "<span>Latest 4 Telephone details reported.\n</span><span>Mobile phone \n</span><span>Home Phone \n</span><span>Office phone</span>"
+            ]
+        },
+        {
+            "content": [
+                "Email Contact(s) :",
+                "-",
+                "Last 4 emails reported."
+            ]
+        },
+        {
+            "content": [
+                "Employment Information(s) :",
+                "Occupation Codes",
+                "<span>Latest Employment detail reported.\n</span><span>Salaried \n</span><span>Self Employed Professionals \n</span><span>Self Employed \n</span><span>Others</span>"
+            ]
+        },
+        {
+            "content": [
+                "Address(es) :",
+                "Address Category",
+                "<span>Latest 4 address reported.\n</span><span>Permanent Address \n</span><span>Residence Address \n</span><span>Office Address \n</span><span>Not categorized</span>"
+            ]
+        }
+    ]
+}

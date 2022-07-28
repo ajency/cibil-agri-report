@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "30") }}
+    {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "30" "className" "medium") }}
     {{ partial "farm-data-glossary" (dict "tableHead" .Site.Data.data_insight_report.farm_glossary_data.table_head "tableBody" .Site.Data.data_insight_report.farm_glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "FARM DATA GLOSSARY" "break" true ) }}
 
 {{ end }}

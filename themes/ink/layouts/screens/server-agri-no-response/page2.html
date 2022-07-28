@@ -11,7 +11,7 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" "className" "medium") }}
             {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
             {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date )  }}
         </td>

@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)" ) }}
+{{ partial "page-title" (dict "pageTitle" "CONSUMER FARM LOCATION(S)" "className" "medium") }}
 {{partial "survey-report_map" (dict "surveyReports" .Site.Data.server_cir_no_response.survey_reports.G1 )}}
 {{partial "survey-report_farmLocation" (dict "surveyReports" .Site.Data.server_cir_no_response.survey_reports.G1 "hideInfo" true )}}
 {{partial "survey-report_landDetails" (dict "surveyReports" .Site.Data.server_cir_no_response.survey_reports.G1 )}}
