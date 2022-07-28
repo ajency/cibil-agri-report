@@ -1,0 +1,20 @@
+{
+  "left_graph" : [
+    {
+      "graph_image": "images/dynamic-images/farm-score-graph-720.png",
+      "list_title": "Scoring Factors",
+      "list_factors":[
+        "1. Credit card balances are high in proportion to high credit amount",
+        "2. Low proportion of satisfactory trades.",
+        "3. One or more trades with suit filed status in the past 24 months.",
+        "4. Presence of delinquency.",
+        "5. Low average trade age."
+      ]
+    }
+  ],
+  "right_graph" : [
+    {
+      "graph_image": "images/static-images/farm-score-graph-empty3.png"
+    }
+  ]
+}
