@@ -1,9 +1,11 @@
 <table class="no-break error-block" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    {{if .title}}
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" .title "className" "section-title") }}
         </td>
     </tr>
+    {{end}}
     <tr>
         <td>
             <p class="error-message" >{{ .errorMessage }}</p>
