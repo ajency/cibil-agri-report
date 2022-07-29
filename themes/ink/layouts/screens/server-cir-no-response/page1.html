@@ -9,18 +9,6 @@
 
 {{ partial "error-block.html" (dict "errorMessage" "YOUR REQUEST HAS BEEN REJECTED BY THE CREDIT BUREAU SERVER. PLEASE MAKE THE APPROPRIATE CHANGE AND RESUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR." "title" "CONSUMER CIR") }}
 
-
-
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "page-title" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
-            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}
-        </td>
-    </tr>
-</table>
-
 <table class="no-break">
     <tr>
         <td>
@@ -33,8 +21,8 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-            {{ partial "halfcircle-graphs" (dict "leftError" true "errorMessage" "Request has been rejected." "rightGraph" .Site.Data.server_cir_no_response.halfcircle_graph.right_graph) }}
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM(s) Score") }}
+            {{ partial "halfcircle-single-graph" (dict "graphType" "agri" "rightGraph" .Site.Data.halfcircle_graph.right_graph ) }}
         </td>
     </tr>
 </table>

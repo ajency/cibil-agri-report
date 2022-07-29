@@ -31,11 +31,12 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-            {{ partial "halfcircle-graphs" (dict "rightError" true "errorMessage" "Request has been rejected." "leftGraph" .Site.Data.halfcircle_graph.left_graph) }}
+            {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s)") }}
+            {{ partial "halfcircle-single-graph" (dict "graphType" "cir" "leftGraph" .Site.Data.halfcircle_graph.left_graph "rightGraph" .Site.Data.halfcircle_graph.right_graph ) }}
         </td>
     </tr>
 </table>
+
 <table class="no-break">
     <tr>
         <td>

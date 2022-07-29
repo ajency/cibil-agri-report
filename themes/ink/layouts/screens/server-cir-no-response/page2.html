@@ -4,7 +4,15 @@
     <tr>
         <td>
             {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS" "className" "medium") }}
+            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}
+        </td>
+    </tr>
+</table>
 
+<table class="no-break">
+    <tr>
+        <td>
             {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "") }}
             {{ partial "title-table" (dict "tableHead" .Site.Data.server_cir_no_response.major_crops.table_head "tableBody" .Site.Data.server_cir_no_response.major_crops.table_body "break" true ) }}
         </td>
