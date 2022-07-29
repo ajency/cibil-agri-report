@@ -8,12 +8,11 @@
     </tr>
 </table>
 
-{{ partial "error-block.html" (dict "errorMessage" "WE ARE UNABLE TO FETCH FARM DETAILS FOR YOUR REQUEST, PLEASE MAKE THE APPROPRIATE CHANGE AND RESUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR." "title" "FARM REPORT") }}
+{{ partial "error-block.html" (dict "errorMessage" "WE ARE UNABLE TO FETCH FARM DETAILS FOR YOUR REQUEST, PLEASE MAKE THE APPROPRIATE CHANGE AND RESUBMIT THE REQUEST OR CONTACT THE SYSTEM ADMINISTRATOR.") }}
 
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "CONSUMER CIR" "className" "section-title") }}
             {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
         </td>
     </tr>
