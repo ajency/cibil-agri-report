@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<table class="no-break">
+<table class="break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
-            {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body ) }}
-
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER ENQUIRY DETAILS" "className" "medium") }}
+            {{ partial "table-title.html" (dict "tableTitle" "Enquiries") }}
+            {{ partial "information-table.html" (dict "tableHead" .Site.Data.no_cir.enquiries.table_head "tableBody" .Site.Data.no_cir.enquiries.table_body "customMargin" "70" "break" true ) }}
         </td>
     </tr>
 </table>
@@ -13,18 +13,9 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.customer_address.table_head "tableBody" .Site.Data.customer_address.table_body "extendCol1" "true" "break" true ) }}
-            {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
-        </td>
-    </tr>
-</table>
-
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
-            {{ partial "information-table.html" (dict "tableHead" .Site.Data.employment_information.table_head "tableBody" .Site.Data.employment_information.table_body "remark" .Site.Data.employment_information.remark "date" .Site.Data.employment_information.date "break" true ) }}
+            {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS" "className" "medium") }}
+            {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+            {{ partial "title-table-empty" (dict "tableHead" .Site.Data.disputes.table_head "className" "dispute-table" "break" "true" ) }}
         </td>
     </tr>
 </table>

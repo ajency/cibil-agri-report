@@ -1,0 +1,16 @@
+{
+  "left_graph" : [
+    {
+      "graph_image": "images/dynamic-images/farm-score-graph-142.png",
+      "list_title": "Scoring Factors",
+      "list_factors":[
+        "NA"
+      ]
+    }
+  ],
+  "right_graph" : [
+    {
+      "graph_image": "images/static-images/farm-score-graph-empty3.png"
+    }
+  ]
+}

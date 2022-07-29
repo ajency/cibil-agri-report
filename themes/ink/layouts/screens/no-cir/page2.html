@@ -1,13 +1,5 @@
 {{ define "main"}}
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
-            {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
-        </td>
-    </tr>
-</table>
 
 <table class="no-break">
     <tr>
@@ -22,17 +14,20 @@
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM SUMMARY") }}
-            {{ partial "consumer-farm-summary-v2" }}
+            {{ partial "consumer-farm-summary-v2" (dict "comsumerFarmSummary" .Site.Data.consumer_farm_summary_v2.comsumerFarmSummary) }}
+            {{ partial "info-light-text" (dict "text" "LAST TWO SEASON’S DATA" )}}
         </td>
     </tr>
 </table>
 
+{{ partial "spacer" (dict "space" "20")}}
+
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "Consumer Details" "className" "medium") }}
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" "className" "medium" ) }}
             {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
-            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date )  }}
+            {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head  )  }}
         </td>
     </tr>
 </table>
@@ -41,8 +36,18 @@
     <tr>
         <td>
             {{ partial "table-title.html" (dict "tableTitle" "Identification(s)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.identifications.table_head "tableBody" .Site.Data.identifications.table_body "break" true ) }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.identifications.table_head "tableBody" .Site.Data.no_cir.identifications.table_body "break" true ) }}
             {{ partial "info-light-text" (dict "text" "(e) - IDENTIFICATION REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+    
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.telephones.table_head "tableBody" .Site.Data.no_cir.telephones.table_body "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
         </td>
     </tr>
 </table>
@@ -50,9 +55,27 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "TELEPHONE(S)") }}
-            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.telephones.table_head "tableBody" .Site.Data.telephones.table_body "break" true ) }}
-            {{ partial "info-light-text" (dict "text" "(e) - TELEPHONE REPORTED FROM ENQUIRY" )}}
+            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+            {{ partial "consumer-details-table.html" (dict "message" "No emails reported for this consumer") }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.no_cir.customer_address.table_head "tableBody" .Site.Data.no_cir.customer_address.table_body "extendCol1" "true" "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "Employment Information") }}
+            {{ partial "information-table.html" (dict "message" "No employment information reported for this consumer") }}
         </td>
     </tr>
 </table>

@@ -1,11 +1,12 @@
 {{ define "main" }}
 
+
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS") }}
-            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data "break" true )}}
+            {{ partial "table-title" (dict "tableTitle" "Regional Details") }}
+            {{ partial "regional-details" (dict "headTitle" "REGIONAL METRICS" "regionalDetails" .Site.Data.server_cir_no_response.regional_details.regionalDetails) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
         </td>
     </tr>
 </table>
@@ -13,8 +14,9 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(Based on the district where the farm is located)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.major_crops.table_head "tableBody" .Site.Data.major_crops.table_body "break" true ) }}
+            {{ partial "table-title" (dict "tableTitle" "WATER CONDITIONS") }}
+            {{ partial "vertical-bar-chart" (dict "chart_title" "RAINFALL" "chart_title_info" "Average rainfall and rainfall pattern in the last 10 years" "graph_image" "images/dynamic-images/rainfall-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables1.png" "labels_image_width" "303" "chart_desc" "The graph below represents the annual rainfall in the sub-district of Dhoraji." ) }}
+            {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
         </td>
     </tr>
 </table>
@@ -22,8 +24,8 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE") }}
-            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true ) }}
+        {{ partial "vertical-bar-chart" (dict "chart_title" "GROUNDWATER" "chart_title_info" "Average groundwater level and groundwater level pattern in last year " "graph_image" "images/dynamic-images/ground-water-graph.png" "duration" "2011 - 2020" "labels_image" "images/dynamic-images/graph-lables2.png" "labels_image_width" "407" "chart_desc" "The graph below represents the average annual groundwater in the sub-district of Dhoraji" ) }}
+        {{ partial "info-light-text" (dict "text" "THESE VALUES ARE CALCULATED FOR LARGEST BOUNDARY" )}}
         </td>
     </tr>
 </table>

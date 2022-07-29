@@ -1,10 +1,31 @@
 {{ define "main" }}
-<table class="break">
+
+<table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS") }}
-            {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
-            {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" "break" true ) }}
+            {{ partial "page-title" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
+            {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
+            {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "CONSUMER FARM DETAILS" "className" "medium") }}
+
+            {{ partial "table-title-with-id" (dict "tableTitle" "MAJOR Crops in the region" "subTitle" "(In the district of Rajkot)" "property" "Total Agricultural area in Rajkot district" "value" "6,08,802 ha" "info" "") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.server_cir_no_response.major_crops.table_head "tableBody" .Site.Data.server_cir_no_response.major_crops.table_body "break" true ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CROPPING HISTORY & PERFORMANCE" "tableInfo" "") }}
+            {{ partial "performance-table.html" (dict "tableBody" .Site.Data.no_cir.history_performance.table_body "targetValue" .Site.Data.no_cir.history_performance.target_value "break" true "hideInfo" true ) }}
         </td>
     </tr>
 </table>

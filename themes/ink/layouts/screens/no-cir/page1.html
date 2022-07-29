@@ -3,7 +3,6 @@
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT" "pageTitleSmall" "in partnership with <b>SatSure</b>" ) }}
-            {{ partial "page-title" (dict "pageTitle" "CONSUMER CIR" "className" "section-title") }}
             {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
         </td>
     </tr>
@@ -31,7 +30,16 @@
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-            {{ partial "halfcircle-graphs" (dict "rightGraph" .Site.Data.no_cir.halfcircle_graph.right_graph "leftGraph" .Site.Data.halfcircle_graph.left_graph ) }}
+            {{ partial "halfcircle-graphs" (dict "leftGraph" .Site.Data.no_cir.halfcircle_graph.left_graph "rightGraph" .Site.Data.server_cir_no_response.halfcircle_graph.right_graph ) }}
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
+            {{ partial "summary-table" (dict "tableHead" .Site.Data.no_cir.consumer_summary.table_head "tableBody" .Site.Data.no_cir.consumer_summary.table_body ) }}
         </td>
     </tr>
 </table>
