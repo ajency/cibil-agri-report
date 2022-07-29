@@ -1,0 +1,58 @@
+<table {{ if .customMargin }}style=" margin-bottom: {{ .customMargin }}px;"{{ end }} class="title-table bordered-table padding-0 default-data-title-table {{if .break }}break{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr>
+        <td>
+            <table class="{{.className}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                <thead>
+                    {{ if .headerTitle }}
+                    <tr class="extra-head-row">
+                        {{ $arrayFirstElement := index .tableBody 0 }}
+                        <th class="extra-table-head" colspan="{{ if .glossaryDataTable }} {{ add (len $arrayFirstElement.content) 1 }} {{ else }} {{ (len $arrayFirstElement.content) }} {{ end }}">{{ .headerTitle | safeHTML  }}</th>
+                    </tr>
+                    {{ end }}
+                    <tr>
+                        {{ if .glossaryDataTable }}
+                            {{ range $elem_index, $tableHeadd := .tableHead }}
+                                <th {{ if (eq $elem_index 2) }}colspan="2"{{ end }}>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
+                            {{ end }}
+                        {{ else }}
+                            {{ range .tableHead }}
+                                <th>{{ .title }}{{ if .info }} {{partial "info-icon" (dict "message" .info "className" "small up" )}} {{ end }}</th>
+                            {{ end }}
+                        {{ end }}
+                    </tr>
+                </thead>
+                <tbody>
+                    {{ if .tableBody }}
+                        {{ if .glossaryDataTable }}
+                            {{ range .tableBody }}
+                            <tr>
+                                {{ range $elem_index, $elem_val := .content }}
+                                <td {{ if (eq $elem_index 2) }}colspan="2"{{ end }}>{{ $elem_val | safeHTML }}</td>
+                                {{ end }}
+                            </tr>
+                            {{ end }}
+                        {{ else }}
+                            {{ range .tableBody }}
+                            <tr>
+                                {{ range $elem_index, $elem_val := .content }}
+                                <td >{{ $elem_val | safeHTML }}</td>
+                                {{ end }}
+                            </tr>
+                            {{ end }}
+                        {{ end }}
+                    {{else}}
+                    <tr>
+                        <td colspan="{{len .tableHead}}">
+                            {{ partial "empty-state" (dict "message" "No Consumer Farm Ownership available." "className" "no-border")}}
+                        </td>
+                    </tr>
+                    {{end}}
+                </tbody>
+                <tfoot>
+                    {{ $arrayFirstElement := len .tableHead }}
+                    <tr><td class="empty-td" colspan="{{ if .glossaryDataTable }} {{ add ($arrayFirstElement) 1 }}{{ else }}{{ ($arrayFirstElement) }}{{ end }}"></td></tr>
+                </tfoot>
+            </table>
+        </td>
+    </tr>
+</table>

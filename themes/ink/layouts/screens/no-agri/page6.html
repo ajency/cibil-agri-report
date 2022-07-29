@@ -1,15 +1,21 @@
 {{ define "main" }}
 
-{{ partial "title-table" (dict "tableHead" .Site.Data.glossary_data_2.table_head "tableBody" .Site.Data.glossary_data_2.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
-
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "report-end" (dict "text" "END OF REPORT ON Mohana Parab") }}
+            {{ partial "page-title" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
+            {{ partial "info-table.html" (dict "message" "No Farm Details available." )}}
         </td>
     </tr>
 </table>
 
-{{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer.table_head "tableBody" .Site.Data.disclaimer.table_body "className" "white-row disclaimer text-break-format" ) }}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10" "className" "medium") }}
+            {{ partial "title-table" (dict "tableHead" .Site.Data.data_insight_report.glossary_data.table_head "tableBody" .Site.Data.data_insight_report.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true "glossaryDataTable" true ) }}
+        </td>
+    </tr>
+</table>
 
 {{ end }}

@@ -1,4 +1,14 @@
 {{ define "main"}}
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CONSUMER SUMMARY ") }}
+            {{ partial "summary-table" (dict "tableHead" .Site.Data.consumer_summary.table_head "tableBody" .Site.Data.consumer_summary.table_body ) }}
+        </td>
+    </tr>
+</table>
+
 <table class="no-break">
     <tr>
         <td>
@@ -12,7 +22,7 @@
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "CONSUMER FARM SUMMARY") }}
-            {{ partial "consumer-farm-summary-v2.html" }}
+            {{ partial "consumer-farm-summary-v2" }}
         </td>
     </tr>
 </table>
@@ -20,16 +30,7 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER FARM OWNERSHIP") }}
-            {{ partial "farm-ownership-table.html"}}
-        </td>
-    </tr>
-</table>
-
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "page-title" (dict "pageTitle" "Consumer Details" ) }}
+            {{ partial "page-title" (dict "pageTitle" "Consumer Details" "className" "medium") }}
             {{ partial "table-title.html" (dict "tableTitle" "CONSUMER INFORMATION") }}
             {{ partial "consumer-details-table.html" (dict "tableHead" .Site.Data.customer_information.table_head "remark" .Site.Data.customer_information.remark "date" .Site.Data.customer_information.date )  }}
         </td>
@@ -56,13 +57,4 @@
     </tr>
 </table>
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
-            {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body ) }}
-
-        </td>
-    </tr>
-</table>
 {{ end }}

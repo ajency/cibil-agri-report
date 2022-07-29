@@ -1,8 +1,24 @@
 {{ define "main" }}
 
-    {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
-    {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.customer_address.table_head "tableBody" .Site.Data.customer_address.table_body "extendCol1" "true" "break" true ) }}
-    {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "EMAIL CONTACT(S)") }}
+            {{ partial "consumer-details-table.html" (dict "tableBody" .Site.Data.email_contact.table_body ) }}
+
+        </td>
+    </tr>
+</table>
+
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title.html" (dict "tableTitle" "CONSUMER’S REPORTED ADDRESS(ES)") }}
+            {{ partial "consumer-details-table-spaced.html" (dict "tableHead" .Site.Data.customer_address.table_head "tableBody" .Site.Data.customer_address.table_body "extendCol1" "true" "break" true ) }}
+            {{ partial "info-light-text" (dict "text" "(e) - ADDRESSES REPORTED FROM ENQUIRY" )}}
+        </td>
+    </tr>
+</table>
 
 <table class="no-break">
     <tr>
@@ -13,15 +29,4 @@
     </tr>
 </table>
 
-<table class="no-break">
-    <tr>
-        <td>
-            {{ partial "page-title" (dict "pageTitle" "CONSUMER ACCOUNT DETAILS" "className" "medium") }}
-            {{ partial "table-title" (dict "tableTitle" "1. Account" "className" "marginB-20") }}
-            {{ partial "consumer-account-details" (dict "table1Name" "account information" "table2Name" "DAYS PAST DUE/ASSET CLASSIFICATION" "table_title_class" "ac-width1" "table_headDates_class" "ac-width2" "status" "active" "footer_text" "INFORMATION UNDER DISPUTE" "cibil_remark" "Written-off and Settled Status in Dispute" "date_entered" "16/06/2019" "tableHead1" .Site.Data.consumer_account_details1.table_head1 "tableBody1" .Site.Data.consumer_account_details1.table_body1 "tableBody1_leftPanel" .Site.Data.consumer_account_details1.table_body1_leftPanel "tableBody1_middlePanel" .Site.Data.consumer_account_details1.table_body1_middlePanel "tableBody1_rightPanel" .Site.Data.consumer_account_details1.table_body1_rightPanel  "tableHead2" .Site.Data.consumer_account_details1.table_head2 "tableBody_daysPastDue" .Site.Data.consumer_account_details1.table_body1_daysPastDue "horizontal_rows" .Site.Data.consumer_account_details1.horizontal_rows  "break" true) }}
-        </td>
-    </tr>
-</table>
-
-    
 {{ end }}
