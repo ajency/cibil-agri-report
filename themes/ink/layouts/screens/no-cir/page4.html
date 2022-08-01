@@ -3,7 +3,6 @@
 <table class="no-break">
     <tr>
         <td>
-            {{ partial "page-title" (dict "pageTitle" "FARM REPORT" "className" "section-title") }}
             {{ partial "table-title.html" (dict "tableTitle" "FARm DETAILS") }}
             {{ partial "info-table.html" (dict "data" .Site.Data.farm_details.data )}}
         </td>
