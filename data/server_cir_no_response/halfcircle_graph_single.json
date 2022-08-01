@@ -1,0 +1,41 @@
+{
+  "left_graph" : [
+    {
+      "graph_image": "images/dynamic-images/farm-score-graph-720.png",
+      "list_title": "Scoring Factors",
+      "list_factors":[
+        "1. Credit card balances are high in proportion to high credit amount",
+        "2. Low proportion of satisfactory trades.",
+        "3. One or more trades with suit filed status in the past 24 months.",
+        "4. Presence of delinquency.",
+        "5. Low average trade age."
+      ]
+    }
+  ],
+  "right_graph" : [
+    {
+      "graph_image": "images/dynamic-images/farm-score-graph-810.png",
+      "list_title": "FACTORS CONTRIBUTING TOWARDS FARM SCORE",
+      "list_factors":[
+        {
+            "contr_factors":"200",
+            "total_factors":"200",
+            "factor_title":"BASE SCORE",
+            "factor_info": "Scores reflects , well equiped Irrigation system and better land utilization for crop cultivation at Farm."
+        },
+        {
+            "contr_factors":"315",
+            "total_factors":"400",
+            "factor_title":"AVERAGE KHARIF SCORE",
+            "factor_info":"Scores reflects Productivity & revenue potential of the farm in Kharif season"
+        },
+        {
+            "contr_factors":"318",
+            "total_factors":"400",
+            "factor_title":"AVERAGE RABI SCORE",
+            "factor_info": "Scores reflects Productivity & revenue potential of the farm in Rabi Season"
+        }
+      ]
+    }
+  ]
+}
