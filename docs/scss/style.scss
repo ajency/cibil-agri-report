@@ -767,7 +767,7 @@ body {
         .icon{
             vertical-align: top;
             text-align: center;
-            width: 28%;
+            width: 23%;
         }
         .details{
             vertical-align: top;
@@ -1571,5 +1571,16 @@ tfoot {
 .centerTd{
     tbody td:nth-child(2){
         text-align: center;
+    }
+}
+
+.margin30{
+    .graph-img{
+        margin-bottom: 30px !important;
+    }
+    .right-side{
+        .td-title{
+            display: none !important;
+        }
     }
 }

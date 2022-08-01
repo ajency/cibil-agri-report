@@ -28,7 +28,7 @@
     <tr>
         <td>
             {{ partial "table-title" (dict "tableTitle" "CIBIL Transunion Score(s) And CONSUMER FARM(s) Score") }}
-            {{ partial "halfcircle-graphs.html" }}
+            {{ partial "halfcircle-graphs.html" (dict "allowMessage" true "classNames" "margin30" )}}
         </td>
     </tr>
 </table>

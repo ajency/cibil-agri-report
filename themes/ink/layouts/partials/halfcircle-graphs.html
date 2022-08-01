@@ -1,4 +1,4 @@
-<table class="bordered-table horizontal-border circle-graph-table {{ if .negative }}negative{{ end }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table class="bordered-table horizontal-border circle-graph-table {{ if .negative }}negative{{ end }} {{ .classNames }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         <td class="left-side">
             <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
@@ -73,7 +73,11 @@
                 {{else}}
                     <tr>
                         <td>
-                            {{ partial "graph-empty-state" (dict "message" "No data available" "imageURL" "images/static-images/farm-score-graph-empty3.png" "section_title" "FACTORS CONTRIBUTING TOWARDS FARM SCORE" "className" "no-agri") }}
+                            {{ if .allowMessage }}
+                                {{ partial "graph-empty-state" (dict "message" "No Consumer Farm Score available." "imageURL" "images/static-images/farm-score-graph-empty3.png" "className" "no-agri") }}
+                            {{else}}
+                                {{ partial "graph-empty-state" (dict "message" "No data available" "imageURL" "images/static-images/farm-score-graph-empty3.png" "section_title" "FACTORS CONTRIBUTING TOWARDS FARM SCORE" "className" "no-agri") }}
+                            {{end}}
                         </td>
                     </tr>
                 {{end}}
