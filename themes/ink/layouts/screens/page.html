@@ -4,7 +4,7 @@
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CIBIL FARM REPORT" "pageTitleSmall" "powered by SatSure" ) }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data "classNames" "centerTd")}}
         </td>
     </tr>
 </table>

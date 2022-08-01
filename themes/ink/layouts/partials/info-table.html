@@ -1,10 +1,12 @@
 {{ if .data }}
 <!-- info table | start -->
-<table class="bordered-table member-details {{if .break}}break{{end}} horizontal-border" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+<table class="bordered-table member-details {{if .break}}break{{end}} horizontal-border {{ .classNames }}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
     <tr>
         {{ range $elem_index, $elem_val := .data }}
             <td>
-                <p><span class="td-title">{{ $elem_val.property }}</span><span class="colon">:</span><span class="td-desc">{{ $elem_val.value }}</span></p>
+                {{if ne $elem_val.value "" }}
+                    <p><span class="td-title">{{ $elem_val.property }}</span><span class="colon">:</span><span class="td-desc">{{ $elem_val.value }}</span></p>
+                {{end}}
             </td>
             {{ if modBool (add $elem_index 1) 3 }}
                 </tr><tr>

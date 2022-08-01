@@ -5,7 +5,7 @@
         <td>
             {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT"  ) }}
             {{ partial "page-title" (dict "pageTitle" "CONSUMER CIR" "className" "section-title") }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data "classNames" "centerTd")}}
         </td>
     </tr>
 </table>

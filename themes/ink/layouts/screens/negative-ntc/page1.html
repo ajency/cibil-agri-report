@@ -3,7 +3,7 @@
     <tr>
         <td>
             {{ partial "page-title" (dict "pageTitle" "CIBIL CREDIT AND FARM REPORT" "pageTitleSmall" "in partnership with <b>SatSure</b>" ) }}
-            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data)}}
+            {{ partial "info-table.html" (dict "data" .Site.Data.report_member_info.data "classNames" "centerTd")}}
         </td>
     </tr>
 </table>
