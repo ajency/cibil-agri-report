@@ -1592,7 +1592,12 @@ tfoot {
 .title-table table tfoot > tr:last-child > td:last-child {
     border-bottom-right-radius: 8px;
 }
-
+.main-container .title-table tfoot td td {
+    border-bottom: 0;
+}
+.main-container .title-table tfoot .foot-alert-info{
+    border-bottom: 1px solid #ACACAC;
+}
 @media print {
     body {
         zoom:  0.6;
@@ -1612,6 +1617,9 @@ tfoot {
     
     .title-table table thead > tr:first-child > th:last-child {
         border-top-right-radius: 0px;
+    }
+    .main-container .title-table tfoot td td {
+        border-bottom: 1px solid #ACACAC;
     }
 }
 
