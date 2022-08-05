@@ -1694,7 +1694,29 @@ tfoot {
 } */
 
 
+// border fix for performance table and consumer account detials table
 .minus-horizontal-border{
   border-left: 0 !important;
   border-right: 0 !important;
+  border-bottom: 0;
+
+  table thead > tr:first-child{
+    & > th:last-child{
+      border-top-right-radius: 8px;
+    }
+    & > th:first-child{
+      border-top-left-radius: 8px;
+    }
+  }
+}
+
+.consumer-account-details-table {
+  .ac-table-head.one {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .ac-table-footer{
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
 }
