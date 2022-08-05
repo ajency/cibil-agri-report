@@ -1595,6 +1595,20 @@ tfoot {
     border-bottom-right-radius: 8px;
 }
 // border fix 1 end
+
+// border fix 3
+.main-container .title-table tfoot td td {
+    border-bottom: 0;
+}
+.main-container .title-table tfoot .foot-alert-info{
+    border-bottom: 1px solid #ACACAC;
+}
+// border fix 3 end
+// border fix 4
+.landDetails-table{
+    border-bottom: 1px solid #ACACAC;
+}
+// border fix 4 end
 @media print {
     body {
         zoom:  0.6;
@@ -1614,6 +1628,11 @@ tfoot {
     .title-table table thead > tr:first-child > th:last-child {
         border-top-right-radius: 0px;
     }
+    //border fix 3
+    .main-container .title-table tfoot td td {
+        border-bottom: 1px solid #ACACAC;
+    }
+    //border fix 3 end
 }
 
 /* tfoot tr td.empty-td {
