@@ -1,0 +1,94 @@
+{{if .scoreGraphs}}
+    {{range .scoreGraphs}}
+        <table class="bordered-table horizontal-border score-graph-tables" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+
+            {{if .creditvison_score}}
+                {{range .creditvison_score}}
+                    <tr>
+                        <td>
+                            <table class="score-graph-table {{if eq .border_bottom true}}border-bottom{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td class="title-details">
+                                        <p class="score-title">{{safeHTML .graph_title}}</p>
+                                        <p class="score-subtitle">{{safeHTML .graph_subtitle}}</p>
+                                    </td>
+                                    <td class="graph">
+                                        <img class="graph-img" src="{{ .graph_image | relURL}}">
+                                    </td>
+                                    <td class="factors">
+                                        {{if .score_factors}}
+                                            <p class="td-title mb-10">Scoring Factors</p>
+                                            <ul class="list">
+                                                {{range .score_factors}}
+                                                    <li>{{.}}</li>
+                                                {{end}}
+                                            </ul>
+                                        {{end}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                {{end}}
+            {{end}}
+
+            {{if .personal_score}}
+                {{range .personal_score}}
+                    <tr>
+                        <td>
+                            <table class="score-graph-table {{if eq .border_bottom true}}border-bottom{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td class="title-details">
+                                        <p class="score-title">{{safeHTML .graph_title}}</p>
+                                        <p class="score-subtitle">{{safeHTML .graph_subtitle}}</p>
+                                    </td>
+                                    <td class="graph">
+                                        <img class="graph-img" src="{{ .graph_image | relURL}}">
+                                    </td>
+                                    <td class="factors">
+                                        {{if .score_factors}}
+                                            <p class="td-title mb-10">Scoring Factors</p>
+                                            <ul class="list">
+                                                {{range .score_factors}}
+                                                    <li>{{.}}</li>
+                                                {{end}}
+                                            </ul>
+                                        {{end}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                {{end}}
+            {{end}}
+
+            {{if .estimated_range}}
+                {{range .estimated_range}}
+                    <tr>
+                        <td>
+                            <table class="score-graph-table {{if eq .border_bottom true}}border-bottom{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td class="title-details">
+                                        <p class="score-title">{{ safeHTML .graph_title}}</p>
+                                    </td>
+                                    <td class="graph">
+                                        <img class="graph-img" src="{{ .graph_image | relURL}}">
+                                    </td>
+                                    <td class="factors">
+                                        {{if .estimated_range}}
+                                            <p class="td-title mb-10 mb-24">EstimateD ANNUAL Income Range</p>
+                                            {{range .estimated_range}}
+                                                <p class="regular-text">{{.}}</p>
+                                            {{end}}
+                                        {{end}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                {{end}}
+            {{end}}
+
+        </table>
+    {{end}}
+{{end}}

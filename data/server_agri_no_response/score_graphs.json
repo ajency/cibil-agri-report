@@ -1,0 +1,44 @@
+[
+  {
+    "creditvison_score": [
+        {
+            "border_bottom": true,
+            "graph_title": "CREDITVISION®<br>Score",
+            "graph_subtitle": "Ranges from:<br>300 (high risk) to 900 (low risk)",
+            "graph_image": "images/dynamic-images/score-graph-720.png",
+            "score_factors":[
+                "1. Credit card balances are high in proportion to high credit amounts",
+                "2. Low proportion of satisfactory trades",
+                "3. One or more trades with suit-filed status in the past 24 months",
+                "4. Presence of delinquency",
+                "5. Low average trade age"
+            ]
+        }
+    ],
+    "personal_score": [
+        {
+            "border_bottom": true,
+            "graph_title": "Personal Loan<br>Score",
+            "graph_subtitle": "Ranges from:<br>300 (high risk) to 900 (low risk)",
+            "graph_image": "images/dynamic-images/score-graph-680.png",
+            "score_factors":[
+                "1. Credit card balances are high in proportion to high credit amounts",
+                "2. Low proportion of satisfactory trades",
+                "3. One or more trades with suit-filed status in the past 24 months",
+                "4. Presence of delinquency",
+                "5. Low average trade age"
+            ]
+        }
+    ],
+    "estimated_range": [
+        {
+            "border_bottom": false,
+            "graph_title": "Estimated<br>Income Band",
+            "graph_image": "images/dynamic-images/score-graph-7.png",
+            "estimated_range":[
+                "7 (1.5M - 1.8M)"
+            ]
+        }
+    ]
+  }
+]

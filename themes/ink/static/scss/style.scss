@@ -246,9 +246,9 @@ body {
       vertical-align: top;
     }
   }
-  table{
-    tr{
-      td{
+  table {
+    tr {
+      td {
         word-break: break-word;
       }
     }
@@ -1662,7 +1662,7 @@ tfoot {
   .summary-table thead > tr:first-child > th:first-child,
   .farmLocations-table tr:first-child th:first-child,
   .landDetails-table tr:first-child th:first-child,
-  .vertical-bar-graph tr:first-child th:first-child{
+  .vertical-bar-graph tr:first-child th:first-child {
     border-top-left-radius: 7px;
   }
   .consumer-farm-sumamry-v2 thead > tr:first-child > th:last-child,
@@ -1700,18 +1700,17 @@ tfoot {
     padding: 3px !important;
 } */
 
-
 // border fix for performance table and consumer account detials table
-.minus-horizontal-border{
+.minus-horizontal-border {
   border-left: 0 !important;
   border-right: 0 !important;
   border-bottom: 0;
 
-  table thead > tr:first-child{
-    & > th:last-child{
+  table thead > tr:first-child {
+    & > th:last-child {
       border-top-right-radius: 8px;
     }
-    & > th:first-child{
+    & > th:first-child {
       border-top-left-radius: 8px;
     }
   }
@@ -1722,8 +1721,68 @@ tfoot {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
   }
-  .ac-table-footer{
+  .ac-table-footer {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+  }
+}
+
+.score-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.score-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006685;
+}
+.score-title {
+  margin-bottom: 10px !important;
+}
+.regular-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+.mb {
+  &-10 {
+    margin-bottom: 10px !important;
+  }
+  &-24 {
+    margin-bottom: 24px !important;
+  }
+}
+.score-graph-tables{
+  padding: 0px !important;
+
+}
+.score-graph-table {
+  td {
+    padding: 30px 40px;
+  }
+  .td-title {
+    font-size: 18px;
+  }
+  .list {
+    li {
+      line-height: 26px;
+    }
+  }
+  .graph {
+    text-align: center;
+  }
+  .factors {
+    vertical-align: top;
+  }
+  .title-details {
+    width: 25%;
+  }
+  .graph {
+    width: 25%;
   }
 }

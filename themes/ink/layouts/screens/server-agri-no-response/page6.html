@@ -1,17 +1,16 @@
 {{ define "main" }}
 
-{{ partial "title-table" (dict "tableHead" .Site.Data.server_agri_no_response.glossary_data2.table_head "tableBody" .Site.Data.server_agri_no_response.glossary_data2.table_body "className" "text-break-format glossary-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
-
     <table class="no-break">
         <tr>
             <td>
-                {{ partial "report-end" (dict "text" "END OF REPORT ON Mohana Parab") }}
+                {{ partial "page-title" (dict "pageTitle" "CONSUMER DISPUTE REMARKS" "className" "medium") }}
+                {{ partial "table-title" (dict "tableTitle" "DISPUTES") }}
+                {{ partial "title-table" (dict "tableHead" .Site.Data.disputes.table_head "tableBody" .Site.Data.disputes.table_body "className" "dispute-table" "break" true ) }}
             </td>
         </tr>
     </table>
 
-    {{partial "spacer" (dict "space" "99")}}
-
-    {{ partial "title-table" (dict "tableHead" .Site.Data.disclaimer2.table_head "tableBody" .Site.Data.disclaimer2.table_body "className" "white-row disclaimer text-break-format" ) }}
+    {{ partial "page-title.html" (dict "pageTitle" "GLOSSARY" "customMargin" "10" "className" "medium") }}
+    {{ partial "title-table" (dict "tableHead" .Site.Data.server_agri_no_response.glossary_data.table_head "tableBody" .Site.Data.server_agri_no_response.glossary_data.table_body "className" "text-break-format glossary-table inverted-color-table" "headerTitle" "CIR DATA GLOSSARY" "break" true ) }}
 
 {{ end }}
