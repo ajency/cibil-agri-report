@@ -1,0 +1,68 @@
+{{if .algorithm_table}}
+    {{range .algorithm_table}}
+        <table class="bordered-table padding-0 horizontal-border algorithm-table" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" >
+
+            {{if .table_head}}
+                <tr>
+                    <td>
+                        <table class="child-table padding-0" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tr>
+                                {{range .table_head}}
+                                    <th {{if .type}}type="{{.type}}"{{end}}>{{.title}}</th>
+                                {{end}}
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            {{end}}
+
+            {{if .table_body}}
+                {{range .table_body}}
+                    <tr>
+                        <td>
+                            <table class="child-table padding-0 {{if eq .border_bottom true}}border-bottom{{end}}" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                {{$rows:= .rows}}
+                                {{range $index, $details:= .details}}
+                                    <tr>
+                                        {{if .title}}
+                                            <td rowspan="{{$rows}}" class="rowHeader" type="row-header">
+                                                <img src="{{ .icon | relURL }}" class="icon">
+                                                <p class="title">{{safeHTML .title }}</p>
+                                            </td>
+                                        {{else}}
+                                        
+                                        {{end}}
+                                        <td type="col-description">
+                                            <table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    <td type="description">{{.description}}</td>
+                                                    <td class="grey-text">{{.description_code}}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td type="col-value"><b>{{.value}}</b></td>
+                                        <td>
+                                            <table class="risk-scale-bar" role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                <tr>
+                                                    {{if .calculated_value}}
+                                                        <td class="left-limit">{{.left_limit}}</td>
+                                                        <td><span class="risk-scale"><span class="value" style="width:{{.calculated_value}};"></span></span></td>
+                                                        <td class="right-limit">{{.right_limit}}</td>
+                                                    {{else}}
+                                                        <td class="grey-text message">{{.message}}</td>
+                                                    {{end}}
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                {{end}}
+
+                            </table>
+                        </td>
+                    </tr>
+                {{end}}
+            {{end}}
+
+        </table>
+    {{end}}
+{{end}}

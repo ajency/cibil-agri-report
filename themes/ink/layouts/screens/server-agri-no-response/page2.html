@@ -8,4 +8,13 @@
     </tr>
 </table>
 
+<table class="no-break">
+    <tr>
+        <td>
+            {{ partial "table-title" (dict "tableTitle" "CREDITVISION® ALGORITHM(S)") }}
+            {{ partial "algorithm-table" (dict "algorithm_table" .Site.Data.server_agri_no_response.algorithm_table  ) }}
+        </td>
+    </tr>
+</table>
+
 {{ end }}

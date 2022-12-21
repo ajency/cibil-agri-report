@@ -1,0 +1,160 @@
+[
+  {
+    "table_head": [
+      {
+        "title": "COHORT",
+        "type": "row-header"
+      },
+      {
+        "title": "DESCRIPTION (NAME)",
+        "type": "col-description"
+      },
+      {
+        "title": "VALUE",
+        "type": "col-value"
+      },
+      {
+        "title": "RISK SCALE"
+      }
+    ],
+    "table_body": [
+      {
+        "border_bottom": true,
+        "rows": 7,
+        "details": [
+          {
+            "icon": "images/dynamic-images/payment-behaviour.png",
+            "title": "PAYMENT<br>BEHAVIOUR",
+            "description": "Percentage of payments missed in the last 12 months",
+            "description_code": "(PAYMNT63)",
+            "value": "5%",
+            "left_limit": "0%",
+            "right_limit": "15%",
+            "calculated_value": "20%"
+          },
+          {
+            "description": "Maximum delinquency across all trades",
+            "description_code": "(G311S) ",
+            "value": "60-89 DPD",
+            "left_limit": "0",
+            "right_limit": "90+",
+            "calculated_value": "70%"
+          },
+          {
+            "description": "Months since most recent delinquency (30+DPD)",
+            "description_code": "(AT36S)",
+            "value": "8M",
+            "left_limit": "12+",
+            "right_limit": "0",
+            "calculated_value": "60%"
+          },
+          {
+            "description": "Percentage of non delinquent open trades to all open trades",
+            "description_code": "(AT103S)",
+            "value": "10 %",
+            "left_limit": "100%",
+            "right_limit": "0%",
+            "calculated_value": "10%"
+          },
+          {
+            "description": "Number of accounts prior 60 days past due, now current (0 DPD)",
+            "description_code": "(CV18)",
+            "value": "03",
+            "left_limit": "5+",
+            "right_limit": "0",
+            "calculated_value": "55%"
+          },
+          {
+            "description": "Aggregate excess amount paid for all accounts over the past 6 months",
+            "description_code": "(ALL233)",
+            "value": "₹ 25,000",
+            "left_limit": "40K+",
+            "right_limit": "0",
+            "calculated_value": "30%"
+          },
+          {
+            "description": "Customer category bases credit card payment behaviour",
+            "description_code": "(BCPMTSTR)",
+            "value": "Transactor",
+            "message": "At least one bank card on which the consumer paid the full balance"
+          }
+        ]
+      },
+      {
+        "border_bottom": true,
+        "rows": 2,
+        "details": [
+          {
+            "icon": "images/dynamic-images/leverage.png",
+            "title": "LEVERAGE",
+            "description": "Index to measure balance movement across all trades (excluding home and property loans) in last 24 months",
+            "description_code": "(BALMAG01)",
+            "value": "0",
+            "left_limit": "Pay Down",
+            "right_limit": "Debt Build Up",
+            "calculated_value": "30%"
+          },
+          {
+            "description": "Utilization for open trades",
+            "description_code": "(AT34A)",
+            "value": "20 %",
+            "left_limit": "0%",
+            "right_limit": "100%",
+            "calculated_value": "20%"
+          }
+        ]
+      },
+      {
+        "border_bottom": true,
+        "rows": 2,
+        "details": [
+          {
+            "icon": "images/dynamic-images/recency.png",
+            "title": "RECENCY",
+            "description": "Number of trades opened in past 6 months",
+            "description_code": "(AT06S)",
+            "value": "-4",
+            "message": "No trades opened in the last 6 months"
+          },
+          {
+            "description": "Number of enquiries in past 3 months",
+            "description_code": "(G503S)",
+            "value": "-1",
+            "message": "No enquiries in the last 90 days"
+          }
+        ]
+      },
+      {
+        "rows": 3,
+        "details": [
+          {
+            "icon": "images/dynamic-images/demographic.png",
+            "title": "DEMOGRAPHIC STABILITY INDEX",
+            "description": "Number of distinct phones reported in the last 3 months",
+            "description_code": "(DM207S)",
+            "value": "2",
+            "left_limit": "0",
+            "right_limit": "5+",
+            "calculated_value": "35%"
+          },
+          {
+            "description": "Number of distinct addresses reported in the last 3 months",
+            "description_code": "(DM217S)",
+            "value": "No new address reported in the last 3 months",
+            "left_limit": "0",
+            "right_limit": "5+",
+            "calculated_value": "0%"
+          },
+          {
+            "description": "Number of distinct IDs reported in the last 3 months",
+            "description_code": "(DM247S)",
+            "value": "1",
+            "left_limit": "0",
+            "right_limit": "5+",
+            "calculated_value": "15%"
+          }
+        ]
+      }
+    ]
+  }
+]

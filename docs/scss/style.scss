@@ -1757,9 +1757,8 @@ tfoot {
     margin-bottom: 24px !important;
   }
 }
-.score-graph-tables{
+.score-graph-tables {
   padding: 0px !important;
-
 }
 .score-graph-table {
   td {
@@ -1784,5 +1783,105 @@ tfoot {
   }
   .graph {
     width: 25%;
+  }
+}
+
+.algorithm-table {
+  .grey-text {
+    color: #707070;
+  }
+  th, td{
+    &[type="col-description"] {
+      width: 40%;
+    }
+    &[type="col-value"] {
+      width: 20%;
+    }
+    &[type="row-header"] {
+      border-right: 1px solid #acacac;
+      width: 15%;
+    }
+  }
+  td{
+    &[type="description"] {
+      width: 70%;
+      padding-right: 15px !important;
+    }
+  }
+  .child-table{
+    tr {
+      th {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #00a6ca;
+        text-align: left;
+        padding: 18px 20px 20px;
+        border-bottom: 1px solid #acacac;
+
+      }
+      td {
+        padding: 10px 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        table {
+          tr {
+            td {
+              padding: 0px;
+            }
+          }
+        }
+        .icon {
+          width: 40px;
+          margin-bottom: 10px;
+        }
+        &.rowHeader{
+          border-bottom: none !important;
+        }
+      }
+      .grey-text:not(.message){
+        font-size: 16px;
+      }
+      &:not(:last-child){
+        td{
+            border-bottom: 1px solid #ACACAC;
+            table{
+              tr{
+                td{
+                  border-bottom: none;
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
+.risk-scale-bar {
+  .left-limit,
+  .right-limit {
+    color: #707070;
+    width: 61px;
+  }
+  .right-limit {
+    padding-left: 10px !important;
+  }
+  .left-limit {
+    padding-right: 10px !important;
+  }
+  .risk-scale {
+    height: 24px;
+    background-color: #dddddd;
+    display: block;
+    .value {
+      background: #00a6ca;
+      display: block;
+      height: 100%;
+      width: 0%;
+    }
   }
 }
