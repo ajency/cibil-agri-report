@@ -1,0 +1,48 @@
+{
+    "table_head": [
+        {
+            "title": "DISPUTE REMARK"
+        },
+        {
+            "title": "DATE ENTERED"
+        }
+    ],
+    "table_body": [
+        {
+            "content": [
+                "Customer rang on 12/12/2019 to dispute about payment history on accounts 7654/52 and 4050CD00771834. Also, disputed about date of Birth",
+                "03/04/2019"
+            ]
+        },
+        {
+            "content": [
+                "Multiple Disputes in Address (PA) Segment",
+                "02/04/2019"
+            ]
+        },
+        {
+            "content": [
+                "Multiple Disputes in Identification (ID) Segment",
+                "10/03/2019"
+            ]
+        },
+        {
+            "content": [
+                "Telephone Extension in Dispute",
+                "05/03/2019"
+            ]
+        },
+        {
+            "content": [
+                "Multiple Disputes in Email Contact (EC) Segment",
+                "23/02/2019"
+            ]
+        },
+        {
+            "content": [
+                "Telephone Extension in Dispute",
+                "19/02/2019"
+            ]
+        }
+    ]
+}

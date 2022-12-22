@@ -3,7 +3,7 @@
     "creditvison_score": [
         {
             "border_bottom": true,
-            "graph_title": "CREDITVISION®<br>Score",
+            "graph_title": "CREDITVISION<sup>®</sup><br>Score",
             "graph_subtitle": "Ranges from:<br>300 (high risk) to 900 (low risk)",
             "graph_image": "images/dynamic-images/score-graph-720.png",
             "score_factors":[
