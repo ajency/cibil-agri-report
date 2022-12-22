@@ -6,7 +6,14 @@
                     {{ if .headerTitle }}
                     <tr class="extra-head-row">
                         {{ $arrayFirstElement := index .tableBody 0 }}
-                        <th class="extra-table-head" colspan="{{ if .glossaryDataTable }} {{ add (len $arrayFirstElement.content) 1 }} {{ else }} {{ (len $arrayFirstElement.content) }} {{ end }}">{{ .headerTitle | safeHTML  }}</th>
+
+                        {{if eq .headColspan false}}
+                            <th class="extra-table-head">{{ .headerTitle | safeHTML  }}</th>
+                            <th class="extra-table-head"></th>
+                            <th class="extra-table-head"></th>
+                        {{else}}
+                            <th class="extra-table-head" colspan="{{ if .glossaryDataTable }} {{ add (len $arrayFirstElement.content) 1 }} {{ else }} {{ (len $arrayFirstElement.content) }} {{ end }}">{{ .headerTitle | safeHTML  }}</th>
+                        {{end}}
                     </tr>
                     {{ end }}
                     <tr>

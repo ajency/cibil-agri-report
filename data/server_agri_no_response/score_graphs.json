@@ -33,7 +33,7 @@
     "estimated_range": [
         {
             "border_bottom": false,
-            "graph_title": "Estimated<br>Income Band",
+            "graph_title": "ESTIMATED<br>INCOME BAND",
             "graph_image": "images/dynamic-images/score-graph-7.png",
             "estimated_range":[
                 "7 (1.5M - 1.8M)"

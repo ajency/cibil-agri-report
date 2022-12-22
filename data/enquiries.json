@@ -16,26 +16,10 @@
     "table_body": [
         {
             "content": [
-                "ICICI",
-                "03/04/2019",
-                "Microfinance - Personal Loan",
-                "₹ 1,39,911"
-            ]
-        },
-        {
-            "content": [
-                "ICICI",
-                "04/03/2019",
-                "Education Loan",
-                "₹ 5,20,000"
-            ]
-        },
-        {
-            "content": [
                 "Not disclosed",
-                "08/03/2019",
-                "Microfinance - Personal Loan",
-                "₹ 20,000"
+                "17/05/2019",
+                "Education Loan",
+                "₹ 90,000"
             ]
         },
         {
@@ -48,10 +32,26 @@
         },
         {
             "content": [
+                "ICICI",
+                "03/04/2019",
+                "Microfinance - Personal Loan",
+                "₹ 1,39,911"
+            ]
+        },
+        {
+            "content": [
                 "Not disclosed",
-                "17/05/2019",
+                "08/03/2019",
+                "Microfinance - Personal Loan",
+                "₹ 20,000"
+            ]
+        },
+        {
+            "content": [
+                "ICICI",
+                "04/03/2019",
                 "Education Loan",
-                "₹ 90,000"
+                "₹ 5,20,000"
             ]
         },
         {
