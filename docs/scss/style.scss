@@ -559,7 +559,7 @@ body {
             border-top: 0;
           }
           .td-title {
-            width: 128px;
+            width: 147px;
           }
         }
       }
@@ -1733,7 +1733,6 @@ tfoot {
   line-height: 28px;
   color: #2c2c2c;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 .score-subtitle {
   font-weight: 600;
@@ -1897,4 +1896,8 @@ tfoot {
   tbody tr td {
     line-height: 34px !important;
   }
+}
+
+.title-table table.glossary-table thead>tr>th:last-child {
+  width: 48%;
 }
